@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T03:52:09.163Z",
+  "generatedAt": "2026-11-10T04:15:40.270Z",
   "matches": [
     {
       "id": 170703,
@@ -55,7 +55,7 @@
       "battingTeamId": null,
       "state": "Rain",
       "stateTitle": "Break",
-      "status": "Start delayed due to rain (India opt to bowl)",
+      "status": "Start delayed due to wet outfield (India opt to bowl)",
       "startTime": 1794276000000,
       "endTime": 1794304800000,
       "venue": {
