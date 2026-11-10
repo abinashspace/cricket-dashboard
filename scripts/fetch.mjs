@@ -49,7 +49,7 @@ function loadEndpoints() {
     recent: need('FEED_MATCHES_RECENT'),
     squads: need('FEED_SQUADS', 'template containing {id}'),
     rankings: need('FEED_RANKINGS', 'template containing {gender} and {category}'),
-    photos: need('FEED_PHOTOS', 'template containing {face} and {slug}'),
+    photos: envValue('FEED_PHOTOS'),
     fallback: envValue('FEED_FALLBACK'),
   };
 }
@@ -326,7 +326,7 @@ function slugify(name) {
  * loads images from its own origin (never from the provider).
  */
 async function ensurePhoto(faceId, name) {
-  if (!faceId) return null;
+  if (!faceId || !EP.photos) return null;
   const file = `${faceId}.jpg`;
   const dest = join(PHOTOS_DIR, file);
   try {
