@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T03:31:00.531Z",
+  "generatedAt": "2026-11-10T03:48:31.138Z",
   "matches": [
     {
       "id": 170703,
@@ -55,7 +55,7 @@
       "battingTeamId": null,
       "state": "Delay",
       "stateTitle": "Delay",
-      "status": "Toss delayed due to wet outfield (toss at 9:00am IST)",
+      "status": "India opt to bowl",
       "startTime": 1794276000000,
       "endTime": 1794304800000,
       "venue": {
@@ -78,186 +78,7 @@
         "team1": [],
         "team2": []
       },
-      "squads": {
-        "team1": [
-          {
-            "id": 8216,
-            "name": "Tom Latham",
-            "tag": "WK",
-            "role": "WK-Batter"
-          },
-          {
-            "id": 10100,
-            "name": "Mitchell Santner",
-            "tag": "C",
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 8549,
-            "name": "Will Young",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 9443,
-            "name": "Tim Seifert",
-            "tag": null,
-            "role": "WK-Batter"
-          },
-          {
-            "id": 10694,
-            "name": "Henry Nicholls",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 10713,
-            "name": "Daryl Mitchell",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 10693,
-            "name": "Glenn Phillips",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 11170,
-            "name": "Nathan Smith",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 9441,
-            "name": "Kyle Jamieson",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 8554,
-            "name": "Jacob Duffy",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 13363,
-            "name": "Matthew Fisher",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 15197,
-            "name": "Kristian Clarke",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 9551,
-            "name": "Michael Bracewell",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 10745,
-            "name": "Nick Kelly",
-            "tag": null,
-            "role": "Batting Allrounder"
-          }
-        ],
-        "team2": [
-          {
-            "id": 11808,
-            "name": "Shubman Gill",
-            "tag": "C",
-            "role": "Batter"
-          },
-          {
-            "id": 8733,
-            "name": "KL Rahul",
-            "tag": "WK",
-            "role": "WK-Batter"
-          },
-          {
-            "id": 576,
-            "name": "Rohit Sharma",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 1413,
-            "name": "Virat Kohli",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 9428,
-            "name": "Shreyas Iyer",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 8808,
-            "name": "Axar Patel",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 36139,
-            "name": "Naman Dhir",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 14598,
-            "name": "Anshul Kamboj",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 14179,
-            "name": "Auqib Nabi",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 22141,
-            "name": "Gurnoor Brar",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 13217,
-            "name": "Arshdeep Singh",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 11813,
-            "name": "Ruturaj Gaikwad",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 10808,
-            "name": "Mohammed Siraj",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 10276,
-            "name": "Ishan Kishan",
-            "tag": null,
-            "role": "WK-Batter"
-          },
-          {
-            "id": 8292,
-            "name": "Kuldeep Yadav",
-            "tag": null,
-            "role": "Bowler"
-          }
-        ]
-      }
+      "squads": null
     },
     {
       "id": 175690,

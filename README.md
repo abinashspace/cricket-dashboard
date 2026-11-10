@@ -30,7 +30,9 @@ source is unreachable — you just keep the last good data, and the page shows i
 - Filter by state, match type, and free-text search over teams, series and venues.
 - Expand any card for both squads, and copy a clean text summary of the match.
 - Rankings: men's and women's batting, bowling, all-rounder and team tables for
-  Test / ODI / T20I, with a top-3 podium, rating points, recent movement and search.
+  Test / ODI / T20I — a top-10 list with portraits, rating points, recent movement
+  and search. Portraits are cached under `data/photos/` so the page loads every image
+  from its own origin.
 - Local timezone times, light/dark theme (remembered), auto-refresh every 5 minutes.
 - Mobile layout, deep links (`#rankings` opens the rankings view).
 
@@ -60,6 +62,7 @@ before running:
 | `FEED_MATCHES_RECENT` | Recent results page |
 | `FEED_SQUADS` | Squad page template, containing `{id}` |
 | `FEED_RANKINGS` | Ranking page template, containing `{gender}` and `{category}` |
+| `FEED_PHOTOS` | Portrait template, containing `{face}` and `{slug}` |
 | `FEED_FALLBACK` | Optional RSS fallback for live scores |
 
 Example:

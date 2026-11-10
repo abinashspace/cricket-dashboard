@@ -1593,9 +1593,12 @@
         }
 
         function playerAvatar(row, sizeClass) {
+          const img = row.photo
+            ? `<img src="${esc(row.photo)}" alt="" decoding="async" onerror="this.remove()" />`
+            : '';
           return `<span class="${sizeClass}" style="${badgeStyle(row.name)}">${esc(
             initials(row.name),
-          )}</span>`;
+          )}${img}</span>`;
         }
 
         function trendChip(t) {

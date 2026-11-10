@@ -8,15 +8,17 @@
  * No API keys, no npm dependencies. Runs on a schedule from GitHub Actions.
  */
 
-import { writeFile, mkdir, readFile } from 'node:fs/promises';
+import { writeFile, mkdir, readFile, readdir, unlink, access } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, '..', 'data', 'matches.json');
 const RANKINGS_OUT = join(__dirname, '..', 'data', 'rankings.json');
+const PHOTOS_DIR = join(__dirname, '..', 'data', 'photos');
 
 const RANKINGS_MAX_AGE_MS = 6 * 60 * 60 * 1000;
+const RANK_TOP_N = 10;
 
 const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
@@ -47,6 +49,7 @@ function loadEndpoints() {
     recent: need('FEED_MATCHES_RECENT'),
     squads: need('FEED_SQUADS', 'template containing {id}'),
     rankings: need('FEED_RANKINGS', 'template containing {gender} and {category}'),
+    photos: need('FEED_PHOTOS', 'template containing {face} and {slug}'),
     fallback: envValue('FEED_FALLBACK'),
   };
 }
@@ -310,6 +313,64 @@ function clean(v) {
   return v;
 }
 
+function slugify(name) {
+  return String(name || '')
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+/**
+ * Download a portrait once and keep it locally under data/photos, so the page
+ * loads images from its own origin (never from the provider).
+ */
+async function ensurePhoto(faceId, name) {
+  if (!faceId) return null;
+  const file = `${faceId}.jpg`;
+  const dest = join(PHOTOS_DIR, file);
+  try {
+    await access(dest);
+    return `data/photos/${file}`;
+  } catch {
+    /* not cached yet */
+  }
+  try {
+    const url = fill(EP.photos, { face: faceId, slug: slugify(name) });
+    const res = await fetch(url, { headers: { 'User-Agent': UA } });
+    if (!res.ok) return null;
+    const buf = Buffer.from(await res.arrayBuffer());
+    if (buf.length < 200) return null;
+    await mkdir(PHOTOS_DIR, { recursive: true });
+    await writeFile(dest, buf);
+    return `data/photos/${file}`;
+  } catch {
+    return null;
+  }
+}
+
+/** Drop cached portraits that are no longer referenced, keeping the repo small. */
+async function prunePhotos(used) {
+  let files = [];
+  try {
+    files = await readdir(PHOTOS_DIR);
+  } catch {
+    return;
+  }
+  let removed = 0;
+  for (const file of files) {
+    if (!file.endsWith('.jpg')) continue;
+    if (used.has(file)) continue;
+    try {
+      await unlink(join(PHOTOS_DIR, file));
+      removed++;
+    } catch {
+      /* ignore */
+    }
+  }
+  if (removed) console.log(`Removed ${removed} unused portraits`);
+}
+
 function rankEntry(item, isTeam) {
   const name = clean(item.name) || '';
   const id = clean(item.id);
@@ -327,10 +388,12 @@ function rankEntry(item, isTeam) {
       points: Number(clean(item.points)) || 0,
     };
   }
+  const face = clean(item.faceImageId);
   return {
     ...base,
     country: clean(item.country) || '',
     points: Number(clean(item.points)) || 0,
+    faceImageId: face ? Number(face) : null,
   };
 }
 
@@ -377,9 +440,18 @@ async function fetchRankings(existing) {
         for (const [key, value] of Object.entries(formats)) {
           const list = value?.rank;
           if (!Array.isArray(list) || !list.length) continue;
-          entry[key] = list.map((row) => rankEntry(row, isTeam));
+          entry[key] = list.slice(0, RANK_TOP_N).map((row) => rankEntry(row, isTeam));
         }
         if (!Object.keys(entry).length) throw new Error('empty rankings');
+        if (!isTeam) {
+          for (const list of Object.values(entry)) {
+            for (const row of list) {
+              if (!row.faceImageId) continue;
+              row.photo = await ensurePhoto(row.faceImageId, row.name);
+              delete row.faceImageId;
+            }
+          }
+        }
         result.data[gender][category] = entry;
         const total = Object.values(entry).reduce((n, l) => n + l.length, 0);
         console.log(`rankings ${gender}/${category}: ${total} rows`);
@@ -390,6 +462,18 @@ async function fetchRankings(existing) {
       await sleep(350);
     }
   }
+
+  const used = new Set();
+  for (const tables of Object.values(result.data)) {
+    for (const table of Object.values(tables || {})) {
+      for (const list of Object.values(table || {})) {
+        for (const row of list || []) {
+          if (row.photo) used.add(row.photo.split('/').pop());
+        }
+      }
+    }
+  }
+  await prunePhotos(used);
 
   return result;
 }
