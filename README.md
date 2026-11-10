@@ -9,16 +9,21 @@ Static HTML, no build step, no API keys. Hosted on GitHub Pages.
 
 ## How it works
 
-- `index.html` is the whole app. It reads `data/matches.json` and `data/rankings.json`
-  (same origin, so no CORS issues).
+- `index.html` is the whole app. It reads `data/matches.json`, `data/rankings.json` and
+  `data/players.json` (same origin, so no CORS issues).
 - `.github/workflows/update.yml` runs every 30 minutes, executes `scripts/fetch.mjs`,
   and commits the refreshed snapshots.
 - `scripts/fetch.mjs` builds the snapshots: matches (live / upcoming / recent) with
   venues and squads, plus the men's and women's batting, bowling, all-rounder and team
   ranking tables for Test / ODI / T20I. Rankings are refreshed at most every 6 hours,
   since they only change weekly.
-- Nothing is fetched from the browser at runtime: the page only ever reads the two
-  JSON files next to it, under a strict Content-Security-Policy that blocks external
+- `scripts/players.mjs` builds `data/players.json`: every player named in a squad or an
+  ICC table, with bio details, ICC ranks, full career batting and bowling tables for every
+  format the profile tracks (Test / ODI / T20 / IPL), and recent innings. Profiles rotate
+  slowly — each player is re-read at most once a week, so the 30-minute match refresh
+  stays cheap.
+- Nothing is fetched from the browser at runtime: the page only ever reads the JSON
+  files next to it, under a strict Content-Security-Policy that blocks external
   requests. No third-party scripts, images, fonts or trackers.
 
 Because the page only reads local snapshots, it keeps working even if an upstream
@@ -37,9 +42,15 @@ source is unreachable — you just keep the last good data, and the page shows i
   Test / ODI / T20I — a top-10 list with portraits, rating points, recent movement
   and search. Portraits are cached under `data/photos/` so the page loads every image
   from its own origin.
+- Players: every player in the schedule squads or ICC tables (380+), searchable and
+  filterable by role, sortable by ICC rank, runs or wickets. Open a player for bio
+  details, ICC rankings, career batting and bowling tables across every tracked format,
+  and recent innings.
 - Local timezone times, light/dark theme (remembered), auto-refresh every 5 minutes.
-- Mobile-first layout with a bottom tab bar for Matches and Rankings; on a desktop
-  browser the same mobile app is shown inside a centred phone frame.
+- Live match analytics: an estimated win probability bar and projected score,
+  shown on in-progress cards and expanded in the match panel.
+- Mobile-first layout: bottom tabs on phones, a horizontal nav row under the header on
+  desktop, with the content centred at a comfortable reading width.
 - Warm charcoal/cream theme, and a web app manifest so it can be installed to an
   Android home screen and run standalone.
 - Mobile layout, deep links (`#rankings` opens the rankings view).
@@ -71,6 +82,7 @@ before running:
 | `FEED_SQUADS` | Squad page template, containing `{id}` |
 | `FEED_RANKINGS` | Ranking page template, containing `{gender}` and `{category}` |
 | `FEED_PHOTOS` | Portrait template, containing `{face}` and `{slug}` |
+| `FEED_PLAYERS` | Optional player profile template, containing `{id}` (falls back to the squad feed host) |
 | `FEED_FALLBACK` | Optional RSS fallback for live scores |
 
 Example:

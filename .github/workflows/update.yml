@@ -32,6 +32,7 @@ jobs:
           FEED_SQUADS: ${{ secrets.FEED_SQUADS }}
           FEED_RANKINGS: ${{ secrets.FEED_RANKINGS }}
           FEED_PHOTOS: ${{ secrets.FEED_PHOTOS }}
+          FEED_PLAYERS: ${{ secrets.FEED_PLAYERS }}
           FEED_FALLBACK: ${{ secrets.FEED_FALLBACK }}
         run: node scripts/fetch.mjs
 

@@ -11,10 +11,12 @@
 import { writeFile, mkdir, readFile, readdir, unlink, access } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { updatePlayers } from './players.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, '..', 'data', 'matches.json');
 const RANKINGS_OUT = join(__dirname, '..', 'data', 'rankings.json');
+const PLAYERS_OUT = join(__dirname, '..', 'data', 'players.json');
 const PHOTOS_DIR = join(__dirname, '..', 'data', 'photos');
 const LOGOS_DIR = join(__dirname, '..', 'data', 'logos');
 
@@ -51,6 +53,7 @@ function loadEndpoints() {
     squads: need('FEED_SQUADS', 'template containing {id}'),
     rankings: need('FEED_RANKINGS', 'template containing {gender} and {category}'),
     photos: envValue('FEED_PHOTOS'),
+    players: envValue('FEED_PLAYERS'),
     fallback: envValue('FEED_FALLBACK'),
   };
 }
@@ -357,6 +360,15 @@ async function prunePhotos(used) {
     files = await readdir(PHOTOS_DIR);
   } catch {
     return;
+  }
+  // Player profiles cache portraits too; never drop one they still show.
+  try {
+    const P = JSON.parse(await readFile(PLAYERS_OUT, 'utf8'));
+    for (const player of P.players || []) {
+      if (player.photo) used.add(player.photo.split('/').pop());
+    }
+  } catch {
+    /* no players snapshot yet */
   }
   let removed = 0;
   for (const file of files) {
@@ -742,6 +754,28 @@ async function main() {
     await updateRankings();
   } catch (err) {
     console.warn(`Rankings update failed: ${err.message}`);
+  }
+
+  // 5b. Player profiles + career stats (slow rotation, one file).
+  try {
+    // Fall back to the profile path on the same host as the squad feed, so the
+    // pipeline keeps working without an extra secret.
+    let playerUrl = EP.players;
+    if (!playerUrl && EP.squads) {
+      try {
+        playerUrl = `${new URL(EP.squads).origin}/profiles/{id}/player`;
+      } catch {
+        playerUrl = '';
+      }
+    }
+    await updatePlayers({
+      playerUrl,
+      photosUrl: EP.photos,
+      outFile: PLAYERS_OUT,
+      force: process.env.PLAYERS_FORCE === '1',
+    });
+  } catch (err) {
+    console.warn(`Player stats update failed: ${err.message}`);
   }
 
   // 6. Drop cached logos neither the schedule nor the rankings reference.

@@ -87,10 +87,8 @@
       body {
         margin: 0;
         padding: 0;
-        height: 100%;
       }
       body {
-        overflow: hidden;
         background: var(--bg);
         color: var(--text);
         font-family:
@@ -132,55 +130,25 @@
         color: var(--accent-ink);
       }
 
-      /* ---------- desktop phone frame ---------- */
-      .page {
-        height: 100dvh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 16px;
-        padding: 24px;
-        background:
-          radial-gradient(720px 520px at 50% -10%, color-mix(in srgb, var(--accent) 7%, transparent), transparent 70%),
-          var(--bg);
-      }
-      .phone {
-        width: min(430px, 100%);
-        height: min(900px, calc(100dvh - 96px));
-        padding: 9px;
-        border-radius: 46px;
-        background: linear-gradient(160deg, #2b2620, #14110d 60%);
-        box-shadow:
-          0 40px 120px rgba(0, 0, 0, 0.65),
-          inset 0 0 0 1px rgba(255, 255, 255, 0.08);
-      }
-      html[data-theme='light'] .phone {
-        background: linear-gradient(160deg, #3a332a, #211c16 60%);
-      }
+      /* ---------- page layout ---------- */
       .app {
-        position: relative;
-        height: 100%;
+        min-height: 100dvh;
         display: flex;
         flex-direction: column;
-        overflow: hidden;
-        border-radius: 37px;
-        background: var(--bg);
-      }
-      .phone-note {
-        margin: 0;
-        font-size: 11px;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        color: var(--faint);
-        opacity: 0.75;
+        background:
+          radial-gradient(900px 600px at 50% -12%, color-mix(in srgb, var(--accent) 6%, transparent), transparent 70%),
+          var(--bg);
+        background-attachment: fixed;
       }
 
       /* ---------- app bar ---------- */
       .topbar {
         flex: 0 0 auto;
+        position: sticky;
+        top: 0;
         padding: calc(10px + env(safe-area-inset-top)) 16px 10px;
         background: color-mix(in srgb, var(--bg) 88%, transparent);
+        backdrop-filter: blur(12px);
         border-bottom: 1px solid var(--line-soft);
         z-index: 20;
       }
@@ -189,6 +157,8 @@
         align-items: center;
         gap: 8px;
         min-width: 0;
+        max-width: 920px;
+        margin: 0 auto;
       }
       .brand {
         display: flex;
@@ -293,16 +263,13 @@
       .screen {
         flex: 1;
         min-height: 0;
-        overflow-y: auto;
-        overscroll-behavior: contain;
-        scrollbar-width: none;
-      }
-      .screen::-webkit-scrollbar {
-        width: 0;
-        height: 0;
+        padding-bottom: calc(74px + env(safe-area-inset-bottom));
       }
       .wrap {
-        padding: 18px 16px 26px;
+        width: 100%;
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 20px 18px 28px;
       }
       footer {
         margin-top: 28px;
@@ -734,6 +701,116 @@
         font-weight: 600;
       }
 
+      /* ---------- match analytics ---------- */
+      .analytics-strip {
+        margin-top: 12px;
+        padding: 10px 11px;
+        border-radius: 14px;
+        border: 1px solid var(--line-soft);
+        background: var(--bg-soft);
+        text-align: left;
+      }
+      .an-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 8px;
+        font-size: 9px;
+        font-weight: 650;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--faint);
+      }
+      .an-head b {
+        color: var(--text);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        text-transform: none;
+        font-variant-numeric: tabular-nums;
+      }
+      .an-bar {
+        position: relative;
+        height: 6px;
+        margin-top: 8px;
+        border-radius: 999px;
+        overflow: hidden;
+        background: var(--line);
+      }
+      .an-bar > span {
+        display: block;
+        height: 100%;
+        border-radius: inherit;
+        background: var(--accent);
+        transition: width 0.35s ease;
+      }
+      .an-bar.big {
+        height: 8px;
+        margin-top: 10px;
+      }
+      .an-sides {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 8px;
+        margin-top: 6px;
+        font-size: 10.5px;
+        color: var(--muted);
+        font-variant-numeric: tabular-nums;
+      }
+      .an-sides b {
+        color: var(--text);
+        font-weight: 650;
+      }
+      .an-sides .r {
+        text-align: right;
+      }
+      .analytics-panel {
+        margin-bottom: 16px;
+        padding: 13px 13px 12px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: var(--card);
+      }
+      .an-title {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 8px;
+        font-size: 10px;
+        font-weight: 650;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--faint);
+      }
+      .an-title span:last-child {
+        font-size: 9px;
+        font-weight: 500;
+        letter-spacing: 0;
+        text-transform: none;
+      }
+      .an-facts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 14px;
+        margin-top: 11px;
+        padding-top: 10px;
+        border-top: 1px solid var(--line-soft);
+        font-size: 10.5px;
+        color: var(--faint);
+        font-variant-numeric: tabular-nums;
+      }
+      .an-facts b {
+        color: var(--text);
+        font-weight: 650;
+      }
+      .an-note {
+        margin: 9px 0 0;
+        font-size: 10px;
+        line-height: 1.5;
+        color: var(--faint);
+      }
+
       .meta {
         display: flex;
         flex-wrap: wrap;
@@ -803,6 +880,16 @@
         align-items: baseline;
         gap: 6px;
         line-height: 1.3;
+      }
+      .sq-list li.sq-player {
+        cursor: pointer;
+        border-radius: 6px;
+      }
+      .sq-list li.sq-player:hover .pname,
+      .sq-list li.sq-player:focus-visible .pname {
+        color: var(--accent);
+        text-decoration: underline;
+        text-underline-offset: 2px;
       }
       .sq-list .pname {
         color: var(--text);
@@ -1161,6 +1248,325 @@
         color: var(--faint);
       }
 
+      /* ---------- players ---------- */
+      .players-card {
+        margin-top: 12px;
+        background: var(--card);
+        border: 1px solid var(--line-soft);
+        border-radius: var(--radius);
+        overflow: hidden;
+      }
+      .prow {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 34px minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 10px;
+        padding: 9px 13px;
+        border-bottom: 1px solid var(--line-soft);
+        text-align: left;
+      }
+      .prow:last-child {
+        border-bottom: 0;
+      }
+      .prow:hover {
+        background: var(--card-hover);
+      }
+      .prow .avatar-sm {
+        width: 34px;
+        height: 34px;
+        flex: 0 0 34px;
+        font-size: 10.5px;
+      }
+      .prow-main {
+        min-width: 0;
+      }
+      .prow-name {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        min-width: 0;
+      }
+      .prow-name .nm {
+        font-size: 12.5px;
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .prow-sub {
+        margin-top: 2px;
+        font-size: 10px;
+        color: var(--faint);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .prow-sub b {
+        color: var(--muted);
+        font-weight: 600;
+      }
+      .prow-rank {
+        font-size: 10px;
+        font-weight: 650;
+        color: var(--accent);
+        padding: 3px 7px;
+        border-radius: 999px;
+        background: color-mix(in srgb, var(--accent) 12%, transparent);
+        white-space: nowrap;
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* player detail */
+      .pd-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        margin: 0 0 12px;
+        padding: 0;
+        font-size: 11.5px;
+        font-weight: 600;
+        color: var(--muted);
+      }
+      .pd-back:hover {
+        color: var(--text);
+      }
+      .pd-hero {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+      .avatar-xl {
+        width: 74px;
+        height: 74px;
+        flex: 0 0 74px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: grid;
+        place-items: center;
+        position: relative;
+        background: linear-gradient(145deg, var(--b1, #3a3225), var(--b2, #191307));
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        font-size: 20px;
+        font-weight: 700;
+        color: #f7f2e8;
+      }
+      .avatar-xl img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .pd-name {
+        margin: 0;
+        font-size: 20px;
+        letter-spacing: -0.02em;
+        line-height: 1.15;
+      }
+      .pd-role {
+        margin: 3px 0 0;
+        font-size: 11.5px;
+        color: var(--muted);
+      }
+      .pd-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 13px;
+      }
+      .pd-tag {
+        font-size: 10px;
+        padding: 4px 8px;
+        border-radius: 999px;
+        background: var(--bg-soft);
+        border: 1px solid var(--line-soft);
+        color: var(--muted);
+        white-space: nowrap;
+      }
+      .pd-tag b {
+        color: var(--text);
+        font-weight: 600;
+      }
+      .pd-summary {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1px;
+        margin-top: 12px;
+        border: 1px solid var(--line-soft);
+        border-radius: 14px;
+        overflow: hidden;
+        background: var(--line-soft);
+      }
+      .pd-summary > div {
+        padding: 10px 8px;
+        background: var(--card);
+        text-align: center;
+      }
+      .pd-summary b {
+        display: block;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        font-variant-numeric: tabular-nums;
+      }
+      .pd-summary span {
+        display: block;
+        margin-top: 2px;
+        font-size: 8.5px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--faint);
+        font-weight: 650;
+      }
+      .pd-facts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 11px 12px;
+        padding: 13px 14px;
+      }
+      .pd-fact span {
+        display: block;
+        font-size: 8.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.09em;
+        color: var(--faint);
+        font-weight: 650;
+      }
+      .pd-fact b {
+        display: block;
+        margin-top: 2px;
+        font-size: 11.5px;
+        font-weight: 550;
+        color: var(--text);
+        overflow-wrap: anywhere;
+      }
+      .pd-fact.wide {
+        grid-column: 1 / -1;
+      }
+      .pd-ranks {
+        padding: 2px 14px 6px;
+      }
+      .pd-rank-line {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 8px 0;
+        border-bottom: 1px solid var(--line-soft);
+        font-size: 11.5px;
+      }
+      .pd-rank-line:last-child {
+        border-bottom: 0;
+      }
+      .pd-rank-line span {
+        color: var(--muted);
+      }
+      .pd-rank-line b {
+        color: var(--accent);
+        font-weight: 650;
+        font-variant-numeric: tabular-nums;
+      }
+      .pd-formats {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin: 14px 0 0;
+      }
+      .pd-formats button {
+        padding: 6px 12px;
+        border-radius: 999px;
+        border: 1px solid var(--line-soft);
+        background: var(--card);
+        color: var(--muted);
+        font-size: 11px;
+        font-weight: 600;
+      }
+      .pd-formats button[aria-pressed='true'] {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: var(--accent-ink);
+      }
+      .pd-toggle {
+        display: inline-flex;
+        gap: 4px;
+        margin-left: auto;
+        text-transform: none;
+        letter-spacing: 0;
+      }
+      .pd-toggle button {
+        padding: 3px 9px;
+        border-radius: 999px;
+        border: 1px solid var(--line-soft);
+        font-size: 9.5px;
+        font-weight: 650;
+        color: var(--faint);
+      }
+      .pd-toggle button[aria-pressed='true'] {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: var(--accent-ink);
+      }
+      .pd-stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1px;
+        background: var(--line-soft);
+      }
+      .pd-stat {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 8px;
+        padding: 9px 12px;
+        background: var(--card);
+      }
+      .pd-stat span {
+        font-size: 10px;
+        color: var(--faint);
+        white-space: nowrap;
+      }
+      .pd-stat b {
+        font-size: 12px;
+        font-weight: 650;
+        font-variant-numeric: tabular-nums;
+      }
+      .pd-recent-row {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 14px;
+        border-bottom: 1px solid var(--line-soft);
+        font-size: 11px;
+      }
+      .pd-recent-row:last-child {
+        border-bottom: 0;
+      }
+      .pd-recent-row .rv {
+        font-weight: 650;
+        font-variant-numeric: tabular-nums;
+      }
+      .pd-recent-row .rm {
+        text-align: right;
+        font-size: 9.5px;
+        color: var(--faint);
+        white-space: nowrap;
+      }
+      .pd-note {
+        margin: 0;
+        padding: 10px 13px;
+        font-size: 10px;
+        color: var(--faint);
+        background: var(--bg-soft);
+      }
+      .pd-empty {
+        padding: 18px 14px;
+        font-size: 11.5px;
+        color: var(--muted);
+        text-align: center;
+      }
+
       .empty {
         text-align: center;
         padding: 44px 20px;
@@ -1179,15 +1585,21 @@
         font-size: 12px;
       }
 
-      /* ---------- bottom tabs ---------- */
+      /* ---------- tabs: bottom bar on phones, nav row on desktop ---------- */
       .tabbar {
-        flex: 0 0 auto;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
         display: flex;
         gap: 6px;
+        max-width: 920px;
+        margin: 0 auto;
         padding: 8px 12px calc(8px + env(safe-area-inset-bottom));
         border-top: 1px solid var(--line-soft);
         background: color-mix(in srgb, var(--bg) 92%, transparent);
-        z-index: 20;
+        backdrop-filter: blur(12px);
+        z-index: 30;
       }
       .tabbar button {
         flex: 1;
@@ -1220,25 +1632,44 @@
         color: var(--accent);
       }
 
-      /* ---------- small screens: the phone is the app ---------- */
-      @media (max-width: 759px) {
-        .page {
-          display: block;
-          padding: 0;
+      /* ---------- desktop ---------- */
+      @media (min-width: 760px) {
+        .topbar {
+          padding-left: 24px;
+          padding-right: 24px;
         }
-        .phone {
-          width: 100%;
-          height: 100dvh;
-          padding: 0;
-          border-radius: 0;
-          box-shadow: none;
-          background: none;
+        .topbar-inner {
+          max-width: 872px;
         }
-        .app {
-          border-radius: 0;
+        .tabbar {
+          position: static;
+          order: 1;
+          justify-content: center;
+          gap: 6px;
+          padding: 12px 18px 0;
+          border-top: 0;
+          background: transparent;
+          backdrop-filter: none;
         }
-        .phone-note {
-          display: none;
+        .tabbar button {
+          flex: 0 0 auto;
+          flex-direction: row;
+          gap: 7px;
+          height: 36px;
+          padding: 0 15px;
+          border-radius: 999px;
+          font-size: 12px;
+        }
+        .tabbar button svg {
+          width: 16px;
+          height: 16px;
+        }
+        .screen {
+          order: 2;
+          padding-bottom: 0;
+        }
+        .wrap {
+          padding: 22px 24px 40px;
         }
       }
       @media (max-width: 360px) {
@@ -1263,140 +1694,184 @@
 </style>
   </head>
   <body>
-    <div class="page">
-      <div class="phone">
-        <div class="app">
-          <header class="topbar">
-            <div class="topbar-inner">
-              <div class="brand">
-                <div class="logo" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" stroke-linecap="round">
-                    <circle cx="12" cy="12" r="8.2" />
-                    <path d="M6.4 6.4l11.2 11.2M9.8 5.2l9 9M5.2 9.8l9 9" opacity=".55" />
-                  </svg>
-                </div>
-                <div class="brand-text">
-                  <h1>Cricket</h1>
-                </div>
-              </div>
-              <div class="spacer"></div>
-              <button class="icon-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">
-                <svg viewBox="0 0 24 24" id="themeIcon">
-                  <path d="M21 12.8A8.5 8.5 0 1111.2 3a6.6 6.6 0 009.8 9.8z" />
-                </svg>
-              </button>
-              <button class="icon-btn" id="refreshBtn" aria-label="Refresh data" title="Refresh">
-                <svg viewBox="0 0 24 24">
-                  <path d="M20 11a8 8 0 10-2.3 6.3" />
-                  <path d="M20 5v6h-6" />
-                </svg>
-              </button>
+    <div class="app">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <div class="brand">
+            <div class="logo" aria-hidden="true">
+              <svg viewBox="0 0 24 24" stroke-linecap="round">
+                <circle cx="12" cy="12" r="8.2" />
+                <path d="M6.4 6.4l11.2 11.2M9.8 5.2l9 9M5.2 9.8l9 9" opacity=".55" />
+              </svg>
             </div>
-          </header>
+            <div class="brand-text">
+              <h1>Cricket</h1>
+            </div>
+          </div>
+          <div class="spacer"></div>
+          <button class="icon-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">
+            <svg viewBox="0 0 24 24" id="themeIcon">
+              <path d="M21 12.8A8.5 8.5 0 1111.2 3a6.6 6.6 0 009.8 9.8z" />
+            </svg>
+          </button>
+          <button class="icon-btn" id="refreshBtn" aria-label="Refresh data" title="Refresh">
+            <svg viewBox="0 0 24 24">
+              <path d="M20 11a8 8 0 10-2.3 6.3" />
+              <path d="M20 5v6h-6" />
+            </svg>
+          </button>
+        </div>
+      </header>
 
-          <div class="screen">
-            <div class="wrap">
-              <div id="matchesView">
-                <div class="page-head">
-                  <p class="eyebrow" id="todayLabel">Fixtures · results · rankings</p>
-                  <div class="title-row">
-                    <h2 class="page-title">Matches</h2>
-                    <span class="head-count" id="headCount"></span>
-                  </div>
-                </div>
-
-                <div class="controls">
-                  <div class="search">
-                    <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.4-3.4" /></svg>
-                    <input id="search" type="search" placeholder="Search team, series or venue…" autocomplete="off" />
-                  </div>
-                  <select class="select" id="typeFilter" aria-label="Match type">
-                    <option value="all">All types</option>
-                  </select>
-                </div>
-
-                <div class="filters">
-                  <div class="segmented" role="group" aria-label="Filter matches">
-                    <button data-filter="all" aria-pressed="true">All <span class="count" id="c-all"></span></button>
-                    <button data-filter="upcoming" aria-pressed="false">Fixtures <span class="count" id="c-up"></span></button>
-                    <button data-filter="results" aria-pressed="false">Results <span class="count" id="c-done"></span></button>
-                  </div>
-                </div>
-
-                <main id="main">
-                  <div class="empty">
-                    <h3>Loading matches…</h3>
-                    <p>Fetching the latest snapshot.</p>
-                  </div>
-                </main>
+      <div class="screen">
+        <div class="wrap">
+          <div id="matchesView">
+            <div class="page-head">
+              <p class="eyebrow" id="todayLabel">Fixtures · results · rankings</p>
+              <div class="title-row">
+                <h2 class="page-title">Matches</h2>
+                <span class="head-count" id="headCount"></span>
               </div>
+            </div>
 
-              <div id="rankView" hidden>
-                <div class="page-head">
-                  <p class="eyebrow">ICC · top 10</p>
-                  <div class="title-row">
-                    <h2 class="page-title">Rankings</h2>
-                  </div>
-                  <p class="rank-stamp" id="rankStamp"></p>
-                </div>
-
-                <div class="controls controls-rank">
-                  <div class="search">
-                    <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.4-3.4" /></svg>
-                    <input id="rankSearch" type="search" placeholder="Find a player or team…" autocomplete="off" />
-                  </div>
-                </div>
-
-                <div class="filters">
-                  <div class="segmented" role="group" aria-label="Gender" id="genderTabs">
-                    <button data-gender="men" aria-pressed="true">Men</button>
-                    <button data-gender="women" aria-pressed="false">Women</button>
-                  </div>
-                  <div class="segmented" role="group" aria-label="Format" id="formatTabs">
-                    <button data-format="test" aria-pressed="true">Test</button>
-                    <button data-format="odi" aria-pressed="false">ODI</button>
-                    <button data-format="t20" aria-pressed="false">T20I</button>
-                  </div>
-                </div>
-
-                <div class="filters">
-                  <div class="segmented" role="group" aria-label="Ranking category" id="catTabs">
-                    <button data-cat="batting" aria-pressed="true">Batting</button>
-                    <button data-cat="bowling" aria-pressed="false">Bowling</button>
-                    <button data-cat="all-rounder" aria-pressed="false">All-rounder</button>
-                    <button data-cat="teams" aria-pressed="false">Teams</button>
-                  </div>
-                </div>
-
-                <div id="rankBody">
-                  <div class="empty">
-                    <h3>Loading rankings…</h3>
-                    <p>Fetching the latest tables.</p>
-                  </div>
-                </div>
+            <div class="controls">
+              <div class="search">
+                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.4-3.4" /></svg>
+                <input id="search" type="search" placeholder="Search team, series or venue…" autocomplete="off" />
               </div>
+              <select class="select" id="typeFilter" aria-label="Match type">
+                <option value="all">All types</option>
+              </select>
+            </div>
 
-              <footer>
-                <span>Personal dashboard · no tracking · refreshed automatically</span>
-                <span id="footStamp"></span>
-                <span style="margin-left: auto">All times local</span>
-              </footer>
+            <div class="filters">
+              <div class="segmented" role="group" aria-label="Filter matches">
+                <button data-filter="all" aria-pressed="true">All <span class="count" id="c-all"></span></button>
+                <button data-filter="upcoming" aria-pressed="false">Fixtures <span class="count" id="c-up"></span></button>
+                <button data-filter="results" aria-pressed="false">Results <span class="count" id="c-done"></span></button>
+              </div>
+            </div>
+
+            <main id="main">
+              <div class="empty">
+                <h3>Loading matches…</h3>
+                <p>Fetching the latest snapshot.</p>
+              </div>
+            </main>
+          </div>
+
+          <div id="rankView" hidden>
+            <div class="page-head">
+              <p class="eyebrow">ICC · top 10</p>
+              <div class="title-row">
+                <h2 class="page-title">Rankings</h2>
+              </div>
+              <p class="rank-stamp" id="rankStamp"></p>
+            </div>
+
+            <div class="controls controls-rank">
+              <div class="search">
+                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.4-3.4" /></svg>
+                <input id="rankSearch" type="search" placeholder="Find a player or team…" autocomplete="off" />
+              </div>
+            </div>
+
+            <div class="filters">
+              <div class="segmented" role="group" aria-label="Gender" id="genderTabs">
+                <button data-gender="men" aria-pressed="true">Men</button>
+                <button data-gender="women" aria-pressed="false">Women</button>
+              </div>
+              <div class="segmented" role="group" aria-label="Format" id="formatTabs">
+                <button data-format="test" aria-pressed="true">Test</button>
+                <button data-format="odi" aria-pressed="false">ODI</button>
+                <button data-format="t20" aria-pressed="false">T20I</button>
+              </div>
+            </div>
+
+            <div class="filters">
+              <div class="segmented" role="group" aria-label="Ranking category" id="catTabs">
+                <button data-cat="batting" aria-pressed="true">Batting</button>
+                <button data-cat="bowling" aria-pressed="false">Bowling</button>
+                <button data-cat="all-rounder" aria-pressed="false">All-rounder</button>
+                <button data-cat="teams" aria-pressed="false">Teams</button>
+              </div>
+            </div>
+
+            <div id="rankBody">
+              <div class="empty">
+                <h3>Loading rankings…</h3>
+                <p>Fetching the latest tables.</p>
+              </div>
             </div>
           </div>
 
-          <nav class="tabbar viewtabs" aria-label="View">
-            <button data-view="matches" aria-pressed="true">
-              <svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="3" /><path d="M8 3v4M16 3v4M3.5 10h17" /></svg>
-              <span>Matches</span>
-            </button>
-            <button data-view="rankings" aria-pressed="false">
-              <svg viewBox="0 0 24 24"><path d="M6 20v-7M12 20V4M18 20v-10" /></svg>
-              <span>Rankings</span>
-            </button>
-          </nav>
+          <div id="playersView" hidden>
+            <div id="playersListWrap">
+              <div class="page-head">
+                <p class="eyebrow">Profiles · career stats</p>
+                <div class="title-row">
+                  <h2 class="page-title">Players</h2>
+                  <span class="head-count" id="playersCount"></span>
+                </div>
+                <p class="rank-stamp" id="playersStamp"></p>
+              </div>
+
+              <div class="controls">
+                <div class="search">
+                  <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.4-3.4" /></svg>
+                  <input id="playerSearch" type="search" placeholder="Search player or team…" autocomplete="off" />
+                </div>
+                <select class="select" id="playerSort" aria-label="Sort players">
+                  <option value="rank">ICC rank</option>
+                  <option value="name">A–Z</option>
+                  <option value="runs">Most runs</option>
+                  <option value="wickets">Most wickets</option>
+                </select>
+              </div>
+
+              <div class="filters">
+                <div class="segmented" role="group" aria-label="Player role" id="playerRoleTabs">
+                  <button data-role="any" aria-pressed="true">All</button>
+                  <button data-role="bat" aria-pressed="false">Batters</button>
+                  <button data-role="bowl" aria-pressed="false">Bowlers</button>
+                  <button data-role="ar" aria-pressed="false">All-rounders</button>
+                  <button data-role="wk" aria-pressed="false">Keepers</button>
+                </div>
+              </div>
+
+              <div id="playersBody">
+                <div class="empty">
+                  <h3>Loading players…</h3>
+                  <p>Fetching career profiles.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="playerDetail" hidden></div>
+          </div>
+
+          <footer>
+            <span>Personal dashboard · no tracking · refreshed automatically</span>
+            <span id="footStamp"></span>
+            <span style="margin-left: auto">All times local</span>
+          </footer>
         </div>
       </div>
-      <p class="phone-note">Cricket · mobile preview</p>
+
+      <nav class="tabbar viewtabs" aria-label="View">
+        <button data-view="matches" aria-pressed="true">
+          <svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="3" /><path d="M8 3v4M16 3v4M3.5 10h17" /></svg>
+          <span>Matches</span>
+        </button>
+        <button data-view="rankings" aria-pressed="false">
+          <svg viewBox="0 0 24 24"><path d="M6 20v-7M12 20V4M18 20v-10" /></svg>
+          <span>Rankings</span>
+        </button>
+        <button data-view="players" aria-pressed="false">
+          <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.4" /><path d="M3 20c.6-3.5 3-5.5 6-5.5s5.4 2 6 5.5" /><path d="M16.2 5.4a3.2 3.2 0 010 5.8" /><path d="M18 14.9c2 .6 3.2 2.3 3.6 5.1" /></svg>
+          <span>Players</span>
+        </button>
+      </nav>
     </div>
 
     <script>
@@ -1426,6 +1901,17 @@
             category: 'batting',
             format: 'test',
             query: '',
+          },
+          players: {
+            data: null,
+            loading: false,
+            error: null,
+            query: '',
+            role: 'any',
+            sort: 'rank',
+            selected: null,
+            format: null,
+            tab: 'bat',
           },
         };
 
@@ -1580,6 +2066,197 @@
           return m.state || '';
         }
 
+        /* ---------- match analytics ----------
+         * A lightweight live model built from the score, overs and wickets we
+         * already have. It is an estimate, not a bookmaker price.
+         */
+        function oversToBalls(overs) {
+          const n = Number(overs);
+          if (overs == null || !Number.isFinite(n)) return null;
+          const whole = Math.floor(n);
+          const balls = Math.min(5, Math.round((n - whole) * 10));
+          return whole * 6 + balls;
+        }
+
+        function normalCdf(z) {
+          const sign = z < 0 ? -1 : 1;
+          const x = Math.abs(z) / Math.SQRT2;
+          const t = 1 / (1 + 0.3275911 * x);
+          const y =
+            1 -
+            ((((1.061405429 * t - 1.453152027) * t + 1.421413741) * t - 0.284496736) * t +
+              0.254829592) *
+              t *
+              Math.exp(-x * x);
+          return 0.5 * (1 + sign * y);
+        }
+
+        function formatMeta(m) {
+          const f = String(m.format || '').toUpperCase();
+          if (f.includes('T10')) return { key: 'T10', balls: 60, par: 105, baseRR: 9.4, spread: 26, maxProj: 220 };
+          if (f.includes('T20')) return { key: 'T20', balls: 120, par: 168, baseRR: 8.5, spread: 36, maxProj: 300 };
+          if (f.includes('ODI')) return { key: 'ODI', balls: 300, par: 285, baseRR: 5.65, spread: 62, maxProj: 500 };
+          if (f.includes('TEST')) return { key: 'TEST', balls: null, par: 380, baseRR: 3.4, spread: 125, maxBalls: 130 * 6, maxProj: 750 };
+          return null;
+        }
+
+        function analytics(m) {
+          if (classify(m) !== 'live') return null;
+          const meta = formatMeta(m);
+          if (!meta) return null;
+
+          const innings = [];
+          for (const side of ['team1', 'team2']) {
+            for (const inn of m.scores?.[side] || []) {
+              const balls = oversToBalls(inn.overs);
+              if (balls == null) continue;
+              const runs = Number(inn.runs) || 0;
+              innings.push({
+                side,
+                id: inn.id == null ? 0 : Number(inn.id),
+                runs,
+                wickets: Number(inn.wickets) || 0,
+                balls,
+                rr: balls ? (runs * 6) / balls : 0,
+              });
+            }
+          }
+          if (!innings.length) return null;
+
+          const ordered = innings.slice().sort((a, b) => (a.id || 0) - (b.id || 0));
+          const current = ordered[ordered.length - 1];
+          const ownInns = ordered.filter((x) => x.side === current.side);
+          const otherInns = ordered.filter((x) => x.side !== current.side);
+          const team = current.side === 'team1' ? m.team1 : m.team2;
+          const other = current.side === 'team1' ? m.team2 : m.team1;
+          const wicketsLeft = Math.max(0, 10 - current.wickets);
+          const chase = Boolean(meta.balls && otherInns.length);
+          const target = chase ? Math.max(...otherInns.map((x) => x.runs)) + 1 : null;
+          const needed = chase ? target - current.runs : null;
+          const ballsLeft = meta.balls
+            ? Math.max(0, meta.balls - current.balls)
+            : Math.max(0, meta.maxBalls - current.balls);
+
+          // Blend the small-sample current rate with a format baseline, then
+          // give the projection a wickets-in-hand acceleration.
+          const sample = Math.min(1, current.balls / ((meta.balls || meta.maxBalls) * 0.35));
+          const rate = current.rr * sample + meta.baseRR * (1 - sample);
+          const accel = 0.82 + 0.035 * wicketsLeft;
+          const remaining = chase ? ballsLeft : meta.balls ? meta.balls - current.balls : meta.maxBalls - current.balls;
+          const projected = Math.max(
+            0,
+            Math.min(
+              meta.maxProj,
+              Math.round(current.runs + (Math.max(0, remaining) * rate * accel) / 6),
+            ),
+          );
+
+          let pBat;
+          if (chase) {
+            if (needed <= 0) pBat = 1;
+            else if (ballsLeft <= 0 || wicketsLeft <= 0) pBat = 0;
+            else {
+              const reqRR = (needed * 6) / ballsLeft;
+              const expRR = meta.baseRR * (0.78 + 0.045 * wicketsLeft);
+              const mu = (expRR * ballsLeft) / 6;
+              const sd = Math.max(3.2, 1.55 * Math.sqrt(ballsLeft));
+              const pNorm = 1 - normalCdf((needed - mu) / sd);
+              const pRate = 1 / (1 + Math.exp(-(1 - reqRR / expRR) * 4.2));
+              pBat = 0.55 * pNorm + 0.45 * pRate;
+            }
+          } else {
+            const ownTotal = ownInns.reduce((n, x) => n + x.runs, 0);
+            const oppTotal = otherInns.reduce((n, x) => n + x.runs, 0);
+            const projectedTotal = ownTotal - current.runs + projected;
+            const baseline = otherInns.length ? oppTotal : meta.par;
+            const spread = meta.spread * (otherInns.length ? 1.35 : 1);
+            const z = (projectedTotal - baseline) / spread + (wicketsLeft - 5) * 0.05;
+            pBat = 1 / (1 + Math.exp(-1.15 * z));
+            // Test results are heavily draw-influenced; pull toward a coin flip.
+            if (meta.key === 'TEST') pBat = 0.5 + (pBat - 0.5) * 0.6;
+          }
+
+          const decided = pBat === 0 || pBat === 1;
+          if (!decided) pBat = Math.max(0.02, Math.min(0.98, pBat));
+
+          const p1 = current.side === 'team1' ? pBat : 1 - pBat;
+          return {
+            meta,
+            chase,
+            current,
+            team,
+            other,
+            team1Short: shortName(m.team1),
+            team2Short: shortName(m.team2),
+            p1,
+            p2: 1 - p1,
+            projected,
+            target,
+            needed,
+            ballsLeft,
+            reqRR: chase && ballsLeft > 0 ? (needed * 6) / ballsLeft : null,
+            crr: current.rr,
+            wicketsLeft,
+            label: chase
+              ? `Chasing ${target}`
+              : meta.key === 'TEST'
+                ? 'Projected innings'
+                : 'Projected total',
+            note:
+              meta.key === 'TEST'
+                ? 'Estimate from live score, overs and wickets. Test projection assumes a 130-over innings and ignores draw probability.'
+                : 'Estimate from live score, overs and wickets. Updates with every refresh.',
+          };
+        }
+
+        function analyticsStrip(m) {
+          const a = analytics(m);
+          if (!a) return '';
+          const p1 = Math.round(a.p1 * 100);
+          const p2 = 100 - p1;
+          return `<div class="analytics-strip" title="Model estimate from live score, overs and wickets" aria-label="Win probability: ${esc(a.team1Short)} ${p1} percent, ${esc(
+            a.team2Short,
+          )} ${p2} percent. ${
+            a.chase ? `Chasing ${a.target}. Projected ${a.projected}.` : `${a.label} ${a.projected}.`
+          }">
+            <div class="an-head"><span>Win probability</span><span>Projected <b>${a.projected}</b></span></div>
+            <div class="an-bar"><span style="width:${p1}%"></span></div>
+            <div class="an-sides"><span>${esc(a.team1Short)} <b>${p1}%</b></span><span class="r">${esc(
+              a.team2Short,
+            )} <b>${p2}%</b></span></div>
+          </div>`;
+        }
+
+        function analyticsPanel(m) {
+          const a = analytics(m);
+          if (!a) return '';
+          const p1 = Math.round(a.p1 * 100);
+          const p2 = 100 - p1;
+          const facts = [
+            `CRR <b>${a.crr.toFixed(2)}</b>`,
+            `Wkts left <b>${a.wicketsLeft}</b>`,
+            `${a.chase ? 'Projected finish' : a.label} <b>${a.projected}</b>`,
+          ];
+          if (a.chase) {
+            facts.push(
+              `Need <b>${a.needed}</b> off <b>${a.ballsLeft}</b>`,
+              `Req RR <b>${a.reqRR == null ? '—' : a.reqRR.toFixed(2)}</b>`,
+              `Target <b>${a.target}</b>`,
+            );
+          } else {
+            facts.push(`Format par <b>${a.meta.par}</b>`);
+          }
+          return `<div class="analytics-panel">
+            <div class="an-title"><span>Match analytics</span><span>Model estimate</span></div>
+            <div class="an-bar big"><span style="width:${p1}%"></span></div>
+            <div class="an-sides"><span>${esc(a.team1Short)} <b>${p1}%</b></span><span class="r">${esc(
+              a.team2Short,
+            )} <b>${p2}%</b></span></div>
+            <div class="an-facts">${facts.map((f) => `<span>${f}</span>`).join('')}</div>
+            <p class="an-note">${esc(a.note)}</p>
+          </div>`;
+        }
+
         function matchSummary(m) {
           const t1 = m.team1 ? m.team1.name : 'TBC';
           const t2 = m.team2 ? m.team2.name : 'TBC';
@@ -1636,7 +2313,7 @@
                 <ul class="sq-list">
                   ${t.players
                     .map(
-                      (p) => `<li>
+                      (p) => `<li class="sq-player" data-player="${esc(String(p.id))}" title="Open player profile">
                         <span class="pname">${esc(p.name)}</span>
                         ${p.tag ? `<span class="tag">${esc(p.tag)}</span>` : ''}
                         ${p.role ? `<span class="role">${esc(p.role)}</span>` : ''}
@@ -1700,6 +2377,7 @@
                 ${teamRow(m.team2, 'team2')}
               </div>
               ${statusTxt ? `<div class="match-note">${esc(statusTxt)}</div>` : ''}
+              ${analyticsStrip(m)}
             </button>
             <div class="meta">
               ${venue ? `<span title="${esc(venue)}"><span class="ellipsis">${ICON.pin}${esc(venue)}</span></span>` : ''}
@@ -1707,6 +2385,7 @@
               ${m.squads ? `<span>${ICON.cal}${(m.squads.team1?.length || 0) + (m.squads.team2?.length || 0)} in squads</span>` : ''}
             </div>
             <div class="panel" id="panel-${esc(String(m.id))}">
+              ${analyticsPanel(m)}
               ${squadBlock(m) || '<div class="hint" style="margin:0">Squads appear closer to the start of the match.</div>'}
               <div class="panel-foot">
                 <button class="link-btn copy-btn" data-copy-id="${esc(String(m.id))}">Copy match details</button>
@@ -1988,17 +2667,371 @@
           }
         }
 
+        /* ---------- players ---------- */
+        const PLAYER_FORMATS = ['Test', 'ODI', 'T20', 'T20I', 'IPL'];
+        const PLAYER_ROLE_LABEL = {
+          bat: 'Batter',
+          bowl: 'Bowler',
+          ar: 'All-rounder',
+          wk: 'WK-Batter',
+          other: 'Player',
+        };
+
+        function playerRoleKey(p) {
+          const g = p.roleGroup || 'other';
+          return g === 'all' ? 'ar' : g;
+        }
+
+        function playerFormats(p) {
+          const set = new Set([...Object.keys(p.batting || {}), ...Object.keys(p.bowling || {})]);
+          return [...set].sort((a, b) => {
+            const ia = PLAYER_FORMATS.indexOf(a);
+            const ib = PLAYER_FORMATS.indexOf(b);
+            return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+          });
+        }
+
+        function statNum(v) {
+          const n = parseFloat(String(v == null ? '' : v).replace(/[^0-9.]/g, ''));
+          return Number.isFinite(n) ? n : 0;
+        }
+
+        function playerTotals(p) {
+          let matches = 0;
+          let runs = 0;
+          let wickets = 0;
+          for (const f of ['Test', 'ODI', 'T20', 'T20I']) {
+            const bat = p.batting?.[f];
+            const bowl = p.bowling?.[f];
+            if (bat || bowl) {
+              matches += Math.max(statNum(bat?.Matches), statNum(bowl?.Matches));
+            }
+            if (bat) runs += statNum(bat.Runs);
+            if (bowl) wickets += statNum(bowl.Wickets);
+          }
+          return { matches, runs, wickets };
+        }
+
+        const RANK_FORMAT_NAME = { test: 'Test', odi: 'ODI', t20: 'T20I', t20Diff: 'T20I', odiDiff: 'ODI', testDiff: 'Test' };
+
+        function playerRankLine(p) {
+          const out = [];
+          const cat = { bat: 'Batting', bowl: 'Bowling', all: 'All-rounder' };
+          for (const [key, label] of Object.entries(cat)) {
+            const ranks = p.rankings?.[key] || {};
+            const seen = [];
+            for (const [format, rank] of Object.entries(ranks)) {
+              if (!rank) continue;
+              // `...Diff` mirrors the plain format on the profile feed.
+              if (/Diff$/.test(format) && Object.prototype.hasOwnProperty.call(ranks, format.replace(/Diff$/, ''))) continue;
+              const name = RANK_FORMAT_NAME[format] || format.replace(/([a-z])([A-Z])/g, '$1 $2');
+              seen.push(`${name} #${rank}`);
+            }
+            if (seen.length) out.push({ label, value: seen.join(' · ') });
+          }
+          return out;
+        }
+
+        function playerBestRank(p) {
+          const values = [];
+          for (const cat of ['bat', 'bowl', 'all']) {
+            for (const rank of Object.values(p.rankings?.[cat] || {})) {
+              if (rank) values.push(rank);
+            }
+          }
+          return values.length ? Math.min(...values) : null;
+        }
+
+        function ageFrom(iso) {
+          if (!iso) return null;
+          const d = new Date(`${iso}T00:00:00Z`);
+          if (Number.isNaN(d.getTime())) return null;
+          const now = new Date();
+          let age = now.getUTCFullYear() - d.getUTCFullYear();
+          const m = now.getUTCMonth() - d.getUTCMonth();
+          if (m < 0 || (m === 0 && now.getUTCDate() < d.getUTCDate())) age--;
+          return age > 0 && age < 120 ? age : null;
+        }
+
+        function prettyDate(iso) {
+          if (!iso) return '';
+          const d = new Date(`${iso}T00:00:00Z`);
+          if (Number.isNaN(d.getTime())) return iso;
+          return d.toLocaleDateString([], { day: 'numeric', month: 'short', year: 'numeric' });
+        }
+
+        function playerMatchesQuery(p, q) {
+          if (!q) return true;
+          const hay = [p.name, p.fullName, p.country, p.intlTeam, p.squadTeam, p.role, p.bat, p.bowl]
+            .concat(p.teams || [])
+            .join(' ')
+            .toLowerCase();
+          return hay.includes(q);
+        }
+
+        function playerRow(p) {
+          const t = playerTotals(p);
+          const rank = playerBestRank(p);
+          const role = PLAYER_ROLE_LABEL[playerRoleKey(p)] || 'Player';
+          const team = p.intlTeam || p.country || p.squadTeam || '';
+          const bits = [];
+          if (t.matches) bits.push(`${t.matches} M`);
+          bits.push(`${t.runs.toLocaleString()} R`);
+          if (t.wickets) bits.push(`${t.wickets} W`);
+          const sub = [team, role].filter(Boolean).join(' · ');
+          return `<button class="prow" data-player="${esc(String(p.id))}">
+            <span class="avatar-sm" style="${badgeStyle(p.name)}">${esc(initials(p.name))}${
+              p.photo ? `<img src="${esc(p.photo)}" alt="" loading="lazy" decoding="async" onerror="this.remove()" />` : ''
+            }</span>
+            <span class="prow-main">
+              <span class="prow-name"><span class="nm">${esc(p.name)}</span></span>
+              <span class="prow-sub">${esc(sub)}${sub ? ' · ' : ''}<b>${esc(bits.join(' · '))}</b></span>
+            </span>
+            ${rank ? `<span class="prow-rank">#${esc(String(rank))}</span>` : ''}
+          </button>`;
+        }
+
+        function renderPlayers() {
+          const P = state.players;
+          const listWrap = $('#playersListWrap');
+          const detail = $('#playerDetail');
+          const body = $('#playersBody');
+          if (!body) return;
+
+          listWrap.hidden = Boolean(P.selected);
+          detail.hidden = !P.selected;
+          if (P.selected) {
+            renderPlayerDetail();
+            return;
+          }
+
+          if (!P.data) {
+            body.innerHTML = P.loading
+              ? `<div class="empty"><h3>Loading players…</h3><p>Fetching career profiles.</p></div>`
+              : P.error
+                ? `<div class="empty"><h3>Players unavailable</h3><p>Could not load the profiles. Try again in a moment.</p></div>`
+                : `<div class="empty"><h3>Loading players…</h3><p>Fetching career profiles.</p></div>`;
+            $('#playersCount').textContent = '';
+            $('#playersStamp').textContent = '';
+            return;
+          }
+
+          const q = P.query.trim().toLowerCase();
+          const all = P.data.players || [];
+          let rows = all.filter((p) => {
+            if (P.role !== 'any' && playerRoleKey(p) !== P.role) return false;
+            return playerMatchesQuery(p, q);
+          });
+
+          if (P.sort === 'name') rows.sort((a, b) => a.name.localeCompare(b.name));
+          else if (P.sort === 'runs') rows.sort((a, b) => playerTotals(b).runs - playerTotals(a).runs);
+          else if (P.sort === 'wickets') rows.sort((a, b) => playerTotals(b).wickets - playerTotals(a).wickets);
+          else
+            rows.sort((a, b) => {
+              const ra = playerBestRank(a) ?? 9999;
+              const rb = playerBestRank(b) ?? 9999;
+              return ra - rb || a.name.localeCompare(b.name);
+            });
+
+          $('#playersCount').textContent = `${rows.length} ${rows.length === 1 ? 'player' : 'players'}`;
+          $('#playersStamp').textContent = P.data.generatedAt
+            ? `Updated ${relative(P.data.generatedAt)} · ${P.data.withStats || 0} with career stats`
+            : '';
+
+          if (!rows.length) {
+            body.innerHTML = `<div class="empty"><h3>No one matches</h3><p>Try another name or switch role.</p></div>`;
+            return;
+          }
+
+          body.innerHTML = `<div class="players-card">${rows.map(playerRow).join('')}</div>`;
+        }
+
+        function statGrid(table) {
+          if (!table || !Object.keys(table).length) return '';
+          return `<div class="pd-stats">${Object.entries(table)
+            .map(([label, value]) => `<div class="pd-stat"><span>${esc(label)}</span><b>${esc(value)}</b></div>`)
+            .join('')}</div>`;
+        }
+
+        function defaultFormat(p) {
+          const formats = playerFormats(p);
+          const played = (f) =>
+            Math.max(statNum(p.batting?.[f]?.Matches), statNum(p.bowling?.[f]?.Matches));
+          const intl = formats.filter((f) => f !== 'IPL');
+          const best = intl.map((f) => ({ f, n: played(f) })).sort((a, b) => b.n - a.n)[0];
+          if (best && best.n > 0) return best.f;
+          const any = formats.map((f) => ({ f, n: played(f) })).sort((a, b) => b.n - a.n)[0];
+          return any && any.n > 0 ? any.f : formats[0] || null;
+        }
+
+        function renderPlayerDetail() {
+          const P = state.players;
+          const host = $('#playerDetail');
+          if (!P.data) {
+            host.innerHTML = `<div class="empty"><h3>Loading player…</h3><p>Fetching the career profile.</p></div>`;
+            return;
+          }
+          const p = (P.data?.players || []).find((x) => String(x.id) === String(P.selected));
+          if (!p) {
+            P.selected = null;
+            renderPlayers();
+            return;
+          }
+
+          const formats = playerFormats(p);
+          if (!P.format || !formats.includes(P.format)) P.format = defaultFormat(p);
+          const format = P.format;
+          const table = (P.tab === 'bat' ? p.batting : p.bowling)?.[format] || null;
+
+          const role = PLAYER_ROLE_LABEL[playerRoleKey(p)] || p.role || 'Player';
+          const team = p.intlTeam || p.country || p.squadTeam || '';
+          const age = ageFrom(p.born);
+          const totals = playerTotals(p);
+
+          const tags = [];
+          if (p.bat) tags.push(`<span class="pd-tag">Bat <b>${esc(p.bat.replace(/Handed Bat/i, '').trim() || p.bat)}</b></span>`);
+          if (p.bowl) tags.push(`<span class="pd-tag">Bowl <b>${esc(p.bowl)}</b></span>`);
+          if (p.tag) tags.push(`<span class="pd-tag">Squad <b>${esc(p.tag === 'C' ? 'Captain' : p.tag === 'WK' ? 'Keeper' : p.tag)}</b></span>`);
+
+          const facts = [
+            ['Born', prettyDate(p.born)],
+            ['Age', age ? `${age}` : ''],
+            ['Birthplace', p.birthPlace],
+            ['Intl team', team],
+            ['Role', role],
+          ];
+
+          const rankLines = playerRankLine(p);
+
+          const recent = (P.tab === 'bat' ? p.recentBatting : p.recentBowling) || [];
+
+          host.innerHTML = `
+            <button class="pd-back" id="pdBack">‹ All players</button>
+            <div class="pd-hero">
+              <span class="avatar-xl" style="${badgeStyle(p.name)}">${esc(initials(p.name))}${
+                p.photo ? `<img src="${esc(p.photo)}" alt="" decoding="async" onerror="this.remove()" />` : ''
+              }</span>
+              <div>
+                <h2 class="pd-name">${esc(p.name)}</h2>
+                <p class="pd-role">${esc([team, role].filter(Boolean).join(' · '))}</p>
+              </div>
+            </div>
+            ${tags.length ? `<div class="pd-tags">${tags.join('')}</div>` : ''}
+            ${
+              totals.matches || totals.runs || totals.wickets
+                ? `<div class="pd-summary">
+                    <div><b>${esc(totals.matches ? totals.matches.toLocaleString() : '—')}</b><span>Intl matches</span></div>
+                    <div><b>${esc(totals.runs.toLocaleString())}</b><span>Runs</span></div>
+                    <div><b>${esc(totals.wickets.toLocaleString())}</b><span>Wickets</span></div>
+                  </div>`
+                : ''
+            }
+
+            <div class="players-card">
+              <div class="rank-card-head">Profile</div>
+              <div class="pd-facts">${facts
+                .filter(([, value]) => value)
+                .map(([label, value]) => `<div class="pd-fact"><span>${esc(label)}</span><b>${esc(value)}</b></div>`)
+                .join('')}${
+                p.teams?.length
+                  ? `<div class="pd-fact wide"><span>Teams</span><b>${esc(p.teams.join(', '))}</b></div>`
+                  : ''
+              }</div>
+            </div>
+
+            ${
+              rankLines.length
+                ? `<div class="players-card">
+                    <div class="rank-card-head">ICC rankings</div>
+                    <div class="pd-ranks">${rankLines
+                      .map(
+                        (line) =>
+                          `<div class="pd-rank-line"><span>${esc(line.label)}</span><b>${esc(line.value)}</b></div>`,
+                      )
+                      .join('')}</div>
+                  </div>`
+                : ''
+            }
+
+            ${
+              formats.length
+                ? `<div class="pd-formats" id="pdFormats">${formats
+                    .map(
+                      (f) =>
+                        `<button data-pformat="${esc(f)}" aria-pressed="${String(f === format)}">${esc(f)}</button>`,
+                    )
+                    .join('')}</div>`
+                : ''
+            }
+
+            <div class="players-card">
+              <div class="rank-card-head">
+                <span>Career ${P.tab === 'bat' ? 'batting' : 'bowling'}</span>
+                <span class="pd-toggle" id="pdToggle">
+                  <button data-ptab="bat" aria-pressed="${String(P.tab === 'bat')}">Bat</button>
+                  <button data-ptab="bowl" aria-pressed="${String(P.tab === 'bowl')}">Bowl</button>
+                </span>
+              </div>
+              ${table ? statGrid(table) : `<div class="pd-empty">No career ${P.tab === 'bat' ? 'batting' : 'bowling'} data${format ? ` for ${esc(format)}` : ''} yet.</div>`}
+              ${table ? `<p class="pd-note">Career table · ${esc(format)} · updated ${esc(relative(P.data.generatedAt))}</p>` : ''}
+            </div>
+
+            ${
+              recent.length
+                ? `<div class="players-card">
+                    <div class="rank-card-head">Recent ${P.tab === 'bat' ? 'batting' : 'bowling'} <span class="sp">${esc(String(recent.length))} innings</span></div>
+                    ${recent
+                      .map(
+                        (r) =>
+                          `<div class="pd-recent-row"><span class="rv">${esc(r.value)}</span><span class="rm">${esc(
+                            [r.opp ? `v ${r.opp}` : '', r.format, r.date].filter(Boolean).join(' · '),
+                          )}</span></div>`,
+                      )
+                      .join('')}
+                  </div>`
+                : ''
+            }
+
+            <p class="pd-note" style="border-radius:12px;margin-top:12px">Career tables come from the public profile snapshot. Formats list every competition the profile tracks.</p>
+          `;
+        }
+
+        async function loadPlayers() {
+          const P = state.players;
+          if (P.data || P.loading) return;
+          P.loading = true;
+          P.error = null;
+          renderPlayers();
+          try {
+            const res = await fetch(`data/players.json?t=${Date.now()}`, { cache: 'no-store' });
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            P.data = await res.json();
+          } catch (err) {
+            P.error = true;
+          } finally {
+            P.loading = false;
+            renderPlayers();
+          }
+        }
+
+        function scrollTop() {
+          window.scrollTo({ top: 0, behavior: 'instant' });
+        }
+
         function setView(view) {
           state.view = view;
           $('#matchesView').hidden = view !== 'matches';
           $('#rankView').hidden = view !== 'rankings';
+          $('#playersView').hidden = view !== 'players';
           document.querySelectorAll('.viewtabs button').forEach((b) => {
             b.setAttribute('aria-pressed', String(b.dataset.view === view));
           });
+          const hash = view === 'rankings' ? '#rankings' : view === 'players' ? '#players' : '#matches';
           try {
-            history.replaceState(null, '', view === 'rankings' ? '#rankings' : '#matches');
+            history.replaceState(null, '', hash);
           } catch (e) {}
           if (view === 'rankings') loadRankings();
+          if (view === 'players') loadPlayers();
         }
 
         /* ---------- events ---------- */
@@ -2024,6 +3057,16 @@
         );
 
         $('#main').addEventListener('click', async (e) => {
+          const squadPlayer = e.target.closest('.sq-player');
+          if (squadPlayer && squadPlayer.dataset.player) {
+            state.players.selected = squadPlayer.dataset.player;
+            state.players.format = null;
+            state.players.tab = 'bat';
+            setView('players');
+            renderPlayers();
+            scrollTop();
+            return;
+          }
           const copyBtn = e.target.closest('.copy-btn');
           if (copyBtn) {
             const m = (state.data?.matches || []).find(
@@ -2104,6 +3147,57 @@
           renderRankings();
         });
 
+        $('#playerSearch').addEventListener('input', (e) => {
+          state.players.query = e.target.value;
+          clearTimeout(renderPlayers._t);
+          renderPlayers._t = setTimeout(renderPlayers, 120);
+        });
+
+        $('#playerSort').addEventListener('change', (e) => {
+          state.players.sort = e.target.value;
+          renderPlayers();
+        });
+
+        $('#playerRoleTabs').addEventListener('click', (e) => {
+          const b = e.target.closest('button[data-role]');
+          if (!b) return;
+          state.players.role = b.dataset.role;
+          document
+            .querySelectorAll('#playerRoleTabs button')
+            .forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+          renderPlayers();
+        });
+
+        $('#playersBody').addEventListener('click', (e) => {
+          const b = e.target.closest('.prow');
+          if (!b) return;
+          state.players.selected = b.dataset.player;
+          state.players.tab = 'bat';
+          state.players.format = null;
+          scrollTop();
+          renderPlayers();
+        });
+
+        $('#playerDetail').addEventListener('click', (e) => {
+          if (e.target.closest('#pdBack')) {
+            state.players.selected = null;
+            scrollTop();
+            renderPlayers();
+            return;
+          }
+          const f = e.target.closest('button[data-pformat]');
+          if (f) {
+            state.players.format = f.dataset.pformat;
+            renderPlayerDetail();
+            return;
+          }
+          const t = e.target.closest('#pdToggle button[data-ptab]');
+          if (t) {
+            state.players.tab = t.dataset.ptab;
+            renderPlayerDetail();
+          }
+        });
+
         $('#themeBtn').addEventListener('click', () => {
           const cur = document.documentElement.getAttribute('data-theme');
           const effective =
@@ -2140,6 +3234,10 @@
           if (state.view === 'rankings') {
             state.rank.data = null;
             loadRankings();
+          } else if (state.view === 'players') {
+            state.players.data = null;
+            state.players.selected = null;
+            loadPlayers();
           } else {
             load(true);
           }
@@ -2170,7 +3268,13 @@
         }
 
         render();
-        setView(window.location.hash === '#rankings' ? 'rankings' : 'matches');
+        const startView =
+          window.location.hash === '#rankings'
+            ? 'rankings'
+            : window.location.hash === '#players'
+              ? 'players'
+              : 'matches';
+        setView(startView);
         load(false);
         setInterval(() => load(false), REFRESH_MS);
       })();
