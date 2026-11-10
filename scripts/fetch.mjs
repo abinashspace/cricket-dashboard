@@ -446,13 +446,38 @@ async function attachTeamLogos(matches) {
       byImage.set(team.imageId, await ensureLogo(team.imageId));
     }
   }
-  const used = new Set();
   for (const m of matches) {
     for (const team of [m.team1, m.team2]) {
       if (!team) continue;
       if (team.imageId) team.logo = byImage.get(team.imageId) || null;
-      if (team.logo) used.add(team.logo.split('/').pop());
     }
+  }
+}
+
+/**
+ * Keep only logos still referenced by the schedule or by the team rankings.
+ * Runs after both snapshots are refreshed so ranking-only teams are not pruned.
+ */
+async function pruneUnusedLogos(matches) {
+  const used = new Set();
+  for (const m of matches) {
+    for (const team of [m.team1, m.team2]) {
+      if (team && team.logo) used.add(team.logo.split('/').pop());
+    }
+  }
+  try {
+    const R = JSON.parse(await readFile(RANKINGS_OUT, 'utf8'));
+    for (const tables of Object.values(R.data || {})) {
+      for (const table of Object.values(tables || {})) {
+        for (const list of Object.values(table || {})) {
+          for (const row of list || []) {
+            if (row.logo) used.add(row.logo.split('/').pop());
+          }
+        }
+      }
+    }
+  } catch {
+    /* no rankings snapshot yet */
   }
   await pruneLogos(used);
 }
@@ -468,10 +493,12 @@ function rankEntry(item, isTeam) {
     trend: clean(item.trend) || 'Flat',
   };
   if (isTeam) {
+    const face = clean(item.imageId);
     return {
       ...base,
       matches: Number(clean(item.matches)) || 0,
       points: Number(clean(item.points)) || 0,
+      imageId: face ? Number(face) : null,
     };
   }
   const face = clean(item.faceImageId);
@@ -535,6 +562,14 @@ async function fetchRankings(existing) {
               if (!row.faceImageId) continue;
               row.photo = await ensurePhoto(row.faceImageId, row.name);
               delete row.faceImageId;
+            }
+          }
+        } else {
+          for (const list of Object.values(entry)) {
+            for (const row of list) {
+              if (!row.imageId) continue;
+              row.logo = await ensureLogo(row.imageId);
+              delete row.imageId;
             }
           }
         }
@@ -708,6 +743,9 @@ async function main() {
   } catch (err) {
     console.warn(`Rankings update failed: ${err.message}`);
   }
+
+  // 6. Drop cached logos neither the schedule nor the rankings reference.
+  await pruneUnusedLogos(matches);
 }
 
 main().catch((err) => {

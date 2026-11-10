@@ -38,6 +38,10 @@ source is unreachable — you just keep the last good data, and the page shows i
   and search. Portraits are cached under `data/photos/` so the page loads every image
   from its own origin.
 - Local timezone times, light/dark theme (remembered), auto-refresh every 5 minutes.
+- Mobile-first layout with a bottom tab bar for Matches and Rankings; on a desktop
+  browser the same mobile app is shown inside a centred phone frame.
+- Warm charcoal/cream theme, and a web app manifest so it can be installed to an
+  Android home screen and run standalone.
 - Mobile layout, deep links (`#rankings` opens the rankings view).
 
 ## Run locally
