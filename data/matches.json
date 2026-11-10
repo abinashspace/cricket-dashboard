@@ -1,0 +1,2341 @@
+{
+  "generatedAt": "2026-11-10T03:31:00.531Z",
+  "matches": [
+    {
+      "id": 170703,
+      "series": "Sri Lanka tour of Pakistan, 2026",
+      "seriesId": 13037,
+      "matchDesc": "1st Test",
+      "format": "TEST",
+      "matchType": "International",
+      "dayNight": false,
+      "battingTeamId": 3,
+      "state": "Stumps",
+      "stateTitle": "Stumps",
+      "status": "Day 1: Stumps",
+      "startTime": 1794198600000,
+      "endTime": 1794569400000,
+      "venue": {
+        "ground": "Rawalpindi Cricket Stadium",
+        "city": "Rawalpindi"
+      },
+      "team1": {
+        "id": 3,
+        "name": "Pakistan",
+        "short": "PAK",
+        "imageId": 776308
+      },
+      "team2": {
+        "id": 5,
+        "name": "Sri Lanka",
+        "short": "SL",
+        "imageId": 776254
+      },
+      "scores": {
+        "team1": [
+          {
+            "id": 1,
+            "runs": 281,
+            "wickets": 5,
+            "overs": 67.2
+          }
+        ],
+        "team2": []
+      },
+      "squads": null
+    },
+    {
+      "id": 161260,
+      "series": "India tour of New Zealand 2026",
+      "seriesId": 12543,
+      "matchDesc": "3rd ODI",
+      "format": "ODI",
+      "matchType": "International",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Delay",
+      "stateTitle": "Delay",
+      "status": "Toss delayed due to wet outfield (toss at 9:00am IST)",
+      "startTime": 1794276000000,
+      "endTime": 1794304800000,
+      "venue": {
+        "ground": "Seddon Park",
+        "city": "Hamilton"
+      },
+      "team1": {
+        "id": 13,
+        "name": "New Zealand",
+        "short": "NZ",
+        "imageId": 776333
+      },
+      "team2": {
+        "id": 2,
+        "name": "India",
+        "short": "IND",
+        "imageId": 776162
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": {
+        "team1": [
+          {
+            "id": 8216,
+            "name": "Tom Latham",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 10100,
+            "name": "Mitchell Santner",
+            "tag": "C",
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 8549,
+            "name": "Will Young",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 9443,
+            "name": "Tim Seifert",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 10694,
+            "name": "Henry Nicholls",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 10713,
+            "name": "Daryl Mitchell",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 10693,
+            "name": "Glenn Phillips",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 11170,
+            "name": "Nathan Smith",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 9441,
+            "name": "Kyle Jamieson",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 8554,
+            "name": "Jacob Duffy",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 13363,
+            "name": "Matthew Fisher",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 15197,
+            "name": "Kristian Clarke",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 9551,
+            "name": "Michael Bracewell",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 10745,
+            "name": "Nick Kelly",
+            "tag": null,
+            "role": "Batting Allrounder"
+          }
+        ],
+        "team2": [
+          {
+            "id": 11808,
+            "name": "Shubman Gill",
+            "tag": "C",
+            "role": "Batter"
+          },
+          {
+            "id": 8733,
+            "name": "KL Rahul",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 576,
+            "name": "Rohit Sharma",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1413,
+            "name": "Virat Kohli",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 9428,
+            "name": "Shreyas Iyer",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 8808,
+            "name": "Axar Patel",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 36139,
+            "name": "Naman Dhir",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 14598,
+            "name": "Anshul Kamboj",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 14179,
+            "name": "Auqib Nabi",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 22141,
+            "name": "Gurnoor Brar",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 13217,
+            "name": "Arshdeep Singh",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 11813,
+            "name": "Ruturaj Gaikwad",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 10808,
+            "name": "Mohammed Siraj",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 10276,
+            "name": "Ishan Kishan",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 8292,
+            "name": "Kuldeep Yadav",
+            "tag": null,
+            "role": "Bowler"
+          }
+        ]
+      }
+    },
+    {
+      "id": 175690,
+      "series": "ACC Men's U19 Asia Cup 2026",
+      "seriesId": 13333,
+      "matchDesc": "11th Match, Group A",
+      "format": "ODI",
+      "matchType": "Domestic",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Preview",
+      "stateTitle": "Preview",
+      "status": "Match starts at Nov 10, 05:00 GMT",
+      "startTime": 1794286800000,
+      "endTime": 1794315600000,
+      "venue": {
+        "ground": "Al Amerat Cricket Ground (Ministry Turf 2)",
+        "city": "Al Amerat"
+      },
+      "team1": {
+        "id": 54,
+        "name": "India U19",
+        "short": "INDU19",
+        "imageId": 776180
+      },
+      "team2": {
+        "id": 283,
+        "name": "United Arab Emirates U19",
+        "short": "UAEU19",
+        "imageId": 776244
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": {
+        "team1": [
+          {
+            "id": 1464970,
+            "name": "Lakshya Rajesh Raichandani",
+            "tag": "C",
+            "role": "Batter"
+          },
+          {
+            "id": 1465660,
+            "name": "Anvay Dravid",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 1458979,
+            "name": "Aaryavir Sehwag",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1465099,
+            "name": "VK Vineeth",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1476517,
+            "name": "Yashbardhan Chauhan",
+            "tag": null,
+            "role": null
+          },
+          {
+            "id": 1476493,
+            "name": "Arjun Rajput",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1477047,
+            "name": "Manal Chauhan",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1475679,
+            "name": "Yashveer Goud",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1476560,
+            "name": "Kavya Patel",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1476567,
+            "name": "Mohit Ulva",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1476507,
+            "name": "Ishan Sood",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1476537,
+            "name": "Kushagra Ojha",
+            "tag": null,
+            "role": null
+          },
+          {
+            "id": 1476547,
+            "name": "Rajat Baghel",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 1476557,
+            "name": "Shavin Vinodh",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1479730,
+            "name": "Aryan Savsani",
+            "tag": null,
+            "role": "Batter"
+          }
+        ],
+        "team2": [
+          {
+            "id": 1466455,
+            "name": "Ayaan Misbah",
+            "tag": "C",
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1482390,
+            "name": "Muhammad Ahmed",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 1482233,
+            "name": "Omar Tauqir",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1466454,
+            "name": "Ahmed Khudadad",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 53132,
+            "name": "Yayin Rai",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1482223,
+            "name": "Mohamed Nafees",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1466452,
+            "name": "Zainullah Rehmani",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1448145,
+            "name": "Uddish Suri",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1448181,
+            "name": "Noorullah Ayobi",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1482237,
+            "name": "Muhammad Umar Faisal",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1466488,
+            "name": "Naseem Khan",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1480171,
+            "name": "Raizal Nadir",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1482247,
+            "name": "Hadayatullah Khan",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1482407,
+            "name": "Bilal Khan",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1482431,
+            "name": "Muhammad Saad",
+            "tag": null,
+            "role": "Batter"
+          }
+        ]
+      }
+    },
+    {
+      "id": 175693,
+      "series": "ACC Men's U19 Asia Cup 2026",
+      "seriesId": 13333,
+      "matchDesc": "12th Match, Group A",
+      "format": "ODI",
+      "matchType": "Domestic",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Preview",
+      "stateTitle": "Preview",
+      "status": "Match starts at Nov 10, 05:00 GMT",
+      "startTime": 1794286800000,
+      "endTime": 1794315600000,
+      "venue": {
+        "ground": "Al Amerat Cricket Ground (Ministry Turf 1)",
+        "city": "Al Amerat"
+      },
+      "team1": {
+        "id": 56,
+        "name": "Pakistan U19",
+        "short": "PAKU19",
+        "imageId": 776309
+      },
+      "team2": {
+        "id": 229,
+        "name": "Nepal U19",
+        "short": "NPLU19",
+        "imageId": 776188
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": {
+        "team1": [
+          {
+            "id": 1448229,
+            "name": "Farhan Yousaf",
+            "tag": "C",
+            "role": "Batter"
+          },
+          {
+            "id": 1466804,
+            "name": "Hamza Zahoor",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 1466785,
+            "name": "Usman Khan",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1481943,
+            "name": "Jahangir Bilal",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1482073,
+            "name": "Abdul Qadir",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 54028,
+            "name": "Ahmed Hussain",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1481920,
+            "name": "Hasnain Abbas Dar",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1466818,
+            "name": "Mohammad Sayyam",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1466839,
+            "name": "Niqab Shafiq",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1470993,
+            "name": "Rizwanullah",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 54199,
+            "name": "Ali Raza",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1448237,
+            "name": "Abdul Subhan",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1448245,
+            "name": "Mohammad Huzaifa",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1466809,
+            "name": "Huzaifa Ahsan",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1481973,
+            "name": "Hayam Khan",
+            "tag": null,
+            "role": "Batter"
+          }
+        ],
+        "team2": [
+          {
+            "id": 1466729,
+            "name": "Aashish Luhar",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 1464851,
+            "name": "Bipin Sharma",
+            "tag": "C",
+            "role": "Bowler"
+          },
+          {
+            "id": 1466774,
+            "name": "Niraj Kumar Yadav",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1481931,
+            "name": "Sohail Kunwar",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1481930,
+            "name": "Prashiddha Jaishi",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1466762,
+            "name": "Nischal Kshetri",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1481961,
+            "name": "Darsh Sonar",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1465973,
+            "name": "Sachin Bhatt",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1482013,
+            "name": "Subham Khanal",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1482020,
+            "name": "Nitesh Patel",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1482003,
+            "name": "Sushil Rawal",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1482000,
+            "name": "Abhay Yadav",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1481993,
+            "name": "Suryanshu Koirala",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1481983,
+            "name": "Roshan Shahi",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1481963,
+            "name": "Nischal Chhetri",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1466301,
+            "name": "Rohit Chand",
+            "tag": null,
+            "role": "Batter"
+          }
+        ]
+      }
+    },
+    {
+      "id": 177313,
+      "series": "Women's Victoria T20I Series, 2026",
+      "seriesId": 13413,
+      "matchDesc": "7th Match",
+      "format": "T20",
+      "matchType": "Women",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Preview",
+      "stateTitle": "Preview",
+      "status": "Match starts at Nov 10, 06:30 GMT",
+      "startTime": 1794292200000,
+      "endTime": 1794304800000,
+      "venue": {
+        "ground": "Entebbe Cricket Oval",
+        "city": "Entebbe"
+      },
+      "team1": {
+        "id": 720,
+        "name": "Rwanda Women",
+        "short": "RWAW",
+        "imageId": 248448
+      },
+      "team2": {
+        "id": 592,
+        "name": "United States of America Women",
+        "short": "USAW",
+        "imageId": 776222
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": {
+        "team1": [
+          {
+            "id": 18016,
+            "name": "Marie Bimenyimana",
+            "tag": "C",
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 45141,
+            "name": "Flora Irakoze",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 1424869,
+            "name": "Georgette Ingabire",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 1424874,
+            "name": "Rosette Shimwamana",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1469810,
+            "name": "Fanny Utagushimaninde",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 1469820,
+            "name": "Ruth Uwimana",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 42345,
+            "name": "Alice Ikuzwe",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 42187,
+            "name": "Clarisse Uwase",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 38638,
+            "name": "Henriette Ishimwe",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 38610,
+            "name": "Belise Murekatete",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 38596,
+            "name": "Shakila Niyomuhoza",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 38566,
+            "name": "Merveille Uwase",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 38540,
+            "name": "Rosine Irera",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 38533,
+            "name": "Gisele Ishimwe",
+            "tag": null,
+            "role": "Batter"
+          }
+        ],
+        "team2": [
+          {
+            "id": 19677,
+            "name": "Ella Claridge",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 38713,
+            "name": "Aditiba Chudasama",
+            "tag": "C",
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 38727,
+            "name": "Pooja Ganesh",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 38757,
+            "name": "Jivana Aras",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 50026,
+            "name": "Chetna Pagydyala",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1432955,
+            "name": "Lekha Shetty",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1449273,
+            "name": "Maahi Madhavan",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1470965,
+            "name": "Nikhar Doshi",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1470967,
+            "name": "Sainavi Kambalapalli",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 30621,
+            "name": "Ritu Priya Singh",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 30607,
+            "name": "Taranum Chopra",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 22036,
+            "name": "Isani Vaghela",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 22011,
+            "name": "Gargi Bhogle",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 15409,
+            "name": "Geetika Kodali",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          }
+        ]
+      }
+    },
+    {
+      "id": 162823,
+      "series": "WBBL 2026",
+      "seriesId": 12677,
+      "matchDesc": "17th Match",
+      "format": "T20",
+      "matchType": "Women",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Preview",
+      "stateTitle": "Preview",
+      "status": "Match starts at Nov 10, 08:10 GMT",
+      "startTime": 1794298200000,
+      "endTime": 1794310800000,
+      "venue": {
+        "ground": "Bellerive Oval",
+        "city": "Hobart"
+      },
+      "team1": {
+        "id": 357,
+        "name": "Hobart Hurricanes Women",
+        "short": "HBHW",
+        "imageId": 824982
+      },
+      "team2": {
+        "id": 355,
+        "name": "Adelaide Strikers Women",
+        "short": "ADSW",
+        "imageId": 824978
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": {
+        "team1": [
+          {
+            "id": 9653,
+            "name": "Lizelle Lee",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 12008,
+            "name": "Heather Graham",
+            "tag": "C",
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 38750,
+            "name": "Kate Pelle",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 9149,
+            "name": "Chamari Athapaththu",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 13297,
+            "name": "Rachel Trenaman",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 9996,
+            "name": "Maddy Green",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 9993,
+            "name": "Chinelle Henry",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 14422,
+            "name": "Hayley Silver-holmes",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 12054,
+            "name": "Molly Strano",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 13018,
+            "name": "Linsey Smith",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1432297,
+            "name": "Isabella Malgioglio",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 11405,
+            "name": "Nicola Carey",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 11995,
+            "name": "Lauren Smith",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 18460,
+            "name": "Ella Hayward",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 18490,
+            "name": "Amy Smith",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 20663,
+            "name": "Ruth Johnston",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1431689,
+            "name": "Callie Wilson",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1463944,
+            "name": "Ira Aery",
+            "tag": null,
+            "role": "Bowler"
+          }
+        ],
+        "team2": [
+          {
+            "id": 11956,
+            "name": "Tahlia McGrath",
+            "tag": "C",
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 12019,
+            "name": "Bridget Patterson",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 51651,
+            "name": "Emma de Broughe",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 13811,
+            "name": "Maia Bouchier",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 11374,
+            "name": "Laura Wolvaardt",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 15698,
+            "name": "Madeline Penna",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 11957,
+            "name": "Amanda-Jade Wellington",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 11531,
+            "name": "Sophie Ecclestone",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 38748,
+            "name": "Eleanor Larosa",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 9108,
+            "name": "Megan Schutt",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 12552,
+            "name": "Anesu Mushangwe",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 15638,
+            "name": "Darcie Brown",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 21148,
+            "name": "Ellie Johnston",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 21311,
+            "name": "Ella Wilson",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 38729,
+            "name": "Maggie Clark",
+            "tag": null,
+            "role": "Batter"
+          }
+        ]
+      }
+    },
+    {
+      "id": 177753,
+      "series": "Nepal Premier League 2026",
+      "seriesId": 13430,
+      "matchDesc": "21st Match",
+      "format": "T20",
+      "matchType": "League",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Preview",
+      "stateTitle": "Preview",
+      "status": "Match starts at Nov 10, 11:00 GMT",
+      "startTime": 1794308400000,
+      "endTime": 1794321000000,
+      "venue": {
+        "ground": "Tribhuvan University International Cricket Ground",
+        "city": "Kirtipur"
+      },
+      "team1": {
+        "id": 2918,
+        "name": "Janakpur Bolts",
+        "short": "JAB",
+        "imageId": 784132
+      },
+      "team2": {
+        "id": 2960,
+        "name": "Sudur Paschim Royals",
+        "short": "SPR",
+        "imageId": 784128
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": {
+        "team1": [
+          {
+            "id": 12112,
+            "name": "Anil Sah",
+            "tag": "WK",
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 8426,
+            "name": "Harmeet Singh",
+            "tag": "C",
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 15273,
+            "name": "Parvez Hossain Emon",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 14221,
+            "name": "Trit Raj Das",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 11090,
+            "name": "Saif Hassan",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1481847,
+            "name": "Bishal Shusling",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 8983,
+            "name": "James Neesham",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1448009,
+            "name": "Abhisekh Tiwari",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1465654,
+            "name": "Aaditya Mahata",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1481831,
+            "name": "Rahul Yadav",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 13626,
+            "name": "Lalit Rajbanshi",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 14218,
+            "name": "Rit Gautam",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 22701,
+            "name": "Santosh Karki",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1447993,
+            "name": "Mayan Yadav",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1464793,
+            "name": "Bikash Aagri",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1464818,
+            "name": "Amar Routela",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1464934,
+            "name": "Bishal Patel",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          }
+        ],
+        "team2": [
+          {
+            "id": 9961,
+            "name": "Binod Bhandari",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 11155,
+            "name": "Dipendra Singh Airee",
+            "tag": "C",
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 10400,
+            "name": "Saif Zaib",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 10126,
+            "name": "Aarif Sheikh",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 31911,
+            "name": "Brandon McMullen",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 11165,
+            "name": "Ishan Pandey",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1481717,
+            "name": "Anil Kharel",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 9511,
+            "name": "Scott Kuggeleijn",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 18515,
+            "name": "Tharindu Ratnayake",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 52579,
+            "name": "Hemant Dhami",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 14556,
+            "name": "Abinash Bohara",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 53422,
+            "name": "Dipak Bohara",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 1464945,
+            "name": "Milan Bohara",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1464956,
+            "name": "Tek Rawat",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 1465973,
+            "name": "Sachin Bhatt",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1466113,
+            "name": "Hikmat Mahara",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1481730,
+            "name": "Aayub Chand",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1481741,
+            "name": "Tek Raj Thalal",
+            "tag": null,
+            "role": "Bowler"
+          }
+        ]
+      }
+    },
+    {
+      "id": 177324,
+      "series": "Women's Victoria T20I Series, 2026",
+      "seriesId": 13413,
+      "matchDesc": "8th Match",
+      "format": "T20",
+      "matchType": "Women",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Preview",
+      "stateTitle": "Preview",
+      "status": "Match starts at Nov 10, 11:00 GMT",
+      "startTime": 1794308400000,
+      "endTime": 1794321000000,
+      "venue": {
+        "ground": "Entebbe Cricket Oval",
+        "city": "Entebbe"
+      },
+      "team1": {
+        "id": 503,
+        "name": "Namibia Women",
+        "short": "NAMW",
+        "imageId": 776329
+      },
+      "team2": {
+        "id": 448,
+        "name": "Uganda Women",
+        "short": "UGAW",
+        "imageId": 776236
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": {
+        "team1": [
+          {
+            "id": 15379,
+            "name": "Sune Wittmann",
+            "tag": "C",
+            "role": "Batter"
+          },
+          {
+            "id": 15374,
+            "name": "Merczerly Gorases",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 15375,
+            "name": "Victoria Hamunyela",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 15376,
+            "name": "Eveleen Kejarukua",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 15378,
+            "name": "Wilka Mwatile",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 24958,
+            "name": "Jurriene Diergaardt",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 24960,
+            "name": "Mekelaye Mwatile",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 24967,
+            "name": "Edelle van Zyl",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 43118,
+            "name": "Naomi Benjamin",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 50713,
+            "name": "Saima Tuhadeleni",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1482217,
+            "name": "Sarafia Handiba",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 14536,
+            "name": "Sylvia Shihepo",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 14535,
+            "name": "Kayleen Green",
+            "tag": null,
+            "role": "Bowler"
+          }
+        ],
+        "team2": [
+          {
+            "id": 13839,
+            "name": "Janet Mbabazi",
+            "tag": "C",
+            "role": "Batter"
+          },
+          {
+            "id": 13843,
+            "name": "Kevin Awino",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 13847,
+            "name": "Concy Aweko",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 13849,
+            "name": "Stephani Nampiina",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 25028,
+            "name": "Sarah Akiteng",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 26120,
+            "name": "Sarah Walaza",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 35731,
+            "name": "Prosscovia Alako",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 35740,
+            "name": "Esther Iloku",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 46065,
+            "name": "Malisa Ariokot",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1426462,
+            "name": "Asumin Akurut",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1462434,
+            "name": "Naume Amongin",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 13841,
+            "name": "Immaculate Nakisuuyi",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 13838,
+            "name": "Rita Musamali",
+            "tag": null,
+            "role": "Batter"
+          }
+        ]
+      }
+    },
+    {
+      "id": 176154,
+      "series": "Abu Dhabi T10 League 2026",
+      "seriesId": 13307,
+      "matchDesc": "9th Match",
+      "format": "T20",
+      "matchType": "League",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Preview",
+      "stateTitle": "Preview",
+      "status": "Match starts at Nov 10, 13:45 GMT",
+      "startTime": 1794318300000,
+      "endTime": 1794330900000,
+      "venue": {
+        "ground": "Sheikh Zayed Stadium",
+        "city": "Abu Dhabi"
+      },
+      "team1": {
+        "id": 3640,
+        "name": "Yas Lions",
+        "short": "YL",
+        "imageId": 1116764
+      },
+      "team2": {
+        "id": 3647,
+        "name": "United Tigers",
+        "short": "UT",
+        "imageId": 1116768
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": null
+    },
+    {
+      "id": 176155,
+      "series": "Abu Dhabi T10 League 2026",
+      "seriesId": 13307,
+      "matchDesc": "10th Match",
+      "format": "T20",
+      "matchType": "League",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Preview",
+      "stateTitle": "Preview",
+      "status": "Match starts at Nov 10, 16:00 GMT",
+      "startTime": 1794326400000,
+      "endTime": 1794339000000,
+      "venue": {
+        "ground": "Sheikh Zayed Stadium",
+        "city": "Abu Dhabi"
+      },
+      "team1": {
+        "id": 598,
+        "name": "UAE Bulls",
+        "short": "UBL",
+        "imageId": 1116765
+      },
+      "team2": {
+        "id": 3631,
+        "name": "Emirates Eagles",
+        "short": "EE",
+        "imageId": 1116767
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": null
+    },
+    {
+      "id": 177233,
+      "series": "CSA T20 Challenge 2026",
+      "seriesId": 13180,
+      "matchDesc": "Super Eights",
+      "format": "T20",
+      "matchType": "League",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Preview",
+      "stateTitle": "Preview",
+      "status": "Match starts at Nov 10, 16:00 GMT",
+      "startTime": 1794326400000,
+      "endTime": 1794339000000,
+      "venue": {
+        "ground": "Newlands",
+        "city": "Cape Town"
+      },
+      "team1": {
+        "id": 917,
+        "name": "Western Province",
+        "short": "WPR",
+        "imageId": 1082447
+      },
+      "team2": {
+        "id": 1768,
+        "name": "South Western Districts",
+        "short": "SWD",
+        "imageId": 349609
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": null
+    },
+    {
+      "id": 166653,
+      "series": "Sheffield Shield 2026-27",
+      "seriesId": 12717,
+      "matchDesc": "10th Match",
+      "format": "TEST",
+      "matchType": "Domestic",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Upcoming",
+      "stateTitle": "Upcoming Match",
+      "status": "Match starts at Nov 11, 23:30 GMT",
+      "startTime": 1794353400000,
+      "endTime": 1794637800000,
+      "venue": {
+        "ground": "Cricket Central",
+        "city": "Sydney"
+      },
+      "team1": {
+        "id": 104,
+        "name": "New South Wales",
+        "short": "NSW",
+        "imageId": 172196
+      },
+      "team2": {
+        "id": 158,
+        "name": "South Australia",
+        "short": "SAUS",
+        "imageId": 172225
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": null
+    },
+    {
+      "id": 166657,
+      "series": "Sheffield Shield 2026-27",
+      "seriesId": 12717,
+      "matchDesc": "11th Match",
+      "format": "TEST",
+      "matchType": "Domestic",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Upcoming",
+      "stateTitle": "Upcoming Match",
+      "status": "Match starts at Nov 11, 23:30 GMT",
+      "startTime": 1794353400000,
+      "endTime": 1794637800000,
+      "venue": {
+        "ground": "Melbourne Cricket Ground",
+        "city": "Melbourne"
+      },
+      "team1": {
+        "id": 52,
+        "name": "Victoria",
+        "short": "VIC",
+        "imageId": 172153
+      },
+      "team2": {
+        "id": 87,
+        "name": "Western Australia",
+        "short": "WA",
+        "imageId": 172180
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": null
+    },
+    {
+      "id": 166667,
+      "series": "Sheffield Shield 2026-27",
+      "seriesId": 12717,
+      "matchDesc": "12th Match",
+      "format": "TEST",
+      "matchType": "Domestic",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Upcoming",
+      "stateTitle": "Upcoming Match",
+      "status": "Match starts at Nov 11, 00:30 GMT",
+      "startTime": 1794357000000,
+      "endTime": 1794641400000,
+      "venue": {
+        "ground": "The Gabba",
+        "city": "Brisbane"
+      },
+      "team1": {
+        "id": 164,
+        "name": "Queensland",
+        "short": "QL",
+        "imageId": 172233
+      },
+      "team2": {
+        "id": 166,
+        "name": "Tasmania",
+        "short": "TAS",
+        "imageId": 172235
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": null
+    },
+    {
+      "id": 176510,
+      "series": "England Lions tour of West Indies, 2026",
+      "seriesId": 13377,
+      "matchDesc": "2nd Unofficial ODI",
+      "format": "ODI",
+      "matchType": "Domestic",
+      "dayNight": false,
+      "battingTeamId": 42,
+      "state": "Complete",
+      "stateTitle": "Complete",
+      "status": "England Lions won by 276 runs",
+      "startTime": 1794247200000,
+      "endTime": 1794276000000,
+      "venue": {
+        "ground": "Warner Park",
+        "city": "Basseterre, St Kitts"
+      },
+      "team1": {
+        "id": 42,
+        "name": "England Lions",
+        "short": "ENGA",
+        "imageId": 776239
+      },
+      "team2": {
+        "id": 207,
+        "name": "West Indies A",
+        "short": "WIA",
+        "imageId": 776192
+      },
+      "scores": {
+        "team1": [
+          {
+            "id": 1,
+            "runs": 487,
+            "wickets": 5,
+            "overs": 49.6
+          }
+        ],
+        "team2": [
+          {
+            "id": 2,
+            "runs": 211,
+            "wickets": 10,
+            "overs": 30.5
+          }
+        ]
+      },
+      "squads": null
+    },
+    {
+      "id": 176143,
+      "series": "Abu Dhabi T10 League 2026",
+      "seriesId": 13307,
+      "matchDesc": "8th Match",
+      "format": "T20",
+      "matchType": "League",
+      "dayNight": false,
+      "battingTeamId": 3647,
+      "state": "Complete",
+      "stateTitle": "Complete",
+      "status": "United Tigers won by 9 wkts",
+      "startTime": 1794240000000,
+      "endTime": 1794252600000,
+      "venue": {
+        "ground": "Sheikh Zayed Stadium",
+        "city": "Abu Dhabi"
+      },
+      "team1": {
+        "id": 2885,
+        "name": "Royal Desert Champions",
+        "short": "RDC",
+        "imageId": 1116766
+      },
+      "team2": {
+        "id": 3647,
+        "name": "United Tigers",
+        "short": "UT",
+        "imageId": 1116768
+      },
+      "scores": {
+        "team1": [
+          {
+            "id": 1,
+            "runs": 81,
+            "wickets": 9,
+            "overs": 9.6
+          }
+        ],
+        "team2": [
+          {
+            "id": 2,
+            "runs": 84,
+            "wickets": 1,
+            "overs": 6.6
+          }
+        ]
+      },
+      "squads": null
+    },
+    {
+      "id": 176136,
+      "series": "Abu Dhabi T10 League 2026",
+      "seriesId": 13307,
+      "matchDesc": "7th Match",
+      "format": "T20",
+      "matchType": "League",
+      "dayNight": false,
+      "battingTeamId": 3623,
+      "state": "Complete",
+      "stateTitle": "ARA Won",
+      "status": "Arabian Aces won by 10 wkts",
+      "startTime": 1794231900000,
+      "endTime": 1794244500000,
+      "venue": {
+        "ground": "Sheikh Zayed Stadium",
+        "city": "Abu Dhabi"
+      },
+      "team1": {
+        "id": 3631,
+        "name": "Emirates Eagles",
+        "short": "EE",
+        "imageId": 1116767
+      },
+      "team2": {
+        "id": 3623,
+        "name": "Arabian Aces",
+        "short": "ARA",
+        "imageId": 1116769
+      },
+      "scores": {
+        "team1": [
+          {
+            "id": 1,
+            "runs": 108,
+            "wickets": 5,
+            "overs": 9.6
+          }
+        ],
+        "team2": [
+          {
+            "id": 2,
+            "runs": 110,
+            "wickets": null,
+            "overs": 6.5
+          }
+        ]
+      },
+      "squads": null
+    },
+    {
+      "id": 177743,
+      "series": "Nepal Premier League 2026",
+      "seriesId": 13430,
+      "matchDesc": "20th Match",
+      "format": "T20",
+      "matchType": "League",
+      "dayNight": false,
+      "battingTeamId": 2937,
+      "state": "Complete",
+      "stateTitle": "Complete",
+      "status": "Kathmandu Gorkhas won by 10 runs",
+      "startTime": 1794222900000,
+      "endTime": 1794235500000,
+      "venue": {
+        "ground": "Tribhuvan University International Cricket Ground",
+        "city": "Kirtipur"
+      },
+      "team1": {
+        "id": 2937,
+        "name": "Kathmandu Gorkhas",
+        "short": "KAG",
+        "imageId": 784125
+      },
+      "team2": {
+        "id": 2913,
+        "name": "Chitwan Rhinos",
+        "short": "CHR",
+        "imageId": 784127
+      },
+      "scores": {
+        "team1": [
+          {
+            "id": 1,
+            "runs": 180,
+            "wickets": 8,
+            "overs": 19.6
+          }
+        ],
+        "team2": [
+          {
+            "id": 2,
+            "runs": 170,
+            "wickets": 7,
+            "overs": 19.6
+          }
+        ]
+      },
+      "squads": null
+    },
+    {
+      "id": 177740,
+      "series": "Nepal Premier League 2026",
+      "seriesId": 13430,
+      "matchDesc": "19th Match",
+      "format": "T20",
+      "matchType": "League",
+      "dayNight": false,
+      "battingTeamId": 2949,
+      "state": "Complete",
+      "stateTitle": "POA Won",
+      "status": "Pokhara Avengers won by 63 runs",
+      "startTime": 1794206700000,
+      "endTime": 1794219300000,
+      "venue": {
+        "ground": "Tribhuvan University International Cricket Ground",
+        "city": "Kirtipur"
+      },
+      "team1": {
+        "id": 2949,
+        "name": "Pokhara Avengers",
+        "short": "POA",
+        "imageId": 784130
+      },
+      "team2": {
+        "id": 2929,
+        "name": "Karnali Yaks",
+        "short": "KAY",
+        "imageId": 784126
+      },
+      "scores": {
+        "team1": [
+          {
+            "id": 1,
+            "runs": 217,
+            "wickets": 3,
+            "overs": 19.6
+          }
+        ],
+        "team2": [
+          {
+            "id": 2,
+            "runs": 154,
+            "wickets": 10,
+            "overs": 18.3
+          }
+        ]
+      },
+      "squads": null
+    },
+    {
+      "id": 175670,
+      "series": "ACC Men's U19 Asia Cup 2026",
+      "seriesId": 13333,
+      "matchDesc": "9th Match, Group B",
+      "format": "ODI",
+      "matchType": "Domestic",
+      "dayNight": false,
+      "battingTeamId": 224,
+      "state": "Complete",
+      "stateTitle": "Complete",
+      "status": "Bangladesh U19 won by 205 runs",
+      "startTime": 1794200400000,
+      "endTime": 1794229200000,
+      "venue": {
+        "ground": "Al Amerat Cricket Ground (Ministry Turf 2)",
+        "city": "Al Amerat"
+      },
+      "team1": {
+        "id": 224,
+        "name": "Bangladesh U19",
+        "short": "BANU19",
+        "imageId": 776211
+      },
+      "team2": {
+        "id": 386,
+        "name": "Malaysia U19",
+        "short": "MLYU19",
+        "imageId": 776321
+      },
+      "scores": {
+        "team1": [
+          {
+            "id": 1,
+            "runs": 303,
+            "wickets": 8,
+            "overs": 49.6
+          }
+        ],
+        "team2": [
+          {
+            "id": 2,
+            "runs": 98,
+            "wickets": 10,
+            "overs": 30.5
+          }
+        ]
+      },
+      "squads": null
+    },
+    {
+      "id": 175680,
+      "series": "ACC Men's U19 Asia Cup 2026",
+      "seriesId": 13333,
+      "matchDesc": "10th Match, Group B",
+      "format": "ODI",
+      "matchType": "Domestic",
+      "dayNight": false,
+      "battingTeamId": 223,
+      "state": "Complete",
+      "stateTitle": "AFGU19 Won",
+      "status": "Afghanistan U19 won by 106 runs",
+      "startTime": 1794200400000,
+      "endTime": 1794229200000,
+      "venue": {
+        "ground": "Al Amerat Cricket Ground (Ministry Turf 1)",
+        "city": "Al Amerat"
+      },
+      "team1": {
+        "id": 223,
+        "name": "Afghanistan U19",
+        "short": "AFGU19",
+        "imageId": 172278
+      },
+      "team2": {
+        "id": 172,
+        "name": "Sri Lanka U19",
+        "short": "SLU19",
+        "imageId": 776266
+      },
+      "scores": {
+        "team1": [
+          {
+            "id": 1,
+            "runs": 275,
+            "wickets": 10,
+            "overs": 49.5
+          }
+        ],
+        "team2": [
+          {
+            "id": 2,
+            "runs": 169,
+            "wickets": 10,
+            "overs": 34.1
+          }
+        ]
+      },
+      "squads": null
+    },
+    {
+      "id": 171307,
+      "series": "India A tour of NeIndia A tour of New Zealand, 2026w Zealand, 2026",
+      "seriesId": 13091,
+      "matchDesc": "3rd Unofficial Test",
+      "format": "TEST",
+      "matchType": "Domestic",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Complete",
+      "stateTitle": "Complete",
+      "status": "Match drawn",
+      "startTime": 1794002400000,
+      "endTime": 1794286800000,
+      "venue": {
+        "ground": "Bert Sutcliffe Oval",
+        "city": "Lincoln"
+      },
+      "team1": {
+        "id": 78,
+        "name": "India A",
+        "short": "INDA",
+        "imageId": 776181
+      },
+      "team2": {
+        "id": 80,
+        "name": "New Zealand A",
+        "short": "NZA",
+        "imageId": 776336
+      },
+      "scores": {
+        "team1": [
+          {
+            "id": 1,
+            "runs": 464,
+            "wickets": 5,
+            "overs": 145.6
+          }
+        ],
+        "team2": [
+          {
+            "id": 2,
+            "runs": 36,
+            "wickets": 2,
+            "overs": 13.6
+          }
+        ]
+      },
+      "squads": null
+    },
+    {
+      "id": 172727,
+      "series": "Afghanistan vs Zimbabwe in UAE, 2026",
+      "seriesId": 13201,
+      "matchDesc": "1st Test",
+      "format": "TEST",
+      "matchType": "International",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Complete",
+      "stateTitle": "Complete",
+      "status": "Match drawn",
+      "startTime": 1793858400000,
+      "endTime": 1794229200000,
+      "venue": {
+        "ground": "Sharjah Cricket Stadium",
+        "city": "Sharjah"
+      },
+      "team1": {
+        "id": 12,
+        "name": "Zimbabwe",
+        "short": "ZIM",
+        "imageId": 776198
+      },
+      "team2": {
+        "id": 96,
+        "name": "Afghanistan",
+        "short": "AFG",
+        "imageId": 776177
+      },
+      "scores": {
+        "team1": [
+          {
+            "id": 1,
+            "runs": 504,
+            "wickets": 10,
+            "overs": 134.3
+          },
+          {
+            "id": 3,
+            "runs": 523,
+            "wickets": 5,
+            "overs": 122.1
+          }
+        ],
+        "team2": [
+          {
+            "id": 2,
+            "runs": 514,
+            "wickets": 10,
+            "overs": 169.4
+          }
+        ]
+      },
+      "squads": null
+    },
+    {
+      "id": 173060,
+      "series": "West Indies tour of Bangladesh, 2026",
+      "seriesId": 13211,
+      "matchDesc": "2nd Test",
+      "format": "TEST",
+      "matchType": "International",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Complete",
+      "stateTitle": "Complete",
+      "status": "Match drawn",
+      "startTime": 1793849400000,
+      "endTime": 1794220200000,
+      "venue": {
+        "ground": "Sylhet International Cricket Stadium",
+        "city": "Sylhet"
+      },
+      "team1": {
+        "id": 10,
+        "name": "West Indies",
+        "short": "WI",
+        "imageId": 776191
+      },
+      "team2": {
+        "id": 6,
+        "name": "Bangladesh",
+        "short": "BAN",
+        "imageId": 776210
+      },
+      "scores": {
+        "team1": [
+          {
+            "id": 1,
+            "runs": 356,
+            "wickets": 10,
+            "overs": 106.4
+          },
+          {
+            "id": 3,
+            "runs": 398,
+            "wickets": 6,
+            "overs": 92.6
+          }
+        ],
+        "team2": [
+          {
+            "id": 2,
+            "runs": 386,
+            "wickets": 10,
+            "overs": 111.5
+          },
+          {
+            "id": 4,
+            "runs": 184,
+            "wickets": 4,
+            "overs": 58.6
+          }
+        ]
+      },
+      "squads": null
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+name: Update cricket data
+
+on:
+  schedule:
+    # Every 10 minutes. GitHub may delay scheduled runs under load.
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-cricket-data
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Fetch latest matches
+        env:
+          FEED_MATCHES_LIVE: ${{ secrets.FEED_MATCHES_LIVE }}
+          FEED_MATCHES_UPCOMING: ${{ secrets.FEED_MATCHES_UPCOMING }}
+          FEED_MATCHES_RECENT: ${{ secrets.FEED_MATCHES_RECENT }}
+          FEED_SQUADS: ${{ secrets.FEED_SQUADS }}
+          FEED_RANKINGS: ${{ secrets.FEED_RANKINGS }}
+          FEED_FALLBACK: ${{ secrets.FEED_FALLBACK }}
+        run: node scripts/fetch.mjs
+
+      - name: Commit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "No change."
+          else
+            git commit -m "chore: refresh cricket data ($(date -u +%H:%M UTC))"
+            git pull --rebase --autostash origin main
+            git push
+          fi

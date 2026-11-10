@@ -1,0 +1,1917 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#0b0f14" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'"
+    />
+    <title>Cricket — Live Scores</title>
+    <meta
+      name="description"
+      content="A personal cricket dashboard: live scores, fixtures, venues and squads."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%8F%3C/text%3E%3C/svg%3E"
+    />
+    <style>
+      :root {
+        --bg: #0a0e13;
+        --bg-soft: #0f151c;
+        --card: #121a23;
+        --card-hover: #16202b;
+        --line: #223040;
+        --line-soft: #1a2632;
+        --text: #e8eef4;
+        --muted: #8ea1b4;
+        --faint: #64798d;
+        --accent: #4ade80;
+        --accent-dim: #1c6b3f;
+        --live: #ff5d5d;
+        --amber: #f5b544;
+        --radius: 16px;
+        --shadow: 0 1px 0 rgba(255, 255, 255, 0.03) inset;
+      }
+      html[data-theme='light'] {
+        --bg: #f4f7fa;
+        --bg-soft: #eef3f8;
+        --card: #ffffff;
+        --card-hover: #fbfdff;
+        --line: #dde6ee;
+        --line-soft: #e9eff5;
+        --text: #12202e;
+        --muted: #5b6f83;
+        --faint: #8598ab;
+        --accent: #12925a;
+        --accent-dim: #b9efd4;
+        --live: #d83a3a;
+        --amber: #b57612;
+        --shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+      }
+      @media (prefers-color-scheme: light) {
+        html[data-theme='auto'] {
+          --bg: #f4f7fa;
+          --bg-soft: #eef3f8;
+          --card: #ffffff;
+          --card-hover: #fbfdff;
+          --line: #dde6ee;
+          --line-soft: #e9eff5;
+          --text: #12202e;
+          --muted: #5b6f83;
+          --faint: #8598ab;
+          --accent: #12925a;
+          --accent-dim: #b9efd4;
+          --live: #d83a3a;
+          --amber: #b57612;
+          --shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        min-height: 100vh;
+        background:
+          radial-gradient(1200px 600px at 15% -10%, rgba(74, 222, 128, 0.09), transparent 60%),
+          radial-gradient(900px 500px at 100% 0%, rgba(96, 165, 250, 0.07), transparent 55%),
+          var(--bg);
+        color: var(--text);
+        font-family:
+          ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-feature-settings: 'cv11' 1;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      button {
+        font: inherit;
+        color: inherit;
+        background: none;
+        border: 0;
+        cursor: pointer;
+      }
+      :focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+        border-radius: 8px;
+      }
+
+      .wrap {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 0 20px 72px;
+      }
+
+      /* ---------- header ---------- */
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        backdrop-filter: blur(14px) saturate(140%);
+        -webkit-backdrop-filter: blur(14px) saturate(140%);
+        background: color-mix(in srgb, var(--bg) 78%, transparent);
+        border-bottom: 1px solid var(--line-soft);
+      }
+      .topbar-inner {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 14px 20px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        min-width: 0;
+      }
+      .logo {
+        width: 34px;
+        height: 34px;
+        flex: 0 0 34px;
+        border-radius: 10px;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(145deg, #16351f, #0e2117);
+        border: 1px solid #245034;
+      }
+      html[data-theme='light'] .logo {
+        background: linear-gradient(145deg, #d9f6e6, #eefdf6);
+        border-color: #b7e8ce;
+      }
+      .logo svg {
+        width: 19px;
+        height: 19px;
+        stroke: var(--accent);
+      }
+      .brand h1 {
+        font-size: 16px;
+        letter-spacing: -0.01em;
+        margin: 0;
+        font-weight: 650;
+        white-space: nowrap;
+      }
+      .brand p {
+        margin: 1px 0 0;
+        font-size: 11.5px;
+        color: var(--muted);
+        white-space: nowrap;
+      }
+      .spacer {
+        flex: 1;
+      }
+      .stamp {
+        font-size: 12px;
+        color: var(--muted);
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        white-space: nowrap;
+      }
+      .stamp .dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--accent);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent);
+      }
+      .stamp.stale .dot {
+        background: var(--amber);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--amber) 18%, transparent);
+      }
+      .icon-btn {
+        width: 36px;
+        height: 36px;
+        display: grid;
+        place-items: center;
+        border-radius: 10px;
+        border: 1px solid var(--line);
+        background: var(--card);
+        color: var(--muted);
+        transition:
+          color 0.15s,
+          background 0.15s,
+          transform 0.15s;
+      }
+      .icon-btn:hover {
+        color: var(--text);
+        background: var(--card-hover);
+      }
+      .icon-btn:active {
+        transform: scale(0.95);
+      }
+      .icon-btn svg {
+        width: 17px;
+        height: 17px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 1.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .icon-btn.spin svg {
+        animation: spin 0.9s linear infinite;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* ---------- view tabs ---------- */
+      .viewtabs {
+        display: inline-flex;
+        padding: 3px;
+        gap: 2px;
+        margin-left: 8px;
+        border-radius: 11px;
+        border: 1px solid var(--line);
+        background: var(--card);
+        flex: 0 0 auto;
+      }
+      .viewtabs button {
+        padding: 7px 13px;
+        border-radius: 8px;
+        font-size: 12.5px;
+        font-weight: 600;
+        color: var(--muted);
+        transition:
+          background 0.15s,
+          color 0.15s;
+      }
+      .viewtabs button:hover {
+        color: var(--text);
+      }
+      .viewtabs button[aria-pressed='true'] {
+        background: var(--bg-soft);
+        color: var(--text);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+      }
+
+      /* ---------- controls ---------- */
+      .controls {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        padding: 22px 0 6px;
+      }
+      .segmented {
+        display: inline-flex;
+        padding: 3px;
+        gap: 2px;
+        border-radius: 11px;
+        border: 1px solid var(--line);
+        background: var(--card);
+      }
+      .segmented button {
+        padding: 7px 13px;
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: 550;
+        color: var(--muted);
+        transition:
+          background 0.15s,
+          color 0.15s;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .segmented button:hover {
+        color: var(--text);
+      }
+      .segmented button[aria-pressed='true'] {
+        background: var(--bg-soft);
+        color: var(--text);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+      }
+      .segmented .count {
+        font-size: 11px;
+        color: var(--faint);
+        font-variant-numeric: tabular-nums;
+      }
+      .search {
+        flex: 1 1 200px;
+        min-width: 160px;
+        position: relative;
+      }
+      .search svg {
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 15px;
+        height: 15px;
+        stroke: var(--faint);
+        fill: none;
+        stroke-width: 1.9;
+        stroke-linecap: round;
+      }
+      .search input {
+        width: 100%;
+        padding: 10px 12px 10px 35px;
+        border-radius: 11px;
+        border: 1px solid var(--line);
+        background: var(--card);
+        color: var(--text);
+        font-size: 13px;
+      }
+      .search input::placeholder {
+        color: var(--faint);
+      }
+      .select {
+        padding: 10px 30px 10px 12px;
+        border-radius: 11px;
+        border: 1px solid var(--line);
+        background: var(--card);
+        color: var(--text);
+        font-size: 13px;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238ea1b4' stroke-width='2.2' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+      }
+
+      /* ---------- sections ---------- */
+      .section {
+        padding-top: 22px;
+      }
+      .section-head {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        margin: 0 0 12px;
+      }
+      .section-head h2 {
+        font-size: 12px;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        font-weight: 650;
+        color: var(--muted);
+        margin: 0;
+      }
+      .section-head .n {
+        font-size: 11px;
+        color: var(--faint);
+        font-variant-numeric: tabular-nums;
+        background: var(--bg-soft);
+        border: 1px solid var(--line-soft);
+        border-radius: 999px;
+        padding: 1px 7px;
+      }
+      .pulse {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--live);
+        box-shadow: 0 0 0 0 color-mix(in srgb, var(--live) 55%, transparent);
+        animation: pulse 1.9s ease-out infinite;
+      }
+      @keyframes pulse {
+        70% {
+          box-shadow: 0 0 0 7px transparent;
+        }
+        100% {
+          box-shadow: 0 0 0 0 transparent;
+        }
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        gap: 14px;
+      }
+
+      /* ---------- card ---------- */
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        transition:
+          border-color 0.18s,
+          background 0.18s,
+          transform 0.18s;
+        position: relative;
+      }
+      .card:hover {
+        border-color: color-mix(in srgb, var(--line) 55%, var(--muted));
+        background: var(--card-hover);
+      }
+      .card.is-live {
+        border-color: color-mix(in srgb, var(--live) 32%, var(--line));
+      }
+      .card.is-live::before {
+        content: '';
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 2px;
+        background: linear-gradient(var(--live), transparent 85%);
+      }
+      .card-head {
+        width: 100%;
+        display: block;
+        text-align: left;
+        padding: 14px 16px 0;
+      }
+      .row1 {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        min-width: 0;
+      }
+      .pill {
+        flex: 0 0 auto;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        padding: 3px 7px;
+        border-radius: 6px;
+        border: 1px solid var(--line);
+        color: var(--muted);
+        background: var(--bg-soft);
+        text-transform: uppercase;
+      }
+      .pill.fmt {
+        color: var(--accent);
+        border-color: color-mix(in srgb, var(--accent) 28%, var(--line));
+        background: color-mix(in srgb, var(--accent) 9%, var(--bg-soft));
+      }
+      .series {
+        font-size: 11.5px;
+        color: var(--faint);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        min-width: 0;
+      }
+      .state {
+        margin-left: auto;
+        flex: 0 0 auto;
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--muted);
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .state.live {
+        color: var(--live);
+      }
+      .state.done {
+        color: var(--faint);
+      }
+      .state .led {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: currentColor;
+      }
+
+      .teams {
+        margin-top: 11px;
+        display: grid;
+        gap: 2px;
+      }
+      .team {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 7px 0;
+      }
+      .team + .team {
+        border-top: 1px dashed var(--line-soft);
+      }
+      .badge {
+        width: 30px;
+        height: 30px;
+        flex: 0 0 30px;
+        border-radius: 9px;
+        display: grid;
+        place-items: center;
+        font-size: 10.5px;
+        font-weight: 750;
+        letter-spacing: 0.02em;
+        color: #fff;
+        background: linear-gradient(145deg, var(--b1, #3b4a5a), var(--b2, #26313c));
+        border: 1px solid rgba(255, 255, 255, 0.13);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+      }
+      .tname {
+        font-size: 14.5px;
+        font-weight: 550;
+        letter-spacing: -0.01em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .tname .short {
+        display: none;
+      }
+      .score {
+        margin-left: auto;
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+        font-size: 15px;
+        font-weight: 650;
+        letter-spacing: -0.02em;
+        white-space: nowrap;
+      }
+      .score .ov {
+        font-size: 11px;
+        font-weight: 500;
+        color: var(--faint);
+        margin-left: 3px;
+      }
+      .team.batting .tname {
+        color: var(--text);
+      }
+      .team.idle .score {
+        color: var(--muted);
+        font-weight: 500;
+      }
+      .team .tick {
+        color: var(--accent);
+        font-size: 12px;
+        margin-left: 3px;
+      }
+
+      .match-note {
+        margin-top: 10px;
+        font-size: 12.5px;
+        line-height: 1.45;
+        color: var(--muted);
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .match-note strong {
+        color: var(--text);
+        font-weight: 600;
+      }
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px 14px;
+        padding: 11px 16px 13px;
+        font-size: 11.5px;
+        color: var(--faint);
+        border-top: 1px solid var(--line-soft);
+        margin-top: 12px;
+      }
+      .meta span {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        min-width: 0;
+      }
+      .meta svg {
+        width: 12px;
+        height: 12px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 1.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        flex: 0 0 12px;
+      }
+      .meta .ellipsis {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 100%;
+      }
+
+      .panel {
+        display: none;
+        border-top: 1px solid var(--line-soft);
+        padding: 14px 16px 16px;
+        background: color-mix(in srgb, var(--bg-soft) 55%, transparent);
+      }
+      .card.open .panel {
+        display: block;
+      }
+      .panel-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      .sq-team {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        color: var(--faint);
+        font-weight: 650;
+        margin-bottom: 7px;
+      }
+      .sq-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 5px;
+      }
+      .sq-list li {
+        font-size: 12.5px;
+        color: var(--muted);
+        display: flex;
+        align-items: baseline;
+        gap: 6px;
+        line-height: 1.3;
+      }
+      .sq-list .pname {
+        color: var(--text);
+        font-weight: 500;
+      }
+      .sq-list .tag {
+        font-size: 9.5px;
+        font-weight: 700;
+        color: var(--accent);
+        border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+        border-radius: 4px;
+        padding: 0 3px;
+        line-height: 1.35;
+      }
+      .sq-list .role {
+        font-size: 10.5px;
+        color: var(--faint);
+        margin-left: auto;
+        text-align: right;
+        white-space: nowrap;
+      }
+      .panel-foot {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 15px;
+      }
+      .link-btn {
+        font-size: 12px;
+        font-weight: 550;
+        padding: 7px 11px;
+        border-radius: 8px;
+        border: 1px solid var(--line);
+        color: var(--text);
+        background: var(--card);
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        transition: border-color 0.15s;
+      }
+      .link-btn:hover {
+        border-color: var(--muted);
+      }
+      .link-btn svg {
+        width: 12px;
+        height: 12px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+      }
+      .hint {
+        font-size: 11px;
+        color: var(--faint);
+        margin-left: auto;
+        align-self: center;
+      }
+
+      /* ---------- rankings ---------- */
+      .controls-rank {
+        padding-top: 24px;
+      }
+      .controls-cat {
+        padding-top: 12px;
+      }
+      .rank-stamp {
+        margin-left: auto;
+        font-size: 11.5px;
+        color: var(--faint);
+      }
+      .rank-intro {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        margin: 20px 0 0;
+        flex-wrap: wrap;
+      }
+      .rank-intro h2 {
+        margin: 0;
+        font-size: 18px;
+        letter-spacing: -0.02em;
+        font-weight: 650;
+      }
+      .rank-intro p {
+        margin: 0;
+        font-size: 12px;
+        color: var(--faint);
+      }
+      .podium {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 14px;
+      }
+      .podium-card {
+        position: relative;
+        text-align: center;
+        padding: 20px 14px 16px;
+        border-radius: var(--radius);
+        border: 1px solid var(--line);
+        background: var(--card);
+        overflow: hidden;
+      }
+      .podium-card::after {
+        content: '';
+        position: absolute;
+        inset: 0 0 auto 0;
+        height: 2px;
+        background: var(--line);
+      }
+      .podium-card.p1 {
+        border-color: color-mix(in srgb, var(--amber) 42%, var(--line));
+        background: linear-gradient(
+          180deg,
+          color-mix(in srgb, var(--amber) 7%, var(--card)),
+          var(--card) 70%
+        );
+      }
+      .podium-card.p1::after {
+        background: linear-gradient(90deg, transparent, var(--amber), transparent);
+      }
+      .podium-card.p2::after {
+        background: linear-gradient(90deg, transparent, #c8d4e0, transparent);
+      }
+      .podium-card.p3::after {
+        background: linear-gradient(90deg, transparent, #c98a5a, transparent);
+      }
+      .prank {
+        position: absolute;
+        top: 10px;
+        left: 12px;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        color: var(--faint);
+      }
+      .podium-card.p1 .prank {
+        color: var(--amber);
+      }
+      .avatar-lg {
+        width: 68px;
+        height: 68px;
+        margin: 2px auto 10px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: grid;
+        place-items: center;
+        background: var(--bg-soft);
+        border: 1px solid var(--line);
+        font-size: 19px;
+        font-weight: 700;
+        color: var(--muted);
+        position: relative;
+      }
+      .avatar-lg img {
+        position: absolute;
+        inset: 0;
+      }
+      .pod-name {
+        font-size: 13.5px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .pod-sub {
+        margin-top: 2px;
+        font-size: 11px;
+        color: var(--faint);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .pod-rating {
+        margin-top: 9px;
+        font-size: 23px;
+        line-height: 1;
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        font-variant-numeric: tabular-nums;
+        color: var(--accent);
+      }
+      .pod-rating em {
+        display: block;
+        margin-top: 4px;
+        font-style: normal;
+        font-size: 9.5px;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: var(--faint);
+        font-weight: 650;
+      }
+
+      .avatar-lg img,
+      .avatar-sm img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .avatar-lg,
+      .avatar-sm {
+        background: linear-gradient(145deg, var(--b1, #33465a), var(--b2, #1c2833));
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.14);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+      }
+
+      .rank-card {
+        margin-top: 14px;        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        overflow: hidden;
+      }
+      .rank-card-head {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 11px 16px;
+        border-bottom: 1px solid var(--line-soft);
+        font-size: 10.5px;
+        font-weight: 650;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        background: var(--bg-soft);
+      }
+      .rank-card-head .sp {
+        margin-left: auto;
+        letter-spacing: 0;
+        text-transform: none;
+        font-weight: 500;
+        color: var(--faint);
+      }
+      .rrow {
+        display: grid;
+        grid-template-columns: 42px minmax(0, 1fr) 66px 56px;
+        align-items: center;
+        gap: 10px;
+        padding: 9px 16px;
+        border-bottom: 1px solid var(--line-soft);
+        font-size: 13px;
+      }
+      .rrow:last-child {
+        border-bottom: 0;
+      }
+      .rrow:hover {
+        background: color-mix(in srgb, var(--bg-soft) 55%, transparent);
+      }
+      .rrow.head {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        color: var(--faint);
+        font-weight: 650;
+        border-bottom: 1px solid var(--line-soft);
+      }
+      .rrow.head:hover {
+        background: none;
+      }
+      .rrow.teams {
+        grid-template-columns: 42px minmax(0, 1fr) 42px 52px 60px;
+      }
+      .rrow.teams.head {
+        grid-template-columns: 42px minmax(0, 1fr) 42px 52px 60px;
+      }
+      .rno {
+        font-variant-numeric: tabular-nums;
+        font-weight: 650;
+        color: var(--faint);
+      }
+      .rrow.top .rno {
+        color: var(--text);
+      }
+      .who {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 0;
+      }
+      .avatar-sm {
+        width: 32px;
+        height: 32px;
+        flex: 0 0 32px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: grid;
+        place-items: center;
+        background: var(--bg-soft);
+        border: 1px solid var(--line-soft);
+        font-size: 10.5px;
+        font-weight: 700;
+        color: var(--muted);
+        position: relative;
+      }
+      .avatar-sm img {
+        position: absolute;
+        inset: 0;
+      }
+      .avatar-sm img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .wname {
+        display: block;
+        font-weight: 550;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .wsub {
+        display: block;
+        margin-top: 1px;
+        font-size: 10.5px;
+        color: var(--faint);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .rrating {
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+        font-weight: 650;
+      }
+      .rpts,
+      .rmatches {
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+        color: var(--muted);
+        font-size: 12.5px;
+      }
+      .rtrend {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .trend {
+        font-size: 10.5px;
+        font-weight: 650;
+        padding: 2px 7px;
+        border-radius: 999px;
+        white-space: nowrap;
+      }
+      .trend.up {
+        color: var(--accent);
+        background: color-mix(in srgb, var(--accent) 12%, transparent);
+      }
+      .trend.down {
+        color: var(--live);
+        background: color-mix(in srgb, var(--live) 12%, transparent);
+      }
+      .trend.flat {
+        color: var(--faint);
+        background: var(--bg-soft);
+      }
+      .rank-foot {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 16px;
+        border-top: 1px solid var(--line-soft);
+        font-size: 11.5px;
+        color: var(--faint);
+      }
+      .rank-foot a {
+        color: var(--muted);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+
+      .empty {
+        text-align: center;
+        padding: 50px 20px;
+        color: var(--muted);
+        border: 1px dashed var(--line);
+        border-radius: var(--radius);
+      }
+      .empty h3 {
+        margin: 0 0 6px;
+        font-size: 15px;
+        color: var(--text);
+      }
+      .empty p {
+        margin: 0;
+        font-size: 13px;
+      }
+
+      footer {
+        margin-top: 36px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line-soft);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 18px;
+        font-size: 11.5px;
+        color: var(--faint);
+      }
+      footer a:hover {
+        color: var(--muted);
+        text-decoration: underline;
+      }
+
+      @media (max-width: 620px) {
+        .wrap {
+          padding: 0 14px 60px;
+        }
+        .topbar-inner {
+          padding: 11px 14px;
+          gap: 8px;
+        }
+        .brand-text,
+        .stamp .txt {
+          display: none;
+        }
+        .viewtabs {
+          margin-left: 2px;
+        }
+        .viewtabs button {
+          padding: 7px 10px;
+          font-size: 12px;
+        }
+        .grid {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+        .tname .full {
+          display: none;
+        }
+        .tname .short {
+          display: inline;
+        }
+        .panel-grid {
+          grid-template-columns: 1fr;
+        }
+        .hint {
+          display: none;
+        }
+        .podium {
+          gap: 8px;
+        }
+        .podium-card {
+          padding: 20px 8px 13px;
+        }
+        .avatar-lg {
+          width: 48px;
+          height: 48px;
+          font-size: 15px;
+        }
+        .pod-name {
+          font-size: 11.5px;
+        }
+        .pod-sub {
+          font-size: 10px;
+        }
+        .pod-rating {
+          font-size: 18px;
+        }
+        .rrow {
+          grid-template-columns: 30px minmax(0, 1fr) 54px 44px;
+          gap: 8px;
+          padding: 9px 12px;
+        }
+        .rrow.teams {
+          grid-template-columns: 30px minmax(0, 1fr) 38px 46px 52px;
+        }
+        .rrow.teams.head {
+          grid-template-columns: 30px minmax(0, 1fr) 38px 46px 52px;
+        }
+        .rank-card-head,
+        .rank-foot {
+          padding-left: 12px;
+          padding-right: 12px;
+        }
+        .avatar-sm {
+          width: 28px;
+          height: 28px;
+          flex-basis: 28px;
+          font-size: 9.5px;
+        }
+        .controls-cat {
+          gap: 8px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">
+          <div class="logo" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round">
+              <circle cx="12" cy="12" r="8.2" />
+              <path d="M6.4 6.4l11.2 11.2M9.8 5.2l9 9M5.2 9.8l9 9" opacity=".55" />
+            </svg>
+          </div>
+          <div class="brand-text">
+            <h1>Cricket</h1>
+            <p>Live scores · squads · rankings</p>
+          </div>
+        </div>
+        <nav class="viewtabs" aria-label="View">
+          <button data-view="matches" aria-pressed="true">Matches</button>
+          <button data-view="rankings" aria-pressed="false">Rankings</button>
+        </nav>
+        <div class="spacer"></div>
+        <div class="stamp" id="stamp" title="Data updates every 10 minutes">
+          <span class="dot"></span><span class="txt" id="stampText">loading…</span>
+        </div>
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">
+          <svg viewBox="0 0 24 24" id="themeIcon">
+            <path d="M21 12.8A8.5 8.5 0 1111.2 3a6.6 6.6 0 009.8 9.8z" />
+          </svg>
+        </button>
+        <button class="icon-btn" id="refreshBtn" aria-label="Refresh data" title="Refresh">
+          <svg viewBox="0 0 24 24">
+            <path d="M20 11a8 8 0 10-2.3 6.3" />
+            <path d="M20 5v6h-6" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="wrap">
+      <div id="matchesView">
+        <div class="controls">
+          <div class="segmented" role="group" aria-label="Filter matches">
+            <button data-filter="all" aria-pressed="true">All <span class="count" id="c-all"></span></button>
+            <button data-filter="live" aria-pressed="false">Live <span class="count" id="c-live"></span></button>
+            <button data-filter="upcoming" aria-pressed="false">Upcoming <span class="count" id="c-up"></span></button>
+            <button data-filter="results" aria-pressed="false">Results <span class="count" id="c-done"></span></button>
+          </div>
+          <div class="search">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.4-3.4" /></svg>
+            <input id="search" type="search" placeholder="Search team, series or venue…" autocomplete="off" />
+          </div>
+          <select class="select" id="typeFilter" aria-label="Match type">
+            <option value="all">All types</option>
+          </select>
+        </div>
+
+        <main id="main">
+          <div class="empty">
+            <h3>Loading matches…</h3>
+            <p>Fetching the latest snapshot.</p>
+          </div>
+        </main>
+      </div>
+
+      <div id="rankView" hidden>
+        <div class="controls controls-rank">
+          <div class="segmented" role="group" aria-label="Gender" id="genderTabs">
+            <button data-gender="men" aria-pressed="true">Men</button>
+            <button data-gender="women" aria-pressed="false">Women</button>
+          </div>
+          <div class="segmented" role="group" aria-label="Format" id="formatTabs">
+            <button data-format="test" aria-pressed="true">Test</button>
+            <button data-format="odi" aria-pressed="false">ODI</button>
+            <button data-format="t20" aria-pressed="false">T20I</button>
+          </div>
+          <div class="search">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.4-3.4" /></svg>
+            <input id="rankSearch" type="search" placeholder="Find a player or team…" autocomplete="off" />
+          </div>
+        </div>
+
+        <div class="controls controls-cat">
+          <div class="segmented" role="group" aria-label="Ranking category" id="catTabs">
+            <button data-cat="batting" aria-pressed="true">Batting</button>
+            <button data-cat="bowling" aria-pressed="false">Bowling</button>
+            <button data-cat="all-rounder" aria-pressed="false">All-rounder</button>
+            <button data-cat="teams" aria-pressed="false">Teams</button>
+          </div>
+          <span class="rank-stamp" id="rankStamp"></span>
+        </div>
+
+        <div id="rankBody">
+          <div class="empty">
+            <h3>Loading rankings…</h3>
+            <p>Fetching the latest tables.</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <span>Personal dashboard · no tracking · refreshed automatically</span>
+        <span id="footStamp"></span>
+        <span style="margin-left: auto">All times local</span>
+      </footer>
+    </div>
+
+    <script>
+      (function () {
+        'use strict';
+
+        const DATA_URL = 'data/matches.json';
+        const REFRESH_MS = 5 * 60 * 1000;
+        const STORE_THEME = 'cricket.theme';
+
+        const $ = (sel) => document.querySelector(sel);
+        const fmtCache = new Map();
+
+        let state = {
+          data: null,
+          filter: 'all',
+          type: 'all',
+          query: '',
+          open: new Set(),
+          loading: false,
+          view: 'matches',
+          rank: {
+            data: null,
+            loading: false,
+            error: null,
+            gender: 'men',
+            category: 'batting',
+            format: 'test',
+            query: '',
+          },
+        };
+
+        const RANK_CAT_LABEL = {
+          batting: 'Batting',
+          bowling: 'Bowling',
+          'all-rounder': 'All-rounder',
+          teams: 'Team',
+        };
+        const RANK_FORMAT_LABEL = { test: 'Test', odi: 'ODI', t20: 'T20I' };
+
+        const ICON = {
+          pin: '<svg viewBox="0 0 24 24"><path d="M12 21s-7-5.2-7-11a7 7 0 1114 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>',
+          clock: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 1.8"/></svg>',
+          cal: '<svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg>',
+          arrow: '<svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg>',
+        };
+
+        /* ---------- helpers ---------- */
+        const esc = (s) =>
+          String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            "'": '&#39;',
+          })[c]);
+
+        function hashCode(str) {
+          let h = 0;
+          for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) | 0;
+          return Math.abs(h);
+        }
+        function badgeStyle(name) {
+          const h = hashCode(name || '?') % 360;
+          return `--b1:hsl(${h} 42% 38%);--b2:hsl(${(h + 28) % 360} 46% 24%)`;
+        }
+
+        function shortName(team) {
+          if (!team) return '?';
+          if (team.short) return team.short;
+          return (team.name || '?').split(/\s+/).map((w) => w[0]).join('').slice(0, 3).toUpperCase();
+        }
+
+        function initials(name) {
+          const parts = String(name || '').split(/\s+/).filter(Boolean);
+          if (!parts.length) return '?';
+          if (parts.length === 1) return parts[0].slice(0, 3).toUpperCase();
+          return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+        }
+
+        function badgeText(team) {
+          if (!team) return '?';
+          const short = (team.short || '').trim();
+          if (short) return short.slice(0, 3).toUpperCase();
+          return initials(team.name);
+        }
+
+        function fmtWhen(ms) {
+          if (!ms) return '';
+          const d = new Date(ms);
+          const now = new Date();
+          const dayStart = (x) => new Date(x.getFullYear(), x.getMonth(), x.getDate()).getTime();
+          const diffDays = Math.round((dayStart(d) - dayStart(now)) / 86400000);
+          const time = d.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+          let day;
+          if (diffDays === 0) day = 'Today';
+          else if (diffDays === 1) day = 'Tomorrow';
+          else if (diffDays === -1) day = 'Yesterday';
+          else
+            day = d.toLocaleDateString([], {
+              day: 'numeric',
+              month: 'short',
+              year: d.getFullYear() === now.getFullYear() ? undefined : 'numeric',
+            });
+          return `${day}, ${time}`;
+        }
+
+        function relative(iso) {
+          if (!iso) return '';
+          const mins = Math.max(0, Math.round((Date.now() - new Date(iso).getTime()) / 60000));
+          if (mins < 1) return 'just now';
+          if (mins === 1) return '1 min ago';
+          if (mins < 60) return `${mins} min ago`;
+          const hrs = Math.round(mins / 60);
+          if (hrs < 24) return `${hrs} hr ago`;
+          return `${Math.round(hrs / 24)} d ago`;
+        }
+
+        function classify(m) {
+          const s = (m.state || '').toLowerCase();
+          if (/complete|abandon|cancel|no result|postpon/.test(s)) return 'results';
+          if (/preview|upcoming|scheduled/.test(s)) return 'upcoming';
+          if (/toss|delay|stumps|innings break|rain|drinks|lunch|tea|in progress|live|need|opt to/.test(s)) return 'live';
+          if (m.startTime && m.startTime > Date.now() + 15 * 60000) return 'upcoming';
+          if (m.startTime) return 'live';
+          return 'upcoming';
+        }
+
+        function innText(inn) {
+          if (!inn) return '';
+          const over = inn.overs != null ? `(${inn.overs})` : '';
+          const wkts = inn.wickets != null ? `/${inn.wickets}` : '';
+          return `${inn.runs}${wkts}<span class="ov">${over}</span>`;
+        }
+
+        function scoreFor(m, side) {
+          const list = (m.scores && m.scores[side]) || [];
+          if (!list.length) return '';
+          return list.map(innText).join(' <span class="ov">&</span> ');
+        }
+
+        function hasScore(m, side) {
+          const list = (m.scores && m.scores[side]) || [];
+          return list.length > 0;
+        }
+
+        function statusLine(m) {
+          const txt = (m.status || '').trim();
+          if (txt) return txt;
+          if (m.stateTitle && m.stateTitle !== m.state) return m.stateTitle;
+          return m.state || '';
+        }
+
+        function matchSummary(m) {
+          const t1 = m.team1 ? m.team1.name : 'TBC';
+          const t2 = m.team2 ? m.team2.name : 'TBC';
+          const s = (x) => {
+            const list = (m.scores && m.scores[x]) || [];
+            return list.length ? list.map((i) => `${i.runs}/${i.wickets} (${i.overs})`).join(' & ') : '';
+          };
+          const bits = [
+            `${t1}${s('team1') ? ' ' + s('team1') : ''} vs ${t2}${s('team2') ? ' ' + s('team2') : ''}`,
+            statusLine(m),
+            m.matchDesc ? `${m.series || ''} ${m.matchDesc}`.trim() : m.series || '',
+            m.venue ? [m.venue.ground, m.venue.city].filter(Boolean).join(', ') : '',
+            m.startTime ? fmtWhen(m.startTime) : '',
+          ];
+          return bits.filter(Boolean).join(' · ');
+        }
+
+        /* ---------- theme ---------- */
+        function applyTheme(t) {
+          document.documentElement.setAttribute('data-theme', t);
+          try {
+            localStorage.setItem(STORE_THEME, t);
+          } catch (e) {}
+          const icon = $('#themeIcon');
+          if (t === 'light') {
+            icon.innerHTML = '<circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"/>';
+          } else {
+            icon.innerHTML = '<path d="M21 12.8A8.5 8.5 0 1111.2 3a6.6 6.6 0 009.8 9.8z"/>';
+          }
+        }
+
+        /* ---------- rendering ---------- */
+        function squadBlock(m) {
+          if (!m.squads) return '';
+          const teams = [
+            { team: m.team1, players: m.squads.team1 || [] },
+            { team: m.team2, players: m.squads.team2 || [] },
+          ].filter((t) => t.players.length);
+
+          if (!teams.length) return '';
+
+          const cols = teams
+            .map(
+              (t) => `
+              <div>
+                <div class="sq-team">${esc(t.team ? t.team.name : 'Squad')}</div>
+                <ul class="sq-list">
+                  ${t.players
+                    .map(
+                      (p) => `<li>
+                        <span class="pname">${esc(p.name)}</span>
+                        ${p.tag ? `<span class="tag">${esc(p.tag)}</span>` : ''}
+                        ${p.role ? `<span class="role">${esc(p.role)}</span>` : ''}
+                      </li>`,
+                    )
+                    .join('')}
+                </ul>
+              </div>`,
+            )
+            .join('');
+
+          return `<div class="panel-grid">${cols}</div>`;
+        }
+
+        function card(m) {
+          const kind = classify(m);
+          const isLive = kind === 'live';
+          const open = state.open.has(String(m.id));
+          const s1 = scoreFor(m, 'team1');
+          const s2 = scoreFor(m, 'team2');
+          const battingTeamId = m.battingTeamId;
+          const teamRow = (team, side) => {
+            const score = side === 'team1' ? s1 : s2;
+            const batting = battingTeamId && team && team.id === battingTeamId;
+            return `<div class="team ${batting ? 'batting' : ''} ${score ? '' : 'idle'}">
+              <span class="badge" style="${badgeStyle(team ? team.name : '?')}" aria-hidden="true">${esc(badgeText(team))}</span>
+              <span class="tname"><span class="full">${esc(team ? team.name : 'TBC')}</span><span class="short">${esc(shortName(team))}</span></span>
+              <span class="score">${score || '<span class="ov">yet to bat</span>'}${batting ? '<span class="tick" title="Batting">•</span>' : ''}</span>
+            </div>`;
+          };
+
+          const venue = m.venue && (m.venue.ground || m.venue.city)
+            ? `${m.venue.ground || ''}${m.venue.ground && m.venue.city ? ', ' : ''}${m.venue.city || ''}`
+            : '';
+
+          const statusTxt = statusLine(m);
+          const isDone = kind === 'results';
+
+          return `<article class="card ${isLive ? 'is-live' : ''} ${open ? 'open' : ''}" data-id="${esc(String(m.id))}" data-kind="${kind}" data-type="${esc(m.matchType || '')}" data-search="${esc(
+            [m.team1?.name, m.team2?.name, m.series, m.matchDesc, venue, m.format, m.matchType].join(' ').toLowerCase(),
+          )}">
+            <button class="card-head" aria-expanded="${open ? 'true' : 'false'}" aria-controls="panel-${esc(String(m.id))}">
+              <div class="row1">
+                <span class="pill fmt">${esc(m.format || m.matchType || 'Match')}</span>
+                <span class="series" title="${esc(m.series || '')}">${esc(m.series || '')}${m.matchDesc ? ' · ' + esc(m.matchDesc) : ''}</span>
+                <span class="state ${isLive ? 'live' : isDone ? 'done' : ''}">${isLive ? '<span class="led"></span>' : ''}${esc(m.stateTitle || m.state || (kind === 'upcoming' ? 'Upcoming' : ''))}</span>
+              </div>
+              <div class="teams">
+                ${teamRow(m.team1, 'team1')}
+                ${teamRow(m.team2, 'team2')}
+              </div>
+              ${statusTxt ? `<div class="match-note">${esc(statusTxt)}</div>` : ''}
+            </button>
+            <div class="meta">
+              ${venue ? `<span title="${esc(venue)}"><span class="ellipsis">${ICON.pin}${esc(venue)}</span></span>` : ''}
+              ${m.startTime ? `<span>${ICON.clock}${esc(fmtWhen(m.startTime))}</span>` : ''}
+              ${m.squads ? `<span>${ICON.cal}${(m.squads.team1?.length || 0) + (m.squads.team2?.length || 0)} in squads</span>` : ''}
+            </div>
+            <div class="panel" id="panel-${esc(String(m.id))}">
+              ${squadBlock(m) || '<div class="hint" style="margin:0">Squads appear closer to the start of the match.</div>'}
+              <div class="panel-foot">
+                <button class="link-btn copy-btn" data-copy-id="${esc(String(m.id))}">Copy match details</button>
+                <span class="hint">Tap the card to collapse</span>
+              </div>
+            </div>
+          </article>`;
+        }
+
+        function section(title, items, opts) {
+          if (!items.length) return '';
+          const head = `<div class="section-head">${opts.live ? '<span class="pulse"></span>' : ''}<h2>${title}</h2><span class="n">${items.length}</span></div>`;
+          return `<section class="section">${head}<div class="grid">${items.map(card).join('')}</div></section>`;
+        }
+
+        function render() {
+          const main = $('#main');
+          const data = state.data;
+          if (!data) {
+            main.innerHTML = `<div class="empty"><h3>No data yet</h3><p>Try refreshing in a moment.</p></div>`;
+            return;
+          }
+
+          const all = data.matches || [];
+          const counts = { all: all.length, live: 0, upcoming: 0, results: 0 };
+          all.forEach((m) => counts[classify(m)]++);
+
+          $('#c-all').textContent = counts.all;
+          $('#c-live').textContent = counts.live;
+          $('#c-up').textContent = counts.upcoming;
+          $('#c-done').textContent = counts.results;
+
+          // populate type filter once
+          const typeSel = $('#typeFilter');
+          const types = [...new Set(all.map((m) => m.matchType).filter(Boolean))].sort();
+          if (typeSel.options.length - 1 !== types.length) {
+            const current = state.type;
+            typeSel.innerHTML =
+              '<option value="all">All types</option>' +
+              types.map((t) => `<option value="${esc(t)}">${esc(t)}</option>`).join('');
+            typeSel.value = types.includes(current) ? current : 'all';
+            state.type = typeSel.value;
+          }
+
+          const q = state.query.trim().toLowerCase();
+          const filtered = all.filter((m) => {
+            if (state.filter !== 'all' && classify(m) !== state.filter) return false;
+            if (state.type !== 'all' && m.matchType !== state.type) return false;
+            if (q) {
+              const hay = [m.team1?.name, m.team2?.name, m.series, m.matchDesc, m.venue?.ground, m.venue?.city, m.format, m.matchType]
+                .join(' ')
+                .toLowerCase();
+              if (!hay.includes(q)) return false;
+            }
+            return true;
+          });
+
+          const groups = { live: [], upcoming: [], results: [] };
+          filtered.forEach((m) => groups[classify(m)].push(m));
+
+          groups.live.sort((a, b) => (a.startTime || 0) - (b.startTime || 0));
+          groups.upcoming.sort((a, b) => (a.startTime || 0) - (b.startTime || 0));
+          groups.results.sort((a, b) => (b.startTime || 0) - (a.startTime || 0));
+
+          let html = '';
+          if (state.filter === 'all' || state.filter === 'live') html += section('Live now', groups.live, { live: true });
+          if (state.filter === 'all' || state.filter === 'upcoming') html += section('Upcoming', groups.upcoming, {});
+          if (state.filter === 'all' || state.filter === 'results') html += section('Recent results', groups.results, {});
+
+          if (!html) {
+            html = `<div class="empty"><h3>Nothing matches</h3><p>Try clearing the search or switching filters.</p></div>`;
+          }
+          main.innerHTML = html;
+
+          const stamp = data.generatedAt ? relative(data.generatedAt) : '';
+          $('#stampText').textContent = stamp;
+          $('#footStamp').textContent = data.generatedAt
+            ? `Snapshot ${new Date(data.generatedAt).toLocaleString()}`
+            : '';
+          const stale = data.generatedAt && Date.now() - new Date(data.generatedAt).getTime() > 25 * 60000;
+          $('#stamp').classList.toggle('stale', Boolean(stale));
+        }
+
+        /* ---------- rankings ---------- */
+        function rankList(R) {
+          const g = R.data && R.data.data ? R.data.data[R.gender] : null;
+          const c = g ? g[R.category] : null;
+          return (c && c[R.format]) || [];
+        }
+
+        function rankFormats(R) {
+          const g = R.data && R.data.data ? R.data.data[R.gender] : null;
+          const c = g ? g[R.category] : null;
+          return c ? Object.keys(c) : [];
+        }
+
+        function playerAvatar(row, sizeClass) {
+          return `<span class="${sizeClass}" style="${badgeStyle(row.name)}">${esc(
+            initials(row.name),
+          )}</span>`;
+        }
+
+        function trendChip(t) {
+          if (t === 'Up') return '<span class="trend up" title="Moved up">▲ Up</span>';
+          if (t === 'Down') return '<span class="trend down" title="Moved down">▼ Down</span>';
+          return '<span class="trend flat" title="No change">– Flat</span>';
+        }
+
+        function renderRankings() {
+          const body = $('#rankBody');
+          const R = state.rank;
+          if (!body) return;
+
+          if (!R.data) {
+            body.innerHTML = R.loading
+              ? `<div class="empty"><h3>Loading rankings…</h3><p>Fetching the latest tables.</p></div>`
+              : R.error
+                ? `<div class="empty"><h3>Rankings unavailable</h3><p>Could not load the tables. Try again in a moment.</p></div>`
+                : `<div class="empty"><h3>Loading rankings…</h3><p>Fetching the latest tables.</p></div>`;
+            return;
+          }
+
+          const isTeam = R.category === 'teams';
+          const formatsAvailable = rankFormats(R);
+          if (formatsAvailable.length && !formatsAvailable.includes(R.format)) {
+            R.format = formatsAvailable[0];
+          }
+          // reflect availability on the format tabs
+          document.querySelectorAll('#formatTabs button').forEach((b) => {
+            const ok = formatsAvailable.includes(b.dataset.format);
+            b.disabled = !ok;
+            b.style.opacity = ok ? '' : '0.35';
+            b.setAttribute('aria-pressed', String(ok && b.dataset.format === R.format));
+          });
+          document.querySelectorAll('#catTabs button').forEach((b) => {
+            b.setAttribute('aria-pressed', String(b.dataset.cat === R.category));
+          });
+          document.querySelectorAll('#genderTabs button').forEach((b) => {
+            b.setAttribute('aria-pressed', String(b.dataset.gender === R.gender));
+          });
+
+          const rows = rankList(R);
+          const q = R.query.trim().toLowerCase();
+          const filtered = q
+            ? rows.filter((r) =>
+                [r.name, r.country].filter(Boolean).join(' ').toLowerCase().includes(q),
+              )
+            : rows;
+
+          const catName = RANK_CAT_LABEL[R.category] || 'Rankings';          const fmtName = RANK_FORMAT_LABEL[R.format] || '';
+          const heading = isTeam
+            ? `${R.gender === 'women' ? "Women's" : "Men's"} team rankings`
+            : `${R.gender === 'women' ? "Women's" : "Men's"} ${catName.toLowerCase()} rankings`;
+
+          let html = `<div class="rank-intro">
+            <h2>${esc(heading)}</h2>
+            <p>${esc(fmtName)} · top ${rows.length || 0}</p>
+          </div>`;
+
+          if (!filtered.length) {
+            html += `<div class="empty" style="margin-top:14px"><h3>No one matches “${esc(
+              R.query,
+            )}”</h3><p>Try another name or clear the search.</p></div>`;
+            body.innerHTML = html;
+            return;
+          }
+
+          // Podium: top three (hidden while searching)
+          const top = filtered.slice(0, 3);
+          if (!q && top.length) {
+            html += `<div class="podium">${top
+              .map((r, i) => {
+                const sub = isTeam
+                  ? `${r.matches} matches · ${r.points} pts`
+                  : r.country || '';
+                const rating = r.rating || 0;
+                return `<div class="podium-card p${i + 1}">
+                  <span class="prank">No. ${esc(String(r.rank || i + 1))}</span>
+                  ${isTeam ? `<span class="avatar-lg">${esc(badgeText({ short: null, name: r.name }))}</span>` : playerAvatar(r, 'avatar-lg')}
+                  <div class="pod-name" title="${esc(r.name)}">${esc(r.name)}</div>
+                  <div class="pod-sub" title="${esc(sub)}">${esc(sub)}</div>
+                  <div class="pod-rating">${esc(String(rating))}<em>${isTeam ? 'rating' : 'rating points'}</em></div>
+                </div>`;
+              })
+              .join('')}</div>`;
+          }
+
+          // Table
+          const tableRows = q ? filtered : filtered.slice(3);
+          if (tableRows.length) {
+            const head = isTeam
+              ? `<div class="rrow teams head"><span>#</span><span>Team</span><span style="text-align:right">M</span><span style="text-align:right">Pts</span><span style="text-align:right">Rating</span></div>`
+              : `<div class="rrow head"><span>#</span><span>Player</span><span style="text-align:right">Rating</span><span style="text-align:right">Trend</span></div>`;
+
+            const bodyRows = tableRows
+              .map((r) => {
+                if (isTeam) {
+                  return `<div class="rrow teams ${r.rank <= 3 ? 'top' : ''}">
+                    <span class="rno">${esc(String(r.rank || ''))}</span>
+                    <span class="who"><span class="wname">${esc(r.name)}</span></span>
+                    <span class="rmatches">${esc(String(r.matches || 0))}</span>
+                    <span class="rpts">${esc(String(r.points || 0))}</span>
+                    <span class="rrating">${esc(String(r.rating || 0))}</span>
+                  </div>`;
+                }
+                return `<div class="rrow ${r.rank <= 3 ? 'top' : ''}">
+                  <span class="rno">${esc(String(r.rank || ''))}</span>
+                  <span class="who">
+                    ${playerAvatar(r, 'avatar-sm')}
+                    <span style="min-width:0">
+                      <span class="wname">${esc(r.name)}</span>
+                      <span class="wsub">${esc(r.country || '')}</span>
+                    </span>
+                  </span>
+                  <span class="rrating">${esc(String(r.rating || 0))}</span>
+                  <span class="rtrend">${trendChip(r.trend)}</span>
+                </div>`;
+              })
+              .join('');
+
+            html += `<div class="rank-card">${head}${bodyRows}</div>`;
+          }
+
+          const stamp = R.data.generatedAt ? relative(R.data.generatedAt) : '';
+          html += `<div class="rank-foot">
+            <span>Rankings refreshed ${esc(stamp)}</span>
+            <span style="margin-left:auto">Top ${rows.length || 0} · ${esc(fmtName)}</span>
+          </div>`;
+
+          body.innerHTML = html;
+          $('#rankStamp').textContent = R.data.generatedAt
+            ? `Updated ${relative(R.data.generatedAt)}`
+            : '';
+        }
+
+        async function loadRankings() {
+          const R = state.rank;
+          if (R.data || R.loading) return;
+          R.loading = true;
+          R.error = null;
+          renderRankings();
+          try {
+            const res = await fetch(`data/rankings.json?t=${Date.now()}`, { cache: 'no-store' });
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            R.data = await res.json();
+          } catch (err) {
+            R.error = true;
+          } finally {
+            R.loading = false;
+            renderRankings();
+          }
+        }
+
+        function setView(view) {
+          state.view = view;
+          $('#matchesView').hidden = view !== 'matches';
+          $('#rankView').hidden = view !== 'rankings';
+          document.querySelectorAll('.viewtabs button').forEach((b) => {
+            b.setAttribute('aria-pressed', String(b.dataset.view === view));
+          });
+          $('#stamp').style.display = view === 'matches' ? '' : 'none';
+          try {
+            history.replaceState(null, '', view === 'rankings' ? '#rankings' : '#matches');
+          } catch (e) {}
+          if (view === 'rankings') loadRankings();
+        }
+
+        /* ---------- events ---------- */
+        $('#main').addEventListener('click', async (e) => {
+          const copyBtn = e.target.closest('.copy-btn');
+          if (copyBtn) {
+            const m = (state.data?.matches || []).find(
+              (x) => String(x.id) === copyBtn.dataset.copyId,
+            );
+            if (!m) return;
+            const text = matchSummary(m);
+            try {
+              await navigator.clipboard.writeText(text);
+              copyBtn.textContent = 'Copied';
+              setTimeout(() => {
+                copyBtn.textContent = 'Copy match details';
+              }, 1600);
+            } catch (err) {
+              window.prompt('Copy match details', text);
+            }
+            return;
+          }
+          const head = e.target.closest('.card-head');
+          if (!head) return;
+          const cardEl = head.closest('.card');
+          const id = cardEl.dataset.id;
+          const isOpen = cardEl.classList.toggle('open');
+          head.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          if (isOpen) state.open.add(id);
+          else state.open.delete(id);
+        });
+
+        document.querySelectorAll('.segmented button[data-filter]').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            state.filter = btn.dataset.filter;
+            document
+              .querySelectorAll('.segmented button[data-filter]')
+              .forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+            render();
+          });
+        });
+
+        $('#search').addEventListener('input', (e) => {
+          state.query = e.target.value;
+          clearTimeout(render._t);
+          render._t = setTimeout(render, 120);
+        });
+
+        $('#rankSearch').addEventListener('input', (e) => {
+          state.rank.query = e.target.value;
+          clearTimeout(renderRankings._t);
+          renderRankings._t = setTimeout(renderRankings, 120);
+        });
+
+        $('#typeFilter').addEventListener('change', (e) => {
+          state.type = e.target.value;
+          render();
+        });
+
+        document.querySelectorAll('.viewtabs button').forEach((btn) => {
+          btn.addEventListener('click', () => setView(btn.dataset.view));
+        });
+
+        $('#genderTabs').addEventListener('click', (e) => {
+          const b = e.target.closest('button[data-gender]');
+          if (!b) return;
+          state.rank.gender = b.dataset.gender;
+          renderRankings();
+        });
+
+        $('#formatTabs').addEventListener('click', (e) => {
+          const b = e.target.closest('button[data-format]');
+          if (!b || b.disabled) return;
+          state.rank.format = b.dataset.format;
+          renderRankings();
+        });
+
+        $('#catTabs').addEventListener('click', (e) => {
+          const b = e.target.closest('button[data-cat]');
+          if (!b) return;
+          state.rank.category = b.dataset.cat;
+          renderRankings();
+        });
+
+        $('#themeBtn').addEventListener('click', () => {
+          const cur = document.documentElement.getAttribute('data-theme');
+          const effective =
+            cur === 'auto'
+              ? window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light'
+              : cur;
+          applyTheme(effective === 'light' ? 'dark' : 'light');
+        });
+
+        async function load(manual) {
+          if (state.loading) return;
+          state.loading = true;
+          const btn = $('#refreshBtn');
+          btn.classList.add('spin');
+          try {
+            const res = await fetch(`${DATA_URL}?t=${Date.now()}`, { cache: 'no-store' });
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            state.data = await res.json();
+            render();
+          } catch (err) {
+            if (!state.data) {
+              $('#main').innerHTML = `<div class="empty"><h3>Could not load data</h3><p>The latest snapshot is unavailable. Try again shortly.</p></div>`;
+              $('#stampText').textContent = 'offline';
+            }
+          } finally {
+            state.loading = false;
+            btn.classList.remove('spin');
+          }
+        }
+
+        $('#refreshBtn').addEventListener('click', (e) => {
+          e.preventDefault();
+          if (state.view === 'rankings') {
+            state.rank.data = null;
+            loadRankings();
+          } else {
+            load(true);
+          }
+        });
+
+        // Theme: stored choice, else follow the system.
+        let stored = null;
+        try {
+          stored = localStorage.getItem(STORE_THEME);
+        } catch (e) {}
+        applyTheme(stored === 'light' || stored === 'dark' ? stored : 'auto');
+        if (!stored) {
+          // draw the right icon for auto
+          const dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (!dark) applyTheme('auto');
+          $('#themeIcon').innerHTML = dark
+            ? '<path d="M21 12.8A8.5 8.5 0 1111.2 3a6.6 6.6 0 009.8 9.8z"/>'
+            : '<circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"/>';
+        }
+
+        render();
+        setView(window.location.hash === '#rankings' ? 'rankings' : 'matches');
+        load(false);
+        setInterval(() => load(false), REFRESH_MS);
+        setInterval(() => {
+          if (state.data) {
+            $('#stampText').textContent = relative(state.data.generatedAt);
+          }
+        }, 60000);
+      })();
+    </script>
+  </body>
+</html>
