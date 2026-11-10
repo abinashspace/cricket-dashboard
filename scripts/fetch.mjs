@@ -541,18 +541,37 @@ async function main() {
     matches = await rssFallback();
   }
 
-  // 2. Fetch squads only for matches that are live or start soon (keeps it polite).
+  // 2. Fetch squads for matches in the next week. Reuse any already known so a
+  //    30-minute refresh does not re-download the same squad pages every run.
   const now = Date.now();
+  const known = new Map();
+  try {
+    const prev = JSON.parse(await readFile(OUT, 'utf8'));
+    for (const m of prev.matches || []) {
+      if (m && m.squads && (m.squads.team1?.length || m.squads.team2?.length)) {
+        known.set(String(m.id), m.squads);
+      }
+    }
+  } catch {
+    /* first run */
+  }
+
+  for (const m of matches) {
+    const cached = known.get(String(m.id));
+    if (cached) m.squads = cached;
+  }
+
   const wantsSquad = matches
     .filter((m) => typeof m.id === 'number')
+    .filter((m) => !m.squads)
     .filter((m) => {
       const done = /complete|abandon|cancel/i.test(m.state);
       if (done) return false;
       if (m.state && !/preview|upcoming/i.test(m.state)) return true; // live-ish
-      return m.startTime && m.startTime - now < 36 * 3600 * 1000;
+      return m.startTime && m.startTime - now < 7 * 24 * 3600 * 1000;
     })
     .sort((a, b) => (a.startTime || 0) - (b.startTime || 0))
-    .slice(0, 8);
+    .slice(0, 10);
 
   for (const m of wantsSquad) {
     try {

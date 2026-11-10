@@ -390,6 +390,33 @@
         }
       }
 
+      /* ---------- timetable date headers ---------- */
+      .date-head {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 16px 0 8px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid var(--line-soft);
+      }
+      .date-head:first-of-type {
+        margin-top: 6px;
+      }
+      .date-head span:first-child {
+        font-size: 12.5px;
+        font-weight: 650;
+        letter-spacing: -0.01em;
+        color: var(--text);
+      }
+      .date-head .dcount {
+        font-size: 10.5px;
+        color: var(--faint);
+        font-variant-numeric: tabular-nums;
+      }
+      .section + .section .date-head:first-of-type {
+        margin-top: 4px;
+      }
+
       .grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
@@ -1143,15 +1170,15 @@
           </div>
           <div class="brand-text">
             <h1>Cricket</h1>
-            <p>Live scores · squads · rankings</p>
+            <p>Fixtures · results · rankings</p>
           </div>
         </div>
         <nav class="viewtabs" aria-label="View">
-          <button data-view="matches" aria-pressed="true">Matches</button>
+          <button data-view="matches" aria-pressed="true">Schedule</button>
           <button data-view="rankings" aria-pressed="false">Rankings</button>
         </nav>
         <div class="spacer"></div>
-        <div class="stamp" id="stamp" title="Data updates every 10 minutes">
+        <div class="stamp" id="stamp" title="Schedule refreshes about every 30 minutes">
           <span class="dot"></span><span class="txt" id="stampText">loading…</span>
         </div>
         <button class="icon-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">
@@ -1173,8 +1200,7 @@
         <div class="controls">
           <div class="segmented" role="group" aria-label="Filter matches">
             <button data-filter="all" aria-pressed="true">All <span class="count" id="c-all"></span></button>
-            <button data-filter="live" aria-pressed="false">Live <span class="count" id="c-live"></span></button>
-            <button data-filter="upcoming" aria-pressed="false">Upcoming <span class="count" id="c-up"></span></button>
+            <button data-filter="upcoming" aria-pressed="false">Fixtures <span class="count" id="c-up"></span></button>
             <button data-filter="results" aria-pressed="false">Results <span class="count" id="c-done"></span></button>
           </div>
           <div class="search">
@@ -1241,7 +1267,7 @@
         'use strict';
 
         const DATA_URL = 'data/matches.json';
-        const REFRESH_MS = 5 * 60 * 1000;
+        const REFRESH_MS = 15 * 60 * 1000;
         const STORE_THEME = 'cricket.theme';
 
         const $ = (sel) => document.querySelector(sel);
@@ -1350,6 +1376,36 @@
           const hrs = Math.round(mins / 60);
           if (hrs < 24) return `${hrs} hr ago`;
           return `${Math.round(hrs / 24)} d ago`;
+        }
+
+        function countdown(ms) {
+          if (!ms) return '';
+          const diff = ms - Date.now();
+          if (diff <= 0) return '';
+          const mins = Math.round(diff / 60000);
+          if (mins < 60) return `in ${mins} min`;
+          const hrs = Math.round(diff / 3600000);
+          if (hrs < 24) return `in ${hrs} hr`;
+          const days = Math.round(diff / 86400000);
+          return `in ${days} d`;
+        }
+
+        function dayStart(ms) {
+          const d = new Date(ms);
+          return new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
+        }
+
+        function dateLabel(ms) {
+          const now = new Date();
+          const d = new Date(ms);
+          const diff = Math.round((dayStart(ms) - dayStart(now.getTime())) / 86400000);
+          if (diff === 0) return 'Today';
+          if (diff === 1) return 'Tomorrow';
+          if (diff === -1) return 'Yesterday';
+          const wd = d.toLocaleDateString([], { weekday: 'short' });
+          const md = d.toLocaleDateString([], { day: 'numeric', month: 'short' });
+          const yr = d.getFullYear() === now.getFullYear() ? '' : ` ${d.getFullYear()}`;
+          return `${wd} ${md}${yr}`;
         }
 
         function classify(m) {
@@ -1474,6 +1530,11 @@
 
           const statusTxt = statusLine(m);
           const isDone = kind === 'results';
+          const stateText = isLive
+            ? m.stateTitle || m.state || 'In progress'
+            : isDone
+              ? m.stateTitle || m.state || 'Completed'
+              : countdown(m.startTime) || m.stateTitle || m.state || 'Upcoming';
 
           return `<article class="card ${isLive ? 'is-live' : ''} ${open ? 'open' : ''}" data-id="${esc(String(m.id))}" data-kind="${kind}" data-type="${esc(m.matchType || '')}" data-search="${esc(
             [m.team1?.name, m.team2?.name, m.series, m.matchDesc, venue, m.format, m.matchType].join(' ').toLowerCase(),
@@ -1482,7 +1543,7 @@
               <div class="row1">
                 <span class="pill fmt">${esc(m.format || m.matchType || 'Match')}</span>
                 <span class="series" title="${esc(m.series || '')}">${esc(m.series || '')}${m.matchDesc ? ' · ' + esc(m.matchDesc) : ''}</span>
-                <span class="state ${isLive ? 'live' : isDone ? 'done' : ''}">${isLive ? '<span class="led"></span>' : ''}${esc(m.stateTitle || m.state || (kind === 'upcoming' ? 'Upcoming' : ''))}</span>
+                <span class="state ${isLive ? 'live' : isDone ? 'done' : ''}">${isLive ? '<span class="led"></span>' : ''}${esc(stateText)}</span>
               </div>
               <div class="teams">
                 ${teamRow(m.team1, 'team1')}
@@ -1505,10 +1566,23 @@
           </article>`;
         }
 
-        function section(title, items, opts) {
-          if (!items.length) return '';
-          const head = `<div class="section-head">${opts.live ? '<span class="pulse"></span>' : ''}<h2>${title}</h2><span class="n">${items.length}</span></div>`;
-          return `<section class="section">${head}<div class="grid">${items.map(card).join('')}</div></section>`;
+        function dateGroup(key, items) {
+          const label = key ? dateLabel(key) : 'Date to be confirmed';
+          return `<div class="date-head"><span>${esc(label)}</span><span class="dcount">${items.length}</span></div>
+            <div class="grid">${items.map(card).join('')}</div>`;
+        }
+
+        function section(title, list, opts) {
+          if (!list.length) return '';
+          const head = `<div class="section-head">${opts && opts.live ? '<span class="pulse"></span>' : ''}<h2>${title}</h2><span class="n">${list.length}</span></div>`;
+          const groups = new Map();
+          for (const m of list) {
+            const key = m.startTime ? dayStart(m.startTime) : 0;
+            if (!groups.has(key)) groups.set(key, []);
+            groups.get(key).push(m);
+          }
+          const body = [...groups.entries()].map(([key, items]) => dateGroup(key, items)).join('');
+          return `<section class="section">${head}${body}</section>`;
         }
 
         function render() {
@@ -1520,11 +1594,13 @@
           }
 
           const all = data.matches || [];
-          const counts = { all: all.length, live: 0, upcoming: 0, results: 0 };
-          all.forEach((m) => counts[classify(m)]++);
+          const counts = { all: all.length, upcoming: 0, results: 0 };
+          all.forEach((m) => {
+            if (classify(m) === 'results') counts.results++;
+            else counts.upcoming++;
+          });
 
           $('#c-all').textContent = counts.all;
-          $('#c-live').textContent = counts.live;
           $('#c-up').textContent = counts.upcoming;
           $('#c-done').textContent = counts.results;
 
@@ -1542,7 +1618,9 @@
 
           const q = state.query.trim().toLowerCase();
           const filtered = all.filter((m) => {
-            if (state.filter !== 'all' && classify(m) !== state.filter) return false;
+            const kind = classify(m);
+            if (state.filter === 'upcoming' && kind === 'results') return false;
+            if (state.filter === 'results' && kind !== 'results') return false;
             if (state.type !== 'all' && m.matchType !== state.type) return false;
             if (q) {
               const hay = [m.team1?.name, m.team2?.name, m.series, m.matchDesc, m.venue?.ground, m.venue?.city, m.format, m.matchType]
@@ -1553,17 +1631,18 @@
             return true;
           });
 
-          const groups = { live: [], upcoming: [], results: [] };
-          filtered.forEach((m) => groups[classify(m)].push(m));
-
-          groups.live.sort((a, b) => (a.startTime || 0) - (b.startTime || 0));
-          groups.upcoming.sort((a, b) => (a.startTime || 0) - (b.startTime || 0));
-          groups.results.sort((a, b) => (b.startTime || 0) - (a.startTime || 0));
+          const soon = (x) => x.startTime || Number.MAX_SAFE_INTEGER;
+          const fixtures = filtered
+            .filter((m) => classify(m) !== 'results')
+            .sort((a, b) => soon(a) - soon(b));
+          const results = filtered
+            .filter((m) => classify(m) === 'results')
+            .sort((a, b) => (b.startTime || 0) - (a.startTime || 0));
 
           let html = '';
-          if (state.filter === 'all' || state.filter === 'live') html += section('Live now', groups.live, { live: true });
-          if (state.filter === 'all' || state.filter === 'upcoming') html += section('Upcoming', groups.upcoming, {});
-          if (state.filter === 'all' || state.filter === 'results') html += section('Recent results', groups.results, {});
+          if (state.filter !== 'results')
+            html += section('Schedule', fixtures, { live: fixtures.some((m) => classify(m) === 'live') });
+          if (state.filter !== 'upcoming') html += section('Results', results, {});
 
           if (!html) {
             html = `<div class="empty"><h3>Nothing matches</h3><p>Try clearing the search or switching filters.</p></div>`;
@@ -1575,7 +1654,7 @@
           $('#footStamp').textContent = data.generatedAt
             ? `Snapshot ${new Date(data.generatedAt).toLocaleString()}`
             : '';
-          const stale = data.generatedAt && Date.now() - new Date(data.generatedAt).getTime() > 25 * 60000;
+          const stale = data.generatedAt && Date.now() - new Date(data.generatedAt).getTime() > 90 * 60000;
           $('#stamp').classList.toggle('stale', Boolean(stale));
         }
 

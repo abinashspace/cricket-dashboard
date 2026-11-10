@@ -1,7 +1,7 @@
 # Cricket dashboard
 
-A single-page personal cricket dashboard: live scores, fixtures, venues, squads and
-ICC rankings.
+A single-page personal cricket dashboard: a fixture timetable with results,
+venues, squads and ICC rankings.
 
 Static HTML, no build step, no API keys. Hosted on GitHub Pages.
 
@@ -11,7 +11,7 @@ Static HTML, no build step, no API keys. Hosted on GitHub Pages.
 
 - `index.html` is the whole app. It reads `data/matches.json` and `data/rankings.json`
   (same origin, so no CORS issues).
-- `.github/workflows/update.yml` runs every 10 minutes, executes `scripts/fetch.mjs`,
+- `.github/workflows/update.yml` runs every 30 minutes, executes `scripts/fetch.mjs`,
   and commits the refreshed snapshots.
 - `scripts/fetch.mjs` builds the snapshots: matches (live / upcoming / recent) with
   venues and squads, plus the men's and women's batting, bowling, all-rounder and team
@@ -26,8 +26,11 @@ source is unreachable — you just keep the last good data, and the page shows i
 
 ## Page features
 
-- Live / Upcoming / Recent sections, with counts and a pulsing live indicator.
-- Filter by state, match type, and free-text search over teams, series and venues.
+- **Timetable**: fixtures grouped by date (Today / Tomorrow / weekday), with a
+  countdown, local start time, venue, series and format; finished matches move to a
+  Results list, also grouped by date.
+- Filter by fixtures or results, match type, and free-text search over teams, series
+  and venues.
 - Expand any card for both squads, and copy a clean text summary of the match.
 - Rankings: men's and women's batting, bowling, all-rounder and team tables for
   Test / ODI / T20I — a top-10 list with portraits, rating points, recent movement

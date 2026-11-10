@@ -2,8 +2,8 @@ name: Update cricket data
 
 on:
   schedule:
-    # Every 10 minutes. GitHub may delay scheduled runs under load.
-    - cron: '*/10 * * * *'
+    # Every 30 minutes. Fixtures rarely change, so this is plenty.
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 permissions:
