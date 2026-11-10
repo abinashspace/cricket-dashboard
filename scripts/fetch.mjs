@@ -16,6 +16,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, '..', 'data', 'matches.json');
 const RANKINGS_OUT = join(__dirname, '..', 'data', 'rankings.json');
 const PHOTOS_DIR = join(__dirname, '..', 'data', 'photos');
+const LOGOS_DIR = join(__dirname, '..', 'data', 'logos');
 
 const RANKINGS_MAX_AGE_MS = 6 * 60 * 60 * 1000;
 const RANK_TOP_N = 10;
@@ -371,6 +372,91 @@ async function prunePhotos(used) {
   if (removed) console.log(`Removed ${removed} unused portraits`);
 }
 
+const IMAGE_EXT = {
+  'image/png': 'png',
+  'image/jpeg': 'jpg',
+  'image/webp': 'webp',
+  'image/gif': 'gif',
+  'image/svg+xml': 'svg',
+};
+
+/**
+ * Download a team logo (flag or crest) once and keep it under data/logos, so the
+ * page serves it from its own origin. The upstream uses the same image id space
+ * as portraits, but logos keep their original format (usually transparent PNG).
+ */
+async function ensureLogo(imageId) {
+  if (!imageId || !EP.photos) return null;
+  const base = String(imageId);
+  try {
+    const files = await readdir(LOGOS_DIR);
+    const hit = files.find((f) => f.startsWith(`${base}.`));
+    if (hit) return `data/logos/${hit}`;
+  } catch {
+    /* not cached yet */
+  }
+  try {
+    const url = fill(EP.photos, { face: imageId, slug: 'team' });
+    const res = await fetch(url, { headers: { 'User-Agent': UA } });
+    if (!res.ok) return null;
+    const type = (res.headers.get('content-type') || '').split(';')[0].trim().toLowerCase();
+    const ext = IMAGE_EXT[type] || 'png';
+    const buf = Buffer.from(await res.arrayBuffer());
+    if (buf.length < 200) return null;
+    await mkdir(LOGOS_DIR, { recursive: true });
+    const file = `${base}.${ext}`;
+    await writeFile(join(LOGOS_DIR, file), buf);
+    return `data/logos/${file}`;
+  } catch {
+    return null;
+  }
+}
+
+/** Drop cached team logos that no longer appear in the schedule. */
+async function pruneLogos(used) {
+  let files = [];
+  try {
+    files = await readdir(LOGOS_DIR);
+  } catch {
+    return;
+  }
+  let removed = 0;
+  for (const file of files) {
+    if (used.has(file)) continue;
+    try {
+      await unlink(join(LOGOS_DIR, file));
+      removed++;
+    } catch {
+      /* ignore */
+    }
+  }
+  if (removed) console.log(`Removed ${removed} unused team logos`);
+}
+
+/**
+ * Attach a local `logo` path to every team that has an upstream image id. All
+ * occurrences of a team share the same cached file.
+ */
+async function attachTeamLogos(matches) {
+  if (!EP.photos) return;
+  const byImage = new Map();
+  for (const m of matches) {
+    for (const team of [m.team1, m.team2]) {
+      if (!team || !team.imageId || byImage.has(team.imageId)) continue;
+      byImage.set(team.imageId, await ensureLogo(team.imageId));
+    }
+  }
+  const used = new Set();
+  for (const m of matches) {
+    for (const team of [m.team1, m.team2]) {
+      if (!team) continue;
+      if (team.imageId) team.logo = byImage.get(team.imageId) || null;
+      if (team.logo) used.add(team.logo.split('/').pop());
+    }
+  }
+  await pruneLogos(used);
+}
+
 function rankEntry(item, isTeam) {
   const name = clean(item.name) || '';
   const id = clean(item.id);
@@ -589,7 +675,10 @@ async function main() {
     await sleep(500);
   }
 
-  // 3. Sort: live first, then upcoming, then completed.
+  // 3. Cache team logos locally (same image id space as portraits).
+  await attachTeamLogos(matches);
+
+  // 4. Sort: live first, then upcoming, then completed.
   const rank = (m) => {
     const s = (m.state || '').toLowerCase();
     if (/complete|abandon|cancel/.test(s)) return 2;
@@ -613,7 +702,7 @@ async function main() {
   console.log(`Wrote ${matches.length} matches to ${OUT}`);
   if (warnings.length) console.log(`Warnings: ${warnings.join(' | ')}`);
 
-  // 4. Ranking tables (their own file, refreshed less often).
+  // 5. Ranking tables (their own file, refreshed less often).
   try {
     await updateRankings();
   } catch (err) {

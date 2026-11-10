@@ -28,7 +28,8 @@ source is unreachable — you just keep the last good data, and the page shows i
 
 - **Timetable**: fixtures grouped by date (Today / Tomorrow / weekday), with a
   countdown, local start time, venue, series and format; finished matches move to a
-  Results list, also grouped by date.
+  Results list, also grouped by date. Each side shows its team logo, cached locally
+  under `data/logos/` (with a lettered fallback when no logo is available).
 - Filter by fixtures or results, match type, and free-text search over teams, series
   and venues.
 - Expand any card for both squads, and copy a clean text summary of the match.

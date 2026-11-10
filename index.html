@@ -539,6 +539,34 @@
         border: 1px solid rgba(255, 255, 255, 0.13);
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
       }
+      .badge.has-logo {
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        border-color: rgba(0, 0, 0, 0.12);
+      }
+      .badge.has-logo .badge-text {
+        display: grid;
+        place-items: center;
+        position: absolute;
+        inset: 0;
+      }
+      .badge.has-logo img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 3px;
+        background: #f4f7fa;
+        border-radius: inherit;
+        display: block;
+        opacity: 0;
+        transition: opacity 0.12s ease;
+      }
+      .badge.has-logo img.loaded {
+        opacity: 1;
+      }
       .tname {
         font-size: 14.5px;
         font-weight: 550;
@@ -1517,8 +1545,14 @@
           const teamRow = (team, side) => {
             const score = side === 'team1' ? s1 : s2;
             const batting = battingTeamId && team && team.id === battingTeamId;
+            const logo = team && team.logo;
+            const badge = logo
+              ? `<span class="badge has-logo" style="${badgeStyle(team ? team.name : '?')}" aria-hidden="true"><span class="badge-text">${esc(
+                  badgeText(team),
+                )}</span><img class="badge-img" src="${esc(logo)}" alt="" width="30" height="30" decoding="async"></span>`
+              : `<span class="badge" style="${badgeStyle(team ? team.name : '?')}" aria-hidden="true">${esc(badgeText(team))}</span>`;
             return `<div class="team ${batting ? 'batting' : ''} ${score ? '' : 'idle'}">
-              <span class="badge" style="${badgeStyle(team ? team.name : '?')}" aria-hidden="true">${esc(badgeText(team))}</span>
+              ${badge}
               <span class="tname"><span class="full">${esc(team ? team.name : 'TBC')}</span><span class="short">${esc(shortName(team))}</span></span>
               <span class="score">${score || '<span class="ov">yet to bat</span>'}${batting ? '<span class="tick" title="Batting">•</span>' : ''}</span>
             </div>`;
@@ -1846,6 +1880,27 @@
         }
 
         /* ---------- events ---------- */
+        // Logos fade in only once fully loaded; until then (or if the file is
+        // missing) the team's initials stay visible. A failed image never shows
+        // the browser's broken-image icon.
+        const mainEl = $('#main');
+        mainEl.addEventListener(
+          'load',
+          (e) => {
+            const img = e.target;
+            if (img.classList && img.classList.contains('badge-img')) img.classList.add('loaded');
+          },
+          true,
+        );
+        mainEl.addEventListener(
+          'error',
+          (e) => {
+            const img = e.target;
+            if (img.classList && img.classList.contains('badge-img')) img.remove();
+          },
+          true,
+        );
+
         $('#main').addEventListener('click', async (e) => {
           const copyBtn = e.target.closest('.copy-btn');
           if (copyBtn) {

@@ -23,13 +23,15 @@
         "id": 3,
         "name": "Pakistan",
         "short": "PAK",
-        "imageId": 776308
+        "imageId": 776308,
+        "logo": "data/logos/776308.png"
       },
       "team2": {
         "id": 5,
         "name": "Sri Lanka",
         "short": "SL",
-        "imageId": 776254
+        "imageId": 776254,
+        "logo": "data/logos/776254.png"
       },
       "scores": {
         "team1": [
@@ -66,13 +68,15 @@
         "id": 13,
         "name": "New Zealand",
         "short": "NZ",
-        "imageId": 776333
+        "imageId": 776333,
+        "logo": "data/logos/776333.png"
       },
       "team2": {
         "id": 2,
         "name": "India",
         "short": "IND",
-        "imageId": 776162
+        "imageId": 776162,
+        "logo": "data/logos/776162.png"
       },
       "scores": {
         "team1": [],
@@ -102,13 +106,15 @@
         "id": 54,
         "name": "India U19",
         "short": "INDU19",
-        "imageId": 776180
+        "imageId": 776180,
+        "logo": "data/logos/776180.png"
       },
       "team2": {
         "id": 283,
         "name": "United Arab Emirates U19",
         "short": "UAEU19",
-        "imageId": 776244
+        "imageId": 776244,
+        "logo": "data/logos/776244.png"
       },
       "scores": {
         "team1": [],
@@ -323,13 +329,15 @@
         "id": 56,
         "name": "Pakistan U19",
         "short": "PAKU19",
-        "imageId": 776309
+        "imageId": 776309,
+        "logo": "data/logos/776309.png"
       },
       "team2": {
         "id": 229,
         "name": "Nepal U19",
         "short": "NPLU19",
-        "imageId": 776188
+        "imageId": 776188,
+        "logo": "data/logos/776188.png"
       },
       "scores": {
         "team1": [],
@@ -550,13 +558,15 @@
         "id": 720,
         "name": "Rwanda Women",
         "short": "RWAW",
-        "imageId": 248448
+        "imageId": 248448,
+        "logo": "data/logos/248448.jpg"
       },
       "team2": {
         "id": 592,
         "name": "United States of America Women",
         "short": "USAW",
-        "imageId": 776222
+        "imageId": 776222,
+        "logo": "data/logos/776222.png"
       },
       "scores": {
         "team1": [],
@@ -759,13 +769,15 @@
         "id": 357,
         "name": "Hobart Hurricanes Women",
         "short": "HBHW",
-        "imageId": 824982
+        "imageId": 824982,
+        "logo": "data/logos/824982.png"
       },
       "team2": {
         "id": 355,
         "name": "Adelaide Strikers Women",
         "short": "ADSW",
-        "imageId": 824978
+        "imageId": 824978,
+        "logo": "data/logos/824978.png"
       },
       "scores": {
         "team1": [],
@@ -998,13 +1010,15 @@
         "id": 2918,
         "name": "Janakpur Bolts",
         "short": "JAB",
-        "imageId": 784132
+        "imageId": 784132,
+        "logo": "data/logos/784132.png"
       },
       "team2": {
         "id": 2960,
         "name": "Sudur Paschim Royals",
         "short": "SPR",
-        "imageId": 784128
+        "imageId": 784128,
+        "logo": "data/logos/784128.png"
       },
       "scores": {
         "team1": [],
@@ -1249,13 +1263,15 @@
         "id": 503,
         "name": "Namibia Women",
         "short": "NAMW",
-        "imageId": 776329
+        "imageId": 776329,
+        "logo": "data/logos/776329.png"
       },
       "team2": {
         "id": 448,
         "name": "Uganda Women",
         "short": "UGAW",
-        "imageId": 776236
+        "imageId": 776236,
+        "logo": "data/logos/776236.png"
       },
       "scores": {
         "team1": [],
@@ -1446,13 +1462,15 @@
         "id": 3640,
         "name": "Yas Lions",
         "short": "YL",
-        "imageId": 1116764
+        "imageId": 1116764,
+        "logo": "data/logos/1116764.jpg"
       },
       "team2": {
         "id": 3647,
         "name": "United Tigers",
         "short": "UT",
-        "imageId": 1116768
+        "imageId": 1116768,
+        "logo": "data/logos/1116768.jpg"
       },
       "scores": {
         "team1": [],
@@ -1733,13 +1751,15 @@
         "id": 598,
         "name": "UAE Bulls",
         "short": "UBL",
-        "imageId": 1116765
+        "imageId": 1116765,
+        "logo": "data/logos/1116765.jpg"
       },
       "team2": {
         "id": 3631,
         "name": "Emirates Eagles",
         "short": "EE",
-        "imageId": 1116767
+        "imageId": 1116767,
+        "logo": "data/logos/1116767.jpg"
       },
       "scores": {
         "team1": [],
@@ -2002,13 +2022,15 @@
         "id": 917,
         "name": "Western Province",
         "short": "WPR",
-        "imageId": 1082447
+        "imageId": 1082447,
+        "logo": "data/logos/1082447.png"
       },
       "team2": {
         "id": 1768,
         "name": "South Western Districts",
         "short": "SWD",
-        "imageId": 349609
+        "imageId": 349609,
+        "logo": "data/logos/349609.png"
       },
       "scores": {
         "team1": [],
@@ -2283,13 +2305,15 @@
         "id": 104,
         "name": "New South Wales",
         "short": "NSW",
-        "imageId": 172196
+        "imageId": 172196,
+        "logo": "data/logos/172196.jpg"
       },
       "team2": {
         "id": 158,
         "name": "South Australia",
         "short": "SAUS",
-        "imageId": 172225
+        "imageId": 172225,
+        "logo": "data/logos/172225.jpg"
       },
       "scores": {
         "team1": [],
@@ -2319,13 +2343,15 @@
         "id": 52,
         "name": "Victoria",
         "short": "VIC",
-        "imageId": 172153
+        "imageId": 172153,
+        "logo": "data/logos/172153.jpg"
       },
       "team2": {
         "id": 87,
         "name": "Western Australia",
         "short": "WA",
-        "imageId": 172180
+        "imageId": 172180,
+        "logo": "data/logos/172180.jpg"
       },
       "scores": {
         "team1": [],
@@ -2355,13 +2381,15 @@
         "id": 164,
         "name": "Queensland",
         "short": "QL",
-        "imageId": 172233
+        "imageId": 172233,
+        "logo": "data/logos/172233.jpg"
       },
       "team2": {
         "id": 166,
         "name": "Tasmania",
         "short": "TAS",
-        "imageId": 172235
+        "imageId": 172235,
+        "logo": "data/logos/172235.jpg"
       },
       "scores": {
         "team1": [],
@@ -2391,13 +2419,15 @@
         "id": 42,
         "name": "England Lions",
         "short": "ENGA",
-        "imageId": 776239
+        "imageId": 776239,
+        "logo": "data/logos/776239.png"
       },
       "team2": {
         "id": 207,
         "name": "West Indies A",
         "short": "WIA",
-        "imageId": 776192
+        "imageId": 776192,
+        "logo": "data/logos/776192.png"
       },
       "scores": {
         "team1": [
@@ -2441,13 +2471,15 @@
         "id": 2885,
         "name": "Royal Desert Champions",
         "short": "RDC",
-        "imageId": 1116766
+        "imageId": 1116766,
+        "logo": "data/logos/1116766.jpg"
       },
       "team2": {
         "id": 3647,
         "name": "United Tigers",
         "short": "UT",
-        "imageId": 1116768
+        "imageId": 1116768,
+        "logo": "data/logos/1116768.jpg"
       },
       "scores": {
         "team1": [
@@ -2491,13 +2523,15 @@
         "id": 3631,
         "name": "Emirates Eagles",
         "short": "EE",
-        "imageId": 1116767
+        "imageId": 1116767,
+        "logo": "data/logos/1116767.jpg"
       },
       "team2": {
         "id": 3623,
         "name": "Arabian Aces",
         "short": "ARA",
-        "imageId": 1116769
+        "imageId": 1116769,
+        "logo": "data/logos/1116769.jpg"
       },
       "scores": {
         "team1": [
@@ -2541,13 +2575,15 @@
         "id": 2937,
         "name": "Kathmandu Gorkhas",
         "short": "KAG",
-        "imageId": 784125
+        "imageId": 784125,
+        "logo": "data/logos/784125.png"
       },
       "team2": {
         "id": 2913,
         "name": "Chitwan Rhinos",
         "short": "CHR",
-        "imageId": 784127
+        "imageId": 784127,
+        "logo": "data/logos/784127.png"
       },
       "scores": {
         "team1": [
@@ -2591,13 +2627,15 @@
         "id": 2949,
         "name": "Pokhara Avengers",
         "short": "POA",
-        "imageId": 784130
+        "imageId": 784130,
+        "logo": "data/logos/784130.png"
       },
       "team2": {
         "id": 2929,
         "name": "Karnali Yaks",
         "short": "KAY",
-        "imageId": 784126
+        "imageId": 784126,
+        "logo": "data/logos/784126.png"
       },
       "scores": {
         "team1": [
@@ -2641,13 +2679,15 @@
         "id": 224,
         "name": "Bangladesh U19",
         "short": "BANU19",
-        "imageId": 776211
+        "imageId": 776211,
+        "logo": "data/logos/776211.png"
       },
       "team2": {
         "id": 386,
         "name": "Malaysia U19",
         "short": "MLYU19",
-        "imageId": 776321
+        "imageId": 776321,
+        "logo": "data/logos/776321.png"
       },
       "scores": {
         "team1": [
@@ -2691,13 +2731,15 @@
         "id": 223,
         "name": "Afghanistan U19",
         "short": "AFGU19",
-        "imageId": 172278
+        "imageId": 172278,
+        "logo": "data/logos/172278.jpg"
       },
       "team2": {
         "id": 172,
         "name": "Sri Lanka U19",
         "short": "SLU19",
-        "imageId": 776266
+        "imageId": 776266,
+        "logo": "data/logos/776266.png"
       },
       "scores": {
         "team1": [
@@ -2741,13 +2783,15 @@
         "id": 78,
         "name": "India A",
         "short": "INDA",
-        "imageId": 776181
+        "imageId": 776181,
+        "logo": "data/logos/776181.png"
       },
       "team2": {
         "id": 80,
         "name": "New Zealand A",
         "short": "NZA",
-        "imageId": 776336
+        "imageId": 776336,
+        "logo": "data/logos/776336.png"
       },
       "scores": {
         "team1": [
@@ -2791,13 +2835,15 @@
         "id": 12,
         "name": "Zimbabwe",
         "short": "ZIM",
-        "imageId": 776198
+        "imageId": 776198,
+        "logo": "data/logos/776198.png"
       },
       "team2": {
         "id": 96,
         "name": "Afghanistan",
         "short": "AFG",
-        "imageId": 776177
+        "imageId": 776177,
+        "logo": "data/logos/776177.png"
       },
       "scores": {
         "team1": [
@@ -2847,13 +2893,15 @@
         "id": 10,
         "name": "West Indies",
         "short": "WI",
-        "imageId": 776191
+        "imageId": 776191,
+        "logo": "data/logos/776191.png"
       },
       "team2": {
         "id": 6,
         "name": "Bangladesh",
         "short": "BAN",
-        "imageId": 776210
+        "imageId": 776210,
+        "logo": "data/logos/776210.png"
       },
       "scores": {
         "team1": [
