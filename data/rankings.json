@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T07:37:49.737Z",
+  "generatedAt": "2026-11-11T15:59:10.728Z",
   "data": {
     "men": {
       "batting": {
@@ -8,10 +8,10 @@
             "rank": 1,
             "id": 11808,
             "name": "Shubman Gill",
-            "rating": 841,
+            "rating": 822,
             "trend": "Flat",
             "country": "India",
-            "points": 841,
+            "points": 822,
             "photo": "data/photos/616515.jpg"
           },
           {
@@ -38,10 +38,10 @@
             "rank": 4,
             "id": 576,
             "name": "Rohit Sharma",
-            "rating": 770,
+            "rating": 754,
             "trend": "Flat",
             "country": "India",
-            "points": 770,
+            "points": 754,
             "photo": "data/photos/616514.jpg"
           },
           {
@@ -98,10 +98,10 @@
             "rank": 10,
             "id": 8733,
             "name": "KL Rahul",
-            "rating": 653,
+            "rating": 657,
             "trend": "Flat",
             "country": "India",
-            "points": 653,
+            "points": 657,
             "photo": "data/photos/616523.jpg"
           }
         ],
@@ -168,43 +168,43 @@
           },
           {
             "rank": 7,
+            "id": 8571,
+            "name": "Rahmat Shah",
+            "rating": 735,
+            "trend": "Up",
+            "country": "Afghanistan",
+            "points": 735,
+            "photo": "data/photos/616543.jpg"
+          },
+          {
+            "rank": 8,
             "id": 10744,
             "name": "Rishabh Pant",
             "rating": 713,
-            "trend": "Flat",
+            "trend": "Down",
             "country": "India",
             "points": 713,
             "photo": "data/photos/616524.jpg"
           },
           {
-            "rank": 8,
+            "rank": 9,
             "id": 10713,
             "name": "Daryl Mitchell",
             "rating": 710,
-            "trend": "Flat",
+            "trend": "Down",
             "country": "New Zealand",
             "points": 710,
             "photo": "data/photos/845511.jpg"
           },
           {
-            "rank": 9,
+            "rank": 10,
             "id": 11808,
             "name": "Shubman Gill",
             "rating": 709,
-            "trend": "Flat",
+            "trend": "Down",
             "country": "India",
             "points": 709,
             "photo": "data/photos/616515.jpg"
-          },
-          {
-            "rank": 10,
-            "id": 10940,
-            "name": "Kamindu Mendis",
-            "rating": 706,
-            "trend": "Flat",
-            "country": "Sri Lanka",
-            "points": 706,
-            "photo": "data/photos/847173.jpg"
           }
         ],
         "t20": [
@@ -334,53 +334,53 @@
           },
           {
             "rank": 3,
-            "id": 10100,
-            "name": "Mitchell Santner",
-            "rating": 644,
-            "trend": "Flat",
-            "country": "New Zealand",
-            "points": 644,
-            "photo": "data/photos/845505.jpg"
-          },
-          {
-            "rank": 4,
             "id": 12555,
             "name": "Abrar Ahmed",
             "rating": 642,
-            "trend": "Flat",
+            "trend": "Up",
             "country": "Pakistan",
             "points": 642,
             "photo": "data/photos/846068.jpg"
           },
           {
-            "rank": 5,
+            "rank": 4,
+            "id": 10100,
+            "name": "Mitchell Santner",
+            "rating": 621,
+            "trend": "Down",
+            "country": "New Zealand",
+            "points": 621,
+            "photo": "data/photos/845505.jpg"
+          },
+          {
+            "rank": 4,
             "id": 12160,
             "name": "Shaheen Afridi",
             "rating": 621,
-            "trend": "Flat",
+            "trend": "Up",
             "country": "Pakistan",
             "points": 621,
             "photo": "data/photos/846065.jpg"
           },
           {
             "rank": 6,
-            "id": 8292,
-            "name": "Kuldeep Yadav",
-            "rating": 620,
-            "trend": "Flat",
-            "country": "India",
-            "points": 620,
-            "photo": "data/photos/846039.jpg"
-          },
-          {
-            "rank": 7,
             "id": 13214,
             "name": "Azmatullah Omarzai",
             "rating": 610,
-            "trend": "Flat",
+            "trend": "Up",
             "country": "Afghanistan",
             "points": 610,
             "photo": "data/photos/845424.jpg"
+          },
+          {
+            "rank": 7,
+            "id": 8292,
+            "name": "Kuldeep Yadav",
+            "rating": 602,
+            "trend": "Down",
+            "country": "India",
+            "points": 602,
+            "photo": "data/photos/846039.jpg"
           },
           {
             "rank": 8,
@@ -661,53 +661,53 @@
             "photo": "data/photos/616461.jpg"
           },
           {
-            "rank": 4,
-            "id": 9551,
-            "name": "Michael Bracewell",
-            "rating": 250,
-            "trend": "Flat",
-            "country": "New Zealand",
-            "points": 250,
-            "photo": "data/photos/845514.jpg"
-          },
-          {
-            "rank": 6,
-            "id": 10100,
-            "name": "Mitchell Santner",
-            "rating": 247,
-            "trend": "Flat",
-            "country": "New Zealand",
-            "points": 247,
-            "photo": "data/photos/845505.jpg"
-          },
-          {
-            "rank": 7,
+            "rank": 5,
             "id": 10738,
             "name": "Rashid Khan",
             "rating": 245,
-            "trend": "Flat",
+            "trend": "Up",
             "country": "Afghanistan",
             "points": 245,
             "photo": "data/photos/845423.jpg"
           },
           {
-            "rank": 8,
+            "rank": 6,
+            "id": 10100,
+            "name": "Mitchell Santner",
+            "rating": 241,
+            "trend": "Flat",
+            "country": "New Zealand",
+            "points": 241,
+            "photo": "data/photos/845505.jpg"
+          },
+          {
+            "rank": 7,
             "id": 31911,
             "name": "Brandon McMullen",
             "rating": 238,
-            "trend": "Flat",
+            "trend": "Up",
             "country": "Scotland",
             "points": 238,
             "photo": "data/photos/845528.jpg"
           },
           {
+            "rank": 8,
+            "id": 9551,
+            "name": "Michael Bracewell",
+            "rating": 236,
+            "trend": "Down",
+            "country": "New Zealand",
+            "points": 236,
+            "photo": "data/photos/845514.jpg"
+          },
+          {
             "rank": 9,
             "id": 8808,
             "name": "Axar Patel",
-            "rating": 198,
+            "rating": 206,
             "trend": "Flat",
             "country": "India",
-            "points": 198,
+            "points": 206,
             "photo": "data/photos/846033.jpg"
           },
           {
@@ -756,10 +756,10 @@
             "rank": 4,
             "id": 11081,
             "name": "Mehidy Hasan Miraz",
-            "rating": 298,
+            "rating": 292,
             "trend": "Flat",
             "country": "Bangladesh",
-            "points": 298,
+            "points": 292,
             "photo": "data/photos/616461.jpg"
           },
           {
@@ -794,6 +794,16 @@
           },
           {
             "rank": 8,
+            "id": 8433,
+            "name": "Justin Greaves",
+            "rating": 229,
+            "trend": "Up",
+            "country": "West Indies",
+            "points": 229,
+            "photo": "data/photos/583423.jpg"
+          },
+          {
+            "rank": 8,
             "id": 8095,
             "name": "Pat Cummins",
             "rating": 229,
@@ -801,16 +811,6 @@
             "country": "Australia",
             "points": 229,
             "photo": "data/photos/352460.jpg"
-          },
-          {
-            "rank": 9,
-            "id": 8433,
-            "name": "Justin Greaves",
-            "rating": 220,
-            "trend": "Flat",
-            "country": "West Indies",
-            "points": 220,
-            "photo": "data/photos/583423.jpg"
           },
           {
             "rank": 10,
@@ -930,103 +930,103 @@
         "odi": [
           {
             "rank": 1,
-            "id": 11,
-            "name": "South Africa",
-            "rating": 124,
+            "id": 2,
+            "name": "India",
+            "rating": 117,
             "trend": "Flat",
-            "matches": 23,
-            "points": 2860,
-            "logo": "data/logos/776287.png"
+            "matches": 38,
+            "points": 4439,
+            "logo": "data/logos/776162.png"
           },
           {
             "rank": 2,
-            "id": 4,
-            "name": "Australia",
-            "rating": 122,
-            "trend": "Flat",
-            "matches": 31,
-            "points": 3787,
-            "logo": "data/logos/776202.png"
-          },
-          {
-            "rank": 3,
             "id": 13,
             "name": "New Zealand",
             "rating": 106,
             "trend": "Flat",
-            "matches": 22,
-            "points": 2336,
+            "matches": 37,
+            "points": 3940,
             "logo": "data/logos/776333.png"
           },
           {
-            "rank": 4,
-            "id": 2,
-            "name": "India",
-            "rating": 105,
+            "rank": 3,
+            "id": 11,
+            "name": "South Africa",
+            "rating": 104,
             "trend": "Flat",
-            "matches": 29,
-            "points": 3042,
-            "logo": "data/logos/776162.png"
+            "matches": 34,
+            "points": 3547,
+            "logo": "data/logos/776287.png"
+          },
+          {
+            "rank": 4,
+            "id": 3,
+            "name": "Pakistan",
+            "rating": 104,
+            "trend": "Flat",
+            "matches": 37,
+            "points": 3838,
+            "logo": "data/logos/776308.png"
           },
           {
             "rank": 5,
-            "id": 9,
-            "name": "England",
+            "id": 4,
+            "name": "Australia",
             "rating": 102,
             "trend": "Flat",
-            "matches": 36,
-            "points": 3658,
-            "logo": "data/logos/776237.png"
+            "matches": 35,
+            "points": 3568,
+            "logo": "data/logos/776202.png"
           },
           {
             "rank": 6,
-            "id": 10,
-            "name": "West Indies",
-            "rating": 78,
+            "id": 96,
+            "name": "Afghanistan",
+            "rating": 94,
             "trend": "Flat",
-            "matches": 30,
-            "points": 2339,
-            "logo": "data/logos/776191.png"
+            "matches": 31,
+            "points": 2926,
+            "logo": "data/logos/776177.png"
           },
           {
             "rank": 7,
             "id": 5,
             "name": "Sri Lanka",
-            "rating": 75,
+            "rating": 94,
             "trend": "Flat",
-            "matches": 19,
-            "points": 1434,
-            "logo": "data/logos/174284.jpg"
+            "matches": 44,
+            "points": 4144,
+            "logo": "data/logos/776254.png"
           },
           {
             "rank": 8,
-            "id": 6,
-            "name": "Bangladesh",
-            "rating": 73,
+            "id": 9,
+            "name": "England",
+            "rating": 93,
             "trend": "Flat",
-            "matches": 28,
-            "points": 2038,
-            "logo": "data/logos/174284.jpg"
+            "matches": 38,
+            "points": 3530,
+            "logo": "data/logos/776237.png"
           },
           {
             "rank": 9,
-            "id": 3,
-            "name": "Pakistan",
-            "rating": 71,
+            "id": 6,
+            "name": "Bangladesh",
+            "rating": 81,
             "trend": "Flat",
-            "matches": 23,
-            "points": 1623,
-            "logo": "data/logos/174284.jpg"
+            "matches": 41,
+            "points": 3304,
+            "logo": "data/logos/776210.png"
           },
           {
             "rank": 10,
-            "id": 12,
-            "name": "Zimbabwe",
-            "rating": 17,
+            "id": 10,
+            "name": "West Indies",
+            "rating": 79,
             "trend": "Flat",
-            "matches": 13,
-            "points": 217,
-            "logo": "data/logos/174284.jpg"
+            "matches": 37,
+            "points": 2924,
+            "logo": "data/logos/776191.png"
           }
         ],
         "test": [
