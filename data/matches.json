@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T20:22:25.741Z",
+  "generatedAt": "2026-11-11T00:49:29.955Z",
   "matches": [
     {
       "id": 170703,
@@ -61,10 +61,10 @@
       "format": "TEST",
       "matchType": "Domestic",
       "dayNight": false,
-      "battingTeamId": null,
-      "state": "Preview",
-      "stateTitle": "Preview",
-      "status": "Match starts at Nov 10, 23:30 GMT",
+      "battingTeamId": 104,
+      "state": "In Progress",
+      "stateTitle": "In Progress",
+      "status": "Day 1: 1st Session",
       "startTime": 1794353400000,
       "endTime": 1794637800000,
       "venue": {
@@ -86,7 +86,14 @@
         "logo": "data/logos/172225.jpg"
       },
       "scores": {
-        "team1": [],
+        "team1": [
+          {
+            "id": 1,
+            "runs": 97,
+            "wickets": 3,
+            "overs": 14.6
+          }
+        ],
         "team2": []
       },
       "squads": {
@@ -284,10 +291,10 @@
       "format": "TEST",
       "matchType": "Domestic",
       "dayNight": false,
-      "battingTeamId": null,
-      "state": "Preview",
-      "stateTitle": "Preview",
-      "status": "Match starts at Nov 10, 23:30 GMT",
+      "battingTeamId": 52,
+      "state": "In Progress",
+      "stateTitle": "In Progress",
+      "status": "Day 1: 1st Session",
       "startTime": 1794353400000,
       "endTime": 1794637800000,
       "venue": {
@@ -309,7 +316,14 @@
         "logo": "data/logos/172180.jpg"
       },
       "scores": {
-        "team1": [],
+        "team1": [
+          {
+            "id": 1,
+            "runs": 66,
+            "wickets": 2,
+            "overs": 14.6
+          }
+        ],
         "team2": []
       },
       "squads": {
@@ -525,12 +539,12 @@
       "format": "TEST",
       "matchType": "Domestic",
       "dayNight": false,
-      "battingTeamId": null,
-      "state": "Preview",
-      "stateTitle": "Preview",
-      "status": "Match starts at Nov 11, 00:30 GMT",
-      "startTime": 1794357000000,
-      "endTime": 1794641400000,
+      "battingTeamId": 164,
+      "state": "In Progress",
+      "stateTitle": "In Progress",
+      "status": "Day 1: 1st Session",
+      "startTime": 1794355200000,
+      "endTime": 1794639600000,
       "venue": {
         "ground": "The Gabba",
         "city": "Brisbane"
@@ -550,7 +564,14 @@
         "logo": "data/logos/172235.jpg"
       },
       "scores": {
-        "team1": [],
+        "team1": [
+          {
+            "id": 1,
+            "runs": 26,
+            "wickets": null,
+            "overs": 9.6
+          }
+        ],
         "team2": []
       },
       "squads": {
@@ -2472,6 +2493,120 @@
       }
     },
     {
+      "id": 170503,
+      "series": "The Ford Trophy 2026-27",
+      "seriesId": 13020,
+      "matchDesc": "13th Match",
+      "format": "ODI",
+      "matchType": "Domestic",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Upcoming",
+      "stateTitle": "Upcoming Match",
+      "status": "Match starts at Nov 11, 21:30 GMT",
+      "startTime": 1794432600000,
+      "endTime": 1794461400000,
+      "venue": {
+        "ground": "Eden Park Outer Oval",
+        "city": "Auckland"
+      },
+      "team1": {
+        "id": 186,
+        "name": "Auckland",
+        "short": "AKL",
+        "imageId": 172246,
+        "logo": "data/logos/172246.jpg"
+      },
+      "team2": {
+        "id": 105,
+        "name": "Otago",
+        "short": "OTG",
+        "imageId": 172197,
+        "logo": "data/logos/172197.jpg"
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": null
+    },
+    {
+      "id": 170511,
+      "series": "The Ford Trophy 2026-27",
+      "seriesId": 13020,
+      "matchDesc": "14th Match",
+      "format": "ODI",
+      "matchType": "Domestic",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Upcoming",
+      "stateTitle": "Upcoming Match",
+      "status": "Match starts at Nov 11, 21:30 GMT",
+      "startTime": 1794432600000,
+      "endTime": 1794461400000,
+      "venue": {
+        "ground": "McLean Park",
+        "city": "Napier"
+      },
+      "team1": {
+        "id": 156,
+        "name": "Central Stags",
+        "short": "CEN",
+        "imageId": 172223,
+        "logo": "data/logos/172223.jpg"
+      },
+      "team2": {
+        "id": 314,
+        "name": "Wellington",
+        "short": "WEL",
+        "imageId": 172364,
+        "logo": "data/logos/172364.jpg"
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": null
+    },
+    {
+      "id": 170517,
+      "series": "The Ford Trophy 2026-27",
+      "seriesId": 13020,
+      "matchDesc": "15th Match",
+      "format": "ODI",
+      "matchType": "Domestic",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Upcoming",
+      "stateTitle": "Upcoming Match",
+      "status": "Match starts at Nov 11, 21:30 GMT",
+      "startTime": 1794432600000,
+      "endTime": 1794461400000,
+      "venue": {
+        "ground": "Hagley Oval",
+        "city": "Christchurch"
+      },
+      "team1": {
+        "id": 312,
+        "name": "Canterbury",
+        "short": "CNTBRY",
+        "imageId": 172362,
+        "logo": "data/logos/172362.jpg"
+      },
+      "team2": {
+        "id": 294,
+        "name": "Northern Districts",
+        "short": "ND",
+        "imageId": 172343,
+        "logo": "data/logos/172343.jpg"
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": null
+    },
+    {
       "id": 176155,
       "series": "Abu Dhabi T10 League 2026",
       "seriesId": 13307,
@@ -2481,7 +2616,7 @@
       "dayNight": false,
       "battingTeamId": 3631,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "EE Won",
       "status": "Emirates Eagles won by 25 runs",
       "startTime": 1794326400000,
       "endTime": 1794339000000,
@@ -2766,7 +2901,7 @@
       "dayNight": false,
       "battingTeamId": 917,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "WPR Won",
       "status": "Western Province won by 5 wkts",
       "startTime": 1794326400000,
       "endTime": 1794339000000,
@@ -3633,7 +3768,7 @@
       "dayNight": false,
       "battingTeamId": 503,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "NAMW Won",
       "status": "Namibia Women won by 4 runs",
       "startTime": 1794308400000,
       "endTime": 1794321000000,
