@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T22:37:27.222Z",
+  "generatedAt": "2026-11-12T12:25:19.042Z",
   "data": {
     "men": {
       "batting": {
@@ -2010,6 +2010,16 @@
           },
           {
             "rank": 6,
+            "id": 258,
+            "name": "Sri Lanka Women",
+            "rating": 238,
+            "trend": "Flat",
+            "matches": 46,
+            "points": 10955,
+            "logo": "data/logos/776267.png"
+          },
+          {
+            "rank": 7,
             "id": 257,
             "name": "West Indies Women",
             "rating": 238,
@@ -2017,16 +2027,6 @@
             "matches": 36,
             "points": 8572,
             "logo": "data/logos/776194.png"
-          },
-          {
-            "rank": 7,
-            "id": 258,
-            "name": "Sri Lanka Women",
-            "rating": 238,
-            "trend": "Flat",
-            "matches": 45,
-            "points": 10702,
-            "logo": "data/logos/776267.png"
           },
           {
             "rank": 8,
@@ -2044,8 +2044,8 @@
             "name": "Ireland Women",
             "rating": 203,
             "trend": "Flat",
-            "matches": 42,
-            "points": 8520,
+            "matches": 43,
+            "points": 8708,
             "logo": "data/logos/839468.png"
           },
           {
