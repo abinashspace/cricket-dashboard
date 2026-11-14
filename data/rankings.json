@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T17:03:01.062Z",
+  "generatedAt": "2026-11-14T02:57:48.734Z",
   "data": {
     "men": {
       "batting": {
@@ -1858,103 +1858,103 @@
         "odi": [
           {
             "rank": 1,
-            "id": 2,
-            "name": "India",
-            "rating": 115,
+            "id": 100,
+            "name": "Australia Women",
+            "rating": 164,
             "trend": "Flat",
-            "matches": 39,
-            "points": 4495,
-            "logo": "data/logos/776162.png"
+            "matches": 31,
+            "points": 5085,
+            "logo": "data/logos/776205.png"
           },
           {
             "rank": 2,
-            "id": 13,
-            "name": "New Zealand",
-            "rating": 108,
+            "id": 99,
+            "name": "England Women",
+            "rating": 126,
             "trend": "Flat",
-            "matches": 38,
-            "points": 4107,
-            "logo": "data/logos/776333.png"
+            "matches": 29,
+            "points": 3653,
+            "logo": "data/logos/776241.png"
           },
           {
             "rank": 3,
-            "id": 11,
-            "name": "South Africa",
-            "rating": 104,
+            "id": 97,
+            "name": "India Women",
+            "rating": 125,
             "trend": "Flat",
-            "matches": 34,
-            "points": 3547,
-            "logo": "data/logos/776287.png"
+            "matches": 33,
+            "points": 4114,
+            "logo": "data/logos/776182.png"
           },
           {
             "rank": 4,
-            "id": 3,
-            "name": "Pakistan",
-            "rating": 104,
+            "id": 260,
+            "name": "South Africa Women",
+            "rating": 100,
             "trend": "Flat",
-            "matches": 37,
-            "points": 3838,
-            "logo": "data/logos/776308.png"
+            "matches": 36,
+            "points": 3614,
+            "logo": "data/logos/776293.png"
           },
           {
             "rank": 5,
-            "id": 4,
-            "name": "Australia",
-            "rating": 103,
+            "id": 98,
+            "name": "New Zealand Women",
+            "rating": 96,
             "trend": "Flat",
-            "matches": 36,
-            "points": 3711,
-            "logo": "data/logos/776202.png"
+            "matches": 24,
+            "points": 2312,
+            "logo": "data/logos/776338.png"
           },
           {
             "rank": 6,
-            "id": 96,
-            "name": "Afghanistan",
-            "rating": 94,
+            "id": 258,
+            "name": "Sri Lanka Women",
+            "rating": 89,
             "trend": "Flat",
-            "matches": 31,
-            "points": 2926,
-            "logo": "data/logos/776177.png"
+            "matches": 24,
+            "points": 2133,
+            "logo": "data/logos/776267.png"
           },
           {
             "rank": 7,
-            "id": 5,
-            "name": "Sri Lanka",
-            "rating": 94,
+            "id": 259,
+            "name": "Pakistan Women",
+            "rating": 73,
             "trend": "Flat",
-            "matches": 44,
-            "points": 4144,
-            "logo": "data/logos/776254.png"
+            "matches": 26,
+            "points": 1902,
+            "logo": "data/logos/776311.png"
           },
           {
             "rank": 8,
-            "id": 9,
-            "name": "England",
-            "rating": 92,
+            "id": 257,
+            "name": "West Indies Women",
+            "rating": 72,
             "trend": "Flat",
-            "matches": 39,
-            "points": 3582,
-            "logo": "data/logos/776237.png"
+            "matches": 29,
+            "points": 2085,
+            "logo": "data/logos/776194.png"
           },
           {
             "rank": 9,
-            "id": 6,
-            "name": "Bangladesh",
-            "rating": 81,
+            "id": 329,
+            "name": "Bangladesh Women",
+            "rating": 72,
             "trend": "Flat",
-            "matches": 41,
-            "points": 3304,
-            "logo": "data/logos/776210.png"
+            "matches": 24,
+            "points": 1725,
+            "logo": "data/logos/776213.png"
           },
           {
             "rank": 10,
-            "id": 10,
-            "name": "West Indies",
-            "rating": 79,
+            "id": 189,
+            "name": "Ireland Women",
+            "rating": 45,
             "trend": "Flat",
-            "matches": 37,
-            "points": 2924,
-            "logo": "data/logos/776191.png"
+            "matches": 25,
+            "points": 1120,
+            "logo": "data/logos/839468.png"
           }
         ],
         "t20": [
@@ -1962,101 +1962,101 @@
             "rank": 1,
             "id": 100,
             "name": "Australia Women",
-            "rating": 292,
+            "rating": 164,
             "trend": "Flat",
-            "matches": 30,
-            "points": 8753,
+            "matches": 31,
+            "points": 5085,
             "logo": "data/logos/776205.png"
           },
           {
             "rank": 2,
             "id": 99,
             "name": "England Women",
-            "rating": 276,
+            "rating": 126,
             "trend": "Flat",
-            "matches": 38,
-            "points": 10504,
+            "matches": 29,
+            "points": 3653,
             "logo": "data/logos/776241.png"
           },
           {
             "rank": 3,
             "id": 97,
             "name": "India Women",
-            "rating": 265,
+            "rating": 125,
             "trend": "Flat",
-            "matches": 52,
-            "points": 13779,
+            "matches": 33,
+            "points": 4114,
             "logo": "data/logos/776182.png"
           },
           {
             "rank": 4,
-            "id": 98,
-            "name": "New Zealand Women",
-            "rating": 248,
+            "id": 260,
+            "name": "South Africa Women",
+            "rating": 100,
             "trend": "Flat",
-            "matches": 34,
-            "points": 8444,
-            "logo": "data/logos/776338.png"
+            "matches": 36,
+            "points": 3614,
+            "logo": "data/logos/776293.png"
           },
           {
             "rank": 5,
-            "id": 260,
-            "name": "South Africa Women",
-            "rating": 246,
+            "id": 98,
+            "name": "New Zealand Women",
+            "rating": 96,
             "trend": "Flat",
-            "matches": 43,
-            "points": 10588,
-            "logo": "data/logos/776293.png"
+            "matches": 24,
+            "points": 2312,
+            "logo": "data/logos/776338.png"
           },
           {
             "rank": 6,
             "id": 258,
             "name": "Sri Lanka Women",
-            "rating": 238,
+            "rating": 89,
             "trend": "Flat",
-            "matches": 47,
-            "points": 11203,
+            "matches": 24,
+            "points": 2133,
             "logo": "data/logos/776267.png"
           },
           {
             "rank": 7,
-            "id": 257,
-            "name": "West Indies Women",
-            "rating": 238,
-            "trend": "Flat",
-            "matches": 36,
-            "points": 8572,
-            "logo": "data/logos/776194.png"
-          },
-          {
-            "rank": 8,
             "id": 259,
             "name": "Pakistan Women",
-            "rating": 213,
+            "rating": 73,
             "trend": "Flat",
-            "matches": 43,
-            "points": 9142,
+            "matches": 26,
+            "points": 1902,
             "logo": "data/logos/776311.png"
           },
           {
-            "rank": 9,
-            "id": 189,
-            "name": "Ireland Women",
-            "rating": 203,
+            "rank": 8,
+            "id": 257,
+            "name": "West Indies Women",
+            "rating": 72,
             "trend": "Flat",
-            "matches": 44,
-            "points": 8921,
-            "logo": "data/logos/839468.png"
+            "matches": 29,
+            "points": 2085,
+            "logo": "data/logos/776194.png"
+          },
+          {
+            "rank": 9,
+            "id": 329,
+            "name": "Bangladesh Women",
+            "rating": 72,
+            "trend": "Flat",
+            "matches": 24,
+            "points": 1725,
+            "logo": "data/logos/776213.png"
           },
           {
             "rank": 10,
-            "id": 329,
-            "name": "Bangladesh Women",
-            "rating": 194,
+            "id": 189,
+            "name": "Ireland Women",
+            "rating": 45,
             "trend": "Flat",
-            "matches": 45,
-            "points": 8737,
-            "logo": "data/logos/776213.png"
+            "matches": 25,
+            "points": 1120,
+            "logo": "data/logos/839468.png"
           }
         ]
       }
