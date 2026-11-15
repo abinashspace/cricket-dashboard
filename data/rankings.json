@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T08:18:58.745Z",
+  "generatedAt": "2026-11-15T15:48:17.623Z",
   "data": {
     "men": {
       "batting": {
@@ -932,20 +932,20 @@
             "rank": 1,
             "id": 2,
             "name": "India",
-            "rating": 115,
+            "rating": 116,
             "trend": "Flat",
-            "matches": 39,
-            "points": 4495,
+            "matches": 40,
+            "points": 4653,
             "logo": "data/logos/776162.png"
           },
           {
             "rank": 2,
             "id": 13,
             "name": "New Zealand",
-            "rating": 108,
+            "rating": 107,
             "trend": "Flat",
-            "matches": 38,
-            "points": 4107,
+            "matches": 39,
+            "points": 4172,
             "logo": "data/logos/776333.png"
           },
           {
@@ -972,10 +972,10 @@
             "rank": 5,
             "id": 4,
             "name": "Australia",
-            "rating": 103,
+            "rating": 101,
             "trend": "Flat",
-            "matches": 36,
-            "points": 3711,
+            "matches": 37,
+            "points": 3753,
             "logo": "data/logos/776202.png"
           },
           {
@@ -1002,10 +1002,10 @@
             "rank": 8,
             "id": 9,
             "name": "England",
-            "rating": 92,
+            "rating": 93,
             "trend": "Flat",
-            "matches": 39,
-            "points": 3582,
+            "matches": 40,
+            "points": 3735,
             "logo": "data/logos/776237.png"
           },
           {
@@ -2012,10 +2012,10 @@
             "rank": 6,
             "id": 258,
             "name": "Sri Lanka Women",
-            "rating": 238,
+            "rating": 239,
             "trend": "Flat",
-            "matches": 47,
-            "points": 11203,
+            "matches": 48,
+            "points": 11451,
             "logo": "data/logos/776267.png"
           },
           {
