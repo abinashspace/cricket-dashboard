@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T21:14:46.872Z",
+  "generatedAt": "2026-11-15T01:13:46.086Z",
   "matches": [
     {
       "id": 175821,
@@ -495,10 +495,10 @@
       "format": "T20",
       "matchType": "League",
       "dayNight": false,
-      "battingTeamId": null,
-      "state": "Toss",
-      "stateTitle": "Toss",
-      "status": "Lions opt to bowl",
+      "battingTeamId": 157,
+      "state": "In Progress",
+      "stateTitle": "In Progress",
+      "status": "Lions need 57 runs in 12 balls",
       "startTime": 1794673800000,
       "endTime": 1794686400000,
       "venue": {
@@ -520,10 +520,260 @@
         "logo": "data/logos/172224.jpg"
       },
       "scores": {
-        "team1": [],
-        "team2": []
+        "team1": [
+          {
+            "id": 1,
+            "runs": 219,
+            "wickets": 4,
+            "overs": 19.6
+          }
+        ],
+        "team2": [
+          {
+            "id": 2,
+            "runs": 163,
+            "wickets": 7,
+            "overs": 17.6
+          }
+        ]
       },
       "squads": null
+    },
+    {
+      "id": 162861,
+      "series": "WBBL 2026",
+      "seriesId": 12677,
+      "matchDesc": "23rd Match",
+      "format": "T20",
+      "matchType": "Women",
+      "dayNight": false,
+      "battingTeamId": 361,
+      "state": "In Progress",
+      "stateTitle": "In Progress",
+      "status": "Melbourne Renegades Women opt to bowl",
+      "startTime": 1794700800000,
+      "endTime": 1794713400000,
+      "venue": {
+        "ground": "North Sydney Oval",
+        "city": "Sydney"
+      },
+      "team1": {
+        "id": 361,
+        "name": "Sydney Sixers Women",
+        "short": "SYSW",
+        "imageId": 824990,
+        "logo": "data/logos/824990.png"
+      },
+      "team2": {
+        "id": 358,
+        "name": "Melbourne Renegades Women",
+        "short": "MLRW",
+        "imageId": 824986,
+        "logo": "data/logos/824986.png"
+      },
+      "scores": {
+        "team1": [
+          {
+            "id": 1,
+            "runs": 119,
+            "wickets": 3,
+            "overs": 16.2
+          }
+        ],
+        "team2": []
+      },
+      "squads": {
+        "team1": [
+          {
+            "id": 11989,
+            "name": "Ashleigh Gardner",
+            "tag": "C",
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 19417,
+            "name": "Alice Capsey",
+            "tag": "WK",
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 9115,
+            "name": "Ellyse Perry",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 13024,
+            "name": "Sophia Dunkley",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 11855,
+            "name": "Melie Kerr",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 12029,
+            "name": "Erin Burns",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1432305,
+            "name": "Eva Ragg",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 11100,
+            "name": "Lauren Cheatle",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 9104,
+            "name": "Sarah Coyte",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1432313,
+            "name": "Caoimhe Bray",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1432635,
+            "name": "Frankie Nicklin",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1432329,
+            "name": "Grace Lyons",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 23856,
+            "name": "Elsa Hunter",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 15645,
+            "name": "Courtney Sippel",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 15644,
+            "name": "Maddy Darke",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 12051,
+            "name": "Maitlan Brown",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          }
+        ],
+        "team2": [
+          {
+            "id": 12011,
+            "name": "Sophie Molineux",
+            "tag": "C",
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 13285,
+            "name": "Nicole Faltum",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 18484,
+            "name": "Olivia Porter",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 11256,
+            "name": "Hayley Matthews",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 14361,
+            "name": "Courtney Webb",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 12015,
+            "name": "Georgia Wareham",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 15640,
+            "name": "Tess Flintoff",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 9192,
+            "name": "Chloe Tryon",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 9089,
+            "name": "Deandra Dottin",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 38741,
+            "name": "Milly Illingworth",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 13293,
+            "name": "Tayla Vlaeminck",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 32905,
+            "name": "Sophie Reid",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 51588,
+            "name": "Sara Kennedy",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1432321,
+            "name": "Annie Wikman",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1480831,
+            "name": "Lucy Wilson",
+            "tag": null,
+            "role": "Batting Allrounder"
+          }
+        ]
+      }
     },
     {
       "id": 176529,
@@ -804,235 +1054,6 @@
             "name": "Sam Cook",
             "tag": null,
             "role": "Bowler"
-          }
-        ]
-      }
-    },
-    {
-      "id": 162861,
-      "series": "WBBL 2026",
-      "seriesId": 12677,
-      "matchDesc": "23rd Match",
-      "format": "T20",
-      "matchType": "Women",
-      "dayNight": false,
-      "battingTeamId": null,
-      "state": "Preview",
-      "stateTitle": "Preview",
-      "status": "Match starts at Nov 15, 00:00 GMT",
-      "startTime": 1794700800000,
-      "endTime": 1794713400000,
-      "venue": {
-        "ground": "North Sydney Oval",
-        "city": "Sydney"
-      },
-      "team1": {
-        "id": 361,
-        "name": "Sydney Sixers Women",
-        "short": "SYSW",
-        "imageId": 824990,
-        "logo": "data/logos/824990.png"
-      },
-      "team2": {
-        "id": 358,
-        "name": "Melbourne Renegades Women",
-        "short": "MLRW",
-        "imageId": 824986,
-        "logo": "data/logos/824986.png"
-      },
-      "scores": {
-        "team1": [],
-        "team2": []
-      },
-      "squads": {
-        "team1": [
-          {
-            "id": 11989,
-            "name": "Ashleigh Gardner",
-            "tag": "C",
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 19417,
-            "name": "Alice Capsey",
-            "tag": "WK",
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 9115,
-            "name": "Ellyse Perry",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 13024,
-            "name": "Sophia Dunkley",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 11855,
-            "name": "Melie Kerr",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 12029,
-            "name": "Erin Burns",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 1432305,
-            "name": "Eva Ragg",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 11100,
-            "name": "Lauren Cheatle",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 9104,
-            "name": "Sarah Coyte",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 1432313,
-            "name": "Caoimhe Bray",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 1432635,
-            "name": "Frankie Nicklin",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 1432329,
-            "name": "Grace Lyons",
-            "tag": null,
-            "role": "WK-Batter"
-          },
-          {
-            "id": 23856,
-            "name": "Elsa Hunter",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 15645,
-            "name": "Courtney Sippel",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 15644,
-            "name": "Maddy Darke",
-            "tag": null,
-            "role": "WK-Batter"
-          },
-          {
-            "id": 12051,
-            "name": "Maitlan Brown",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          }
-        ],
-        "team2": [
-          {
-            "id": 12011,
-            "name": "Sophie Molineux",
-            "tag": "C",
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 13285,
-            "name": "Nicole Faltum",
-            "tag": "WK",
-            "role": "WK-Batter"
-          },
-          {
-            "id": 18484,
-            "name": "Olivia Porter",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 11256,
-            "name": "Hayley Matthews",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 14361,
-            "name": "Courtney Webb",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 12015,
-            "name": "Georgia Wareham",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 15640,
-            "name": "Tess Flintoff",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 9192,
-            "name": "Chloe Tryon",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 9089,
-            "name": "Deandra Dottin",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 38741,
-            "name": "Milly Illingworth",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 13293,
-            "name": "Tayla Vlaeminck",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 32905,
-            "name": "Sophie Reid",
-            "tag": null,
-            "role": "WK-Batter"
-          },
-          {
-            "id": 51588,
-            "name": "Sara Kennedy",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 1432321,
-            "name": "Annie Wikman",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 1480831,
-            "name": "Lucy Wilson",
-            "tag": null,
-            "role": "Batting Allrounder"
           }
         ]
       }
@@ -3950,6 +3971,82 @@
         "short": "CRI",
         "imageId": 172600,
         "logo": "data/logos/172600.jpg"
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": null
+    },
+    {
+      "id": 167133,
+      "series": "Australia Domestic One-Day Cup 2026-27",
+      "seriesId": 12723,
+      "matchDesc": "13th Match",
+      "format": "ODI",
+      "matchType": "Domestic",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Upcoming",
+      "stateTitle": "Upcoming Match",
+      "status": "Match starts at Nov 15, 23:00 GMT",
+      "startTime": 1794783600000,
+      "endTime": 1794812400000,
+      "venue": {
+        "ground": "Cricket Central",
+        "city": "Sydney"
+      },
+      "team1": {
+        "id": 104,
+        "name": "New South Wales",
+        "short": "NSW",
+        "imageId": 172196,
+        "logo": "data/logos/172196.jpg"
+      },
+      "team2": {
+        "id": 158,
+        "name": "South Australia",
+        "short": "SAUS",
+        "imageId": 172225,
+        "logo": "data/logos/172225.jpg"
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": null
+    },
+    {
+      "id": 167143,
+      "series": "Australia Domestic One-Day Cup 2026-27",
+      "seriesId": 12723,
+      "matchDesc": "14th Match",
+      "format": "ODI",
+      "matchType": "Domestic",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Upcoming",
+      "stateTitle": "Upcoming Match",
+      "status": "Match starts at Nov 16, 00:00 GMT",
+      "startTime": 1794787200000,
+      "endTime": 1794816000000,
+      "venue": {
+        "ground": "The Gabba",
+        "city": "Brisbane"
+      },
+      "team1": {
+        "id": 164,
+        "name": "Queensland",
+        "short": "QL",
+        "imageId": 172233,
+        "logo": "data/logos/172233.jpg"
+      },
+      "team2": {
+        "id": 166,
+        "name": "Tasmania",
+        "short": "TAS",
+        "imageId": 172235,
+        "logo": "data/logos/172235.jpg"
       },
       "scores": {
         "team1": [],
@@ -6908,7 +7005,7 @@
       "dayNight": false,
       "battingTeamId": 92,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "TN Won",
       "status": "Tamil Nadu won by 6 runs",
       "startTime": 1794643200000,
       "endTime": 1794655800000,
@@ -7139,7 +7236,7 @@
       "dayNight": false,
       "battingTeamId": 251,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "HP Won",
       "status": "Himachal Pradesh won by 16 runs (VJD Method)",
       "startTime": 1794643200000,
       "endTime": 1794655800000,
@@ -7916,7 +8013,7 @@
       "dayNight": false,
       "battingTeamId": 250,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "SER Won",
       "status": "Services won by 6 wkts",
       "startTime": 1794639600000,
       "endTime": 1794652200000,
@@ -8597,7 +8694,7 @@
       "dayNight": false,
       "battingTeamId": 94,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "SAUR Won",
       "status": "Saurashtra won by 5 wkts",
       "startTime": 1794634200000,
       "endTime": 1794646800000,
@@ -10044,7 +10141,7 @@
       "dayNight": false,
       "battingTeamId": 462,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "MGLY Won",
       "status": "Meghalaya won by 18 runs",
       "startTime": 1794623400000,
       "endTime": 1794636000000,
@@ -10275,7 +10372,7 @@
       "dayNight": false,
       "battingTeamId": 461,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "MNP Won",
       "status": "Manipur won by 61 runs",
       "startTime": 1794623400000,
       "endTime": 1794636000000,
@@ -10327,7 +10424,7 @@
       "dayNight": false,
       "battingTeamId": 164,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "QL Won",
       "status": "Queensland won by 10 wkts",
       "startTime": 1794355200000,
       "endTime": 1794639600000,
