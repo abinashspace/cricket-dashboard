@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T01:13:46.089Z",
+  "generatedAt": "2026-11-15T08:18:58.745Z",
   "data": {
     "men": {
       "batting": {
@@ -2032,10 +2032,10 @@
             "rank": 8,
             "id": 259,
             "name": "Pakistan Women",
-            "rating": 213,
+            "rating": 211,
             "trend": "Flat",
-            "matches": 43,
-            "points": 9142,
+            "matches": 44,
+            "points": 9265,
             "logo": "data/logos/776311.png"
           },
           {
