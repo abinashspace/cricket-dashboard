@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T00:53:43.887Z",
+  "generatedAt": "2026-11-16T07:47:22.342Z",
   "data": {
     "men": {
       "batting": {
@@ -930,103 +930,103 @@
         "odi": [
           {
             "rank": 1,
-            "id": 2,
-            "name": "India",
-            "rating": 116,
-            "trend": "Flat",
-            "matches": 40,
-            "points": 4653,
-            "logo": "data/logos/776162.png"
-          },
-          {
-            "rank": 2,
-            "id": 13,
-            "name": "New Zealand",
-            "rating": 107,
-            "trend": "Flat",
-            "matches": 39,
-            "points": 4172,
-            "logo": "data/logos/776333.png"
-          },
-          {
-            "rank": 3,
             "id": 11,
             "name": "South Africa",
-            "rating": 104,
+            "rating": 124,
             "trend": "Flat",
-            "matches": 34,
-            "points": 3547,
+            "matches": 23,
+            "points": 2860,
             "logo": "data/logos/776287.png"
           },
           {
-            "rank": 4,
-            "id": 3,
-            "name": "Pakistan",
-            "rating": 104,
-            "trend": "Flat",
-            "matches": 37,
-            "points": 3838,
-            "logo": "data/logos/776308.png"
-          },
-          {
-            "rank": 5,
+            "rank": 2,
             "id": 4,
             "name": "Australia",
-            "rating": 101,
+            "rating": 122,
             "trend": "Flat",
-            "matches": 37,
-            "points": 3753,
+            "matches": 31,
+            "points": 3787,
             "logo": "data/logos/776202.png"
           },
           {
-            "rank": 6,
-            "id": 96,
-            "name": "Afghanistan",
-            "rating": 94,
+            "rank": 3,
+            "id": 13,
+            "name": "New Zealand",
+            "rating": 106,
             "trend": "Flat",
-            "matches": 31,
-            "points": 2926,
-            "logo": "data/logos/776177.png"
+            "matches": 22,
+            "points": 2336,
+            "logo": "data/logos/776333.png"
+          },
+          {
+            "rank": 4,
+            "id": 2,
+            "name": "India",
+            "rating": 105,
+            "trend": "Flat",
+            "matches": 29,
+            "points": 3042,
+            "logo": "data/logos/776162.png"
+          },
+          {
+            "rank": 5,
+            "id": 9,
+            "name": "England",
+            "rating": 102,
+            "trend": "Flat",
+            "matches": 36,
+            "points": 3658,
+            "logo": "data/logos/776237.png"
+          },
+          {
+            "rank": 6,
+            "id": 10,
+            "name": "West Indies",
+            "rating": 78,
+            "trend": "Flat",
+            "matches": 30,
+            "points": 2339,
+            "logo": "data/logos/776191.png"
           },
           {
             "rank": 7,
             "id": 5,
             "name": "Sri Lanka",
-            "rating": 94,
+            "rating": 75,
             "trend": "Flat",
-            "matches": 44,
-            "points": 4144,
+            "matches": 19,
+            "points": 1434,
             "logo": "data/logos/776254.png"
           },
           {
             "rank": 8,
-            "id": 9,
-            "name": "England",
-            "rating": 93,
-            "trend": "Flat",
-            "matches": 40,
-            "points": 3735,
-            "logo": "data/logos/776237.png"
-          },
-          {
-            "rank": 9,
             "id": 6,
             "name": "Bangladesh",
-            "rating": 81,
+            "rating": 73,
             "trend": "Flat",
-            "matches": 41,
-            "points": 3304,
+            "matches": 28,
+            "points": 2038,
             "logo": "data/logos/776210.png"
           },
           {
-            "rank": 10,
-            "id": 10,
-            "name": "West Indies",
-            "rating": 79,
+            "rank": 9,
+            "id": 3,
+            "name": "Pakistan",
+            "rating": 71,
             "trend": "Flat",
-            "matches": 37,
-            "points": 2924,
-            "logo": "data/logos/776191.png"
+            "matches": 23,
+            "points": 1623,
+            "logo": "data/logos/776308.png"
+          },
+          {
+            "rank": 10,
+            "id": 12,
+            "name": "Zimbabwe",
+            "rating": 17,
+            "trend": "Flat",
+            "matches": 13,
+            "points": 217,
+            "logo": "data/logos/174284.jpg"
           }
         ],
         "test": [
