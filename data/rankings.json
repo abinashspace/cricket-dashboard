@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T10:34:53.128Z",
+  "generatedAt": "2026-11-17T19:42:24.493Z",
   "data": {
     "men": {
       "batting": {
@@ -1124,10 +1124,10 @@
             "rank": 10,
             "id": 12,
             "name": "Zimbabwe",
-            "rating": 17,
+            "rating": 21,
             "trend": "Flat",
-            "matches": 13,
-            "points": 217,
+            "matches": 16,
+            "points": 338,
             "logo": "data/logos/776198.png"
           }
         ],
