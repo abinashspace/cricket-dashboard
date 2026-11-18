@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T02:16:34.283Z",
+  "generatedAt": "2026-11-18T10:34:54.939Z",
   "data": {
     "men": {
       "batting": {
@@ -168,23 +168,23 @@
           },
           {
             "rank": 7,
-            "id": 8571,
-            "name": "Rahmat Shah",
-            "rating": 735,
-            "trend": "Flat",
-            "country": "Afghanistan",
-            "points": 735,
-            "photo": "data/photos/616543.jpg"
-          },
-          {
-            "rank": 8,
             "id": 10744,
             "name": "Rishabh Pant",
             "rating": 713,
-            "trend": "Flat",
+            "trend": "Up",
             "country": "India",
             "points": 713,
             "photo": "data/photos/616524.jpg"
+          },
+          {
+            "rank": 8,
+            "id": 8571,
+            "name": "Rahmat Shah",
+            "rating": 712,
+            "trend": "Down",
+            "country": "Afghanistan",
+            "points": 712,
+            "photo": "data/photos/616543.jpg"
           },
           {
             "rank": 9,
@@ -344,16 +344,6 @@
           },
           {
             "rank": 4,
-            "id": 10100,
-            "name": "Mitchell Santner",
-            "rating": 621,
-            "trend": "Flat",
-            "country": "New Zealand",
-            "points": 621,
-            "photo": "data/photos/845505.jpg"
-          },
-          {
-            "rank": 4,
             "id": 12160,
             "name": "Shaheen Afridi",
             "rating": 621,
@@ -363,24 +353,34 @@
             "photo": "data/photos/846065.jpg"
           },
           {
-            "rank": 6,
+            "rank": 5,
+            "id": 10100,
+            "name": "Mitchell Santner",
+            "rating": 610,
+            "trend": "Down",
+            "country": "New Zealand",
+            "points": 610,
+            "photo": "data/photos/845505.jpg"
+          },
+          {
+            "rank": 5,
             "id": 13214,
             "name": "Azmatullah Omarzai",
             "rating": 610,
-            "trend": "Flat",
+            "trend": "Up",
             "country": "Afghanistan",
             "points": 610,
             "photo": "data/photos/845424.jpg"
           },
           {
             "rank": 7,
-            "id": 8292,
-            "name": "Kuldeep Yadav",
-            "rating": 602,
-            "trend": "Flat",
-            "country": "India",
-            "points": 602,
-            "photo": "data/photos/846039.jpg"
+            "id": 11540,
+            "name": "Jofra Archer",
+            "rating": 601,
+            "trend": "Up",
+            "country": "England",
+            "points": 601,
+            "photo": "data/photos/848536.jpg"
           },
           {
             "rank": 8,
@@ -694,20 +694,20 @@
             "rank": 8,
             "id": 9551,
             "name": "Michael Bracewell",
-            "rating": 236,
+            "rating": 233,
             "trend": "Flat",
             "country": "New Zealand",
-            "points": 236,
+            "points": 233,
             "photo": "data/photos/845514.jpg"
           },
           {
             "rank": 9,
             "id": 8808,
             "name": "Axar Patel",
-            "rating": 206,
+            "rating": 232,
             "trend": "Flat",
             "country": "India",
-            "points": 206,
+            "points": 232,
             "photo": "data/photos/846033.jpg"
           },
           {
@@ -2042,10 +2042,10 @@
             "rank": 9,
             "id": 189,
             "name": "Ireland Women",
-            "rating": 203,
+            "rating": 201,
             "trend": "Flat",
-            "matches": 45,
-            "points": 9134,
+            "matches": 46,
+            "points": 9253,
             "logo": "data/logos/839468.png"
           },
           {
