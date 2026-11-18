@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T19:42:24.493Z",
+  "generatedAt": "2026-11-18T02:16:34.283Z",
   "data": {
     "men": {
       "batting": {
@@ -171,7 +171,7 @@
             "id": 8571,
             "name": "Rahmat Shah",
             "rating": 735,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "Afghanistan",
             "points": 735,
             "photo": "data/photos/616543.jpg"
@@ -181,7 +181,7 @@
             "id": 10744,
             "name": "Rishabh Pant",
             "rating": 713,
-            "trend": "Down",
+            "trend": "Flat",
             "country": "India",
             "points": 713,
             "photo": "data/photos/616524.jpg"
@@ -191,7 +191,7 @@
             "id": 10713,
             "name": "Daryl Mitchell",
             "rating": 710,
-            "trend": "Down",
+            "trend": "Flat",
             "country": "New Zealand",
             "points": 710,
             "photo": "data/photos/845511.jpg"
@@ -201,7 +201,7 @@
             "id": 11808,
             "name": "Shubman Gill",
             "rating": 709,
-            "trend": "Down",
+            "trend": "Flat",
             "country": "India",
             "points": 709,
             "photo": "data/photos/616515.jpg"
@@ -337,7 +337,7 @@
             "id": 12555,
             "name": "Abrar Ahmed",
             "rating": 642,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "Pakistan",
             "points": 642,
             "photo": "data/photos/846068.jpg"
@@ -347,7 +347,7 @@
             "id": 10100,
             "name": "Mitchell Santner",
             "rating": 621,
-            "trend": "Down",
+            "trend": "Flat",
             "country": "New Zealand",
             "points": 621,
             "photo": "data/photos/845505.jpg"
@@ -357,7 +357,7 @@
             "id": 12160,
             "name": "Shaheen Afridi",
             "rating": 621,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "Pakistan",
             "points": 621,
             "photo": "data/photos/846065.jpg"
@@ -367,7 +367,7 @@
             "id": 13214,
             "name": "Azmatullah Omarzai",
             "rating": 610,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "Afghanistan",
             "points": 610,
             "photo": "data/photos/845424.jpg"
@@ -377,7 +377,7 @@
             "id": 8292,
             "name": "Kuldeep Yadav",
             "rating": 602,
-            "trend": "Down",
+            "trend": "Flat",
             "country": "India",
             "points": 602,
             "photo": "data/photos/846039.jpg"
@@ -665,7 +665,7 @@
             "id": 10738,
             "name": "Rashid Khan",
             "rating": 245,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "Afghanistan",
             "points": 245,
             "photo": "data/photos/845423.jpg"
@@ -685,7 +685,7 @@
             "id": 31911,
             "name": "Brandon McMullen",
             "rating": 238,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "Scotland",
             "points": 238,
             "photo": "data/photos/845528.jpg"
@@ -695,7 +695,7 @@
             "id": 9551,
             "name": "Michael Bracewell",
             "rating": 236,
-            "trend": "Down",
+            "trend": "Flat",
             "country": "New Zealand",
             "points": 236,
             "photo": "data/photos/845514.jpg"
@@ -797,7 +797,7 @@
             "id": 8433,
             "name": "Justin Greaves",
             "rating": 229,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "West Indies",
             "points": 229,
             "photo": "data/photos/583423.jpg"
