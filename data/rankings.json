@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T10:34:54.939Z",
+  "generatedAt": "2026-11-18T19:18:38.493Z",
   "data": {
     "men": {
       "batting": {
@@ -8,101 +8,101 @@
             "rank": 1,
             "id": 11808,
             "name": "Shubman Gill",
-            "rating": 822,
+            "rating": 806,
             "trend": "Flat",
             "country": "India",
-            "points": 822,
+            "points": 806,
             "photo": "data/photos/616515.jpg"
           },
           {
             "rank": 2,
             "id": 10713,
             "name": "Daryl Mitchell",
-            "rating": 794,
+            "rating": 778,
             "trend": "Flat",
             "country": "New Zealand",
-            "points": 794,
+            "points": 778,
             "photo": "data/photos/845511.jpg"
           },
           {
             "rank": 3,
             "id": 1413,
             "name": "Virat Kohli",
-            "rating": 781,
+            "rating": 757,
             "trend": "Flat",
             "country": "India",
-            "points": 781,
+            "points": 757,
             "photo": "data/photos/616517.jpg"
           },
           {
             "rank": 4,
-            "id": 576,
-            "name": "Rohit Sharma",
-            "rating": 754,
-            "trend": "Flat",
-            "country": "India",
-            "points": 754,
-            "photo": "data/photos/616514.jpg"
-          },
-          {
-            "rank": 5,
             "id": 12173,
             "name": "Ibrahim Zadran",
             "rating": 752,
-            "trend": "Flat",
+            "trend": "Up",
             "country": "Afghanistan",
             "points": 752,
             "photo": "data/photos/845418.jpg"
           },
           {
-            "rank": 6,
-            "id": 8502,
-            "name": "Ben Duckett",
-            "rating": 733,
-            "trend": "Flat",
-            "country": "England",
-            "points": 733,
-            "photo": "data/photos/848549.jpg"
+            "rank": 5,
+            "id": 576,
+            "name": "Rohit Sharma",
+            "rating": 732,
+            "trend": "Down",
+            "country": "India",
+            "points": 732,
+            "photo": "data/photos/616514.jpg"
           },
           {
-            "rank": 7,
+            "rank": 6,
             "id": 10384,
             "name": "Shai Hope",
             "rating": 710,
-            "trend": "Flat",
+            "trend": "Up",
             "country": "West Indies",
             "points": 710,
             "photo": "data/photos/845520.jpg"
           },
           {
-            "rank": 8,
-            "id": 12201,
-            "name": "Harry Brook",
-            "rating": 674,
-            "trend": "Flat",
+            "rank": 7,
+            "id": 8502,
+            "name": "Ben Duckett",
+            "rating": 699,
+            "trend": "Down",
             "country": "England",
-            "points": 674,
-            "photo": "data/photos/848570.jpg"
+            "points": 699,
+            "photo": "data/photos/848549.jpg"
           },
           {
-            "rank": 9,
+            "rank": 8,
             "id": 8359,
             "name": "Babar Azam",
             "rating": 661,
-            "trend": "Flat",
+            "trend": "Up",
             "country": "Pakistan",
             "points": 661,
             "photo": "data/photos/846059.jpg"
           },
           {
+            "rank": 9,
+            "id": 8019,
+            "name": "Joe Root",
+            "rating": 652,
+            "trend": "Up",
+            "country": "England",
+            "points": 652,
+            "photo": "data/photos/717792.jpg"
+          },
+          {
             "rank": 10,
-            "id": 8733,
-            "name": "KL Rahul",
-            "rating": 657,
-            "trend": "Flat",
-            "country": "India",
-            "points": 657,
-            "photo": "data/photos/616523.jpg"
+            "id": 9494,
+            "name": "Kusal Mendis",
+            "rating": 649,
+            "trend": "Up",
+            "country": "Sri Lanka",
+            "points": 649,
+            "photo": "data/photos/847148.jpg"
           }
         ],
         "test": [
@@ -972,14 +972,24 @@
             "rank": 5,
             "id": 4,
             "name": "Australia",
-            "rating": 101,
+            "rating": 100,
             "trend": "Flat",
-            "matches": 37,
-            "points": 3753,
+            "matches": 38,
+            "points": 3796,
             "logo": "data/logos/776202.png"
           },
           {
             "rank": 6,
+            "id": 9,
+            "name": "England",
+            "rating": 95,
+            "trend": "Flat",
+            "matches": 41,
+            "points": 3886,
+            "logo": "data/logos/776237.png"
+          },
+          {
+            "rank": 7,
             "id": 96,
             "name": "Afghanistan",
             "rating": 94,
@@ -989,7 +999,7 @@
             "logo": "data/logos/776177.png"
           },
           {
-            "rank": 7,
+            "rank": 8,
             "id": 5,
             "name": "Sri Lanka",
             "rating": 94,
@@ -997,16 +1007,6 @@
             "matches": 44,
             "points": 4144,
             "logo": "data/logos/776254.png"
-          },
-          {
-            "rank": 8,
-            "id": 9,
-            "name": "England",
-            "rating": 93,
-            "trend": "Flat",
-            "matches": 40,
-            "points": 3735,
-            "logo": "data/logos/776237.png"
           },
           {
             "rank": 9,
@@ -2054,8 +2054,8 @@
             "name": "Bangladesh Women",
             "rating": 192,
             "trend": "Flat",
-            "matches": 46,
-            "points": 8841,
+            "matches": 47,
+            "points": 9043,
             "logo": "data/logos/776213.png"
           }
         ]
