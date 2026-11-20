@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T09:00:13.330Z",
+  "generatedAt": "2026-11-20T17:44:12.509Z",
   "data": {
     "men": {
       "batting": {
@@ -2032,20 +2032,20 @@
             "rank": 8,
             "id": 259,
             "name": "Pakistan Women",
-            "rating": 211,
+            "rating": 210,
             "trend": "Flat",
-            "matches": 45,
-            "points": 9486,
+            "matches": 46,
+            "points": 9637,
             "logo": "data/logos/776311.png"
           },
           {
             "rank": 9,
             "id": 189,
             "name": "Ireland Women",
-            "rating": 201,
+            "rating": 202,
             "trend": "Flat",
-            "matches": 46,
-            "points": 9253,
+            "matches": 47,
+            "points": 9514,
             "logo": "data/logos/839468.png"
           },
           {
