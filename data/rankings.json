@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T01:07:26.559Z",
+  "generatedAt": "2026-11-20T09:00:13.330Z",
   "data": {
     "men": {
       "batting": {
@@ -1092,13 +1092,13 @@
           },
           {
             "rank": 7,
-            "id": 5,
-            "name": "Sri Lanka",
+            "id": 3,
+            "name": "Pakistan",
             "rating": 75,
             "trend": "Flat",
-            "matches": 19,
-            "points": 1434,
-            "logo": "data/logos/776254.png"
+            "matches": 26,
+            "points": 1948,
+            "logo": "data/logos/776308.png"
           },
           {
             "rank": 8,
@@ -1112,13 +1112,13 @@
           },
           {
             "rank": 9,
-            "id": 3,
-            "name": "Pakistan",
-            "rating": 71,
+            "id": 5,
+            "name": "Sri Lanka",
+            "rating": 70,
             "trend": "Flat",
-            "matches": 23,
-            "points": 1623,
-            "logo": "data/logos/776308.png"
+            "matches": 22,
+            "points": 1547,
+            "logo": "data/logos/776254.png"
           },
           {
             "rank": 10,
@@ -2014,8 +2014,8 @@
             "name": "Sri Lanka Women",
             "rating": 239,
             "trend": "Flat",
-            "matches": 49,
-            "points": 11700,
+            "matches": 50,
+            "points": 11949,
             "logo": "data/logos/776267.png"
           },
           {
