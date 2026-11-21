@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T06:32:43.970Z",
+  "generatedAt": "2026-11-21T15:12:31.049Z",
   "data": {
     "men": {
       "batting": {
@@ -1136,10 +1136,10 @@
             "rank": 1,
             "id": 9,
             "name": "England",
-            "rating": 269,
+            "rating": 267,
             "trend": "Flat",
-            "matches": 41,
-            "points": 11021,
+            "matches": 42,
+            "points": 11231,
             "logo": "data/logos/776237.png"
           },
           {
@@ -1156,10 +1156,10 @@
             "rank": 3,
             "id": 4,
             "name": "Australia",
-            "rating": 260,
+            "rating": 261,
             "trend": "Flat",
-            "matches": 38,
-            "points": 9868,
+            "matches": 39,
+            "points": 10187,
             "logo": "data/logos/776202.png"
           },
           {
