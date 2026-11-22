@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T01:29:50.472Z",
+  "generatedAt": "2026-11-22T08:44:29.969Z",
   "data": {
     "men": {
       "batting": {
@@ -2014,8 +2014,8 @@
             "name": "Sri Lanka Women",
             "rating": 239,
             "trend": "Flat",
-            "matches": 50,
-            "points": 11949,
+            "matches": 51,
+            "points": 12198,
             "logo": "data/logos/776267.png"
           },
           {
@@ -2034,8 +2034,8 @@
             "name": "Pakistan Women",
             "rating": 210,
             "trend": "Flat",
-            "matches": 46,
-            "points": 9637,
+            "matches": 47,
+            "points": 9857,
             "logo": "data/logos/776311.png"
           },
           {
