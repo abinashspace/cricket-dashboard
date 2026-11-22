@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T08:44:29.969Z",
+  "generatedAt": "2026-11-22T16:59:38.110Z",
   "data": {
     "men": {
       "batting": {
@@ -2042,10 +2042,10 @@
             "rank": 9,
             "id": 189,
             "name": "Ireland Women",
-            "rating": 202,
+            "rating": 203,
             "trend": "Flat",
-            "matches": 47,
-            "points": 9514,
+            "matches": 48,
+            "points": 9726,
             "logo": "data/logos/839468.png"
           },
           {
