@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T22:25:24.324Z",
+  "generatedAt": "2026-11-23T03:00:54.632Z",
   "matches": [
     {
       "id": 161285,
@@ -10,9 +10,9 @@
       "matchType": "International",
       "dayNight": false,
       "battingTeamId": 13,
-      "state": "In Progress",
-      "stateTitle": "In Progress",
-      "status": "Day 5: 1st Session - New Zealand trail by 227 runs",
+      "state": "Tea",
+      "stateTitle": "Tea",
+      "status": "Day 5: Tea Break - New Zealand trail by 146 runs",
       "startTime": 1795039200000,
       "endTime": 1795410000000,
       "venue": {
@@ -43,9 +43,9 @@
           },
           {
             "id": 3,
-            "runs": 125,
-            "wickets": 2,
-            "overs": 50.1
+            "runs": 206,
+            "wickets": 5,
+            "overs": 95.6
           }
         ],
         "team2": [
@@ -245,1038 +245,6 @@
       }
     },
     {
-      "id": 171777,
-      "series": "CSA Four-Day Series Division One 2026-27",
-      "seriesId": 13140,
-      "matchDesc": "10th Match",
-      "format": "TEST",
-      "matchType": "Domestic",
-      "dayNight": false,
-      "battingTeamId": 917,
-      "state": "Stumps",
-      "stateTitle": "Stumps",
-      "status": "Day 3: Stumps - Western Province need 229 runs",
-      "startTime": 1795071600000,
-      "endTime": 1795356000000,
-      "venue": {
-        "ground": "Kingsmead",
-        "city": "Durban"
-      },
-      "team1": {
-        "id": 90,
-        "name": "Dolphins",
-        "short": "DOL",
-        "imageId": 172183,
-        "logo": "data/logos/172183.jpg"
-      },
-      "team2": {
-        "id": 917,
-        "name": "Western Province",
-        "short": "WPR",
-        "imageId": 1082447,
-        "logo": "data/logos/1082447.png"
-      },
-      "scores": {
-        "team1": [
-          {
-            "id": 1,
-            "runs": 235,
-            "wickets": 10,
-            "overs": 60.3
-          },
-          {
-            "id": 3,
-            "runs": 294,
-            "wickets": 10,
-            "overs": 92.5
-          }
-        ],
-        "team2": [
-          {
-            "id": 2,
-            "runs": 251,
-            "wickets": 10,
-            "overs": 84.1
-          },
-          {
-            "id": 4,
-            "runs": 50,
-            "wickets": 1,
-            "overs": 17.6
-          }
-        ]
-      },
-      "squads": {
-        "team1": [
-          {
-            "id": 14187,
-            "name": "Grant Roelofsen",
-            "tag": "WK",
-            "role": "WK-Batter"
-          },
-          {
-            "id": 12188,
-            "name": "Marques Ackerman",
-            "tag": "C",
-            "role": "Batter"
-          },
-          {
-            "id": 1450402,
-            "name": "Semal Pillay",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 14430,
-            "name": "Joshua Richards",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 14586,
-            "name": "Bryce Parsons",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 9587,
-            "name": "Jason Smith",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 9724,
-            "name": "Khaya Zondo",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 8530,
-            "name": "Prenelan Subrayen",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 50972,
-            "name": "Tristan Luus",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 12191,
-            "name": "Okuhle Cele",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 51686,
-            "name": "Sean Gilson",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 50549,
-            "name": "Romashan Pillay",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 1450359,
-            "name": "Bandile Mbatha",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 53408,
-            "name": "Nqobani Mokoena",
-            "tag": null,
-            "role": "Bowler"
-          }
-        ],
-        "team2": [
-          {
-            "id": 20267,
-            "name": "Daniel Smith",
-            "tag": "C",
-            "role": "WK-Batter"
-          },
-          {
-            "id": 11209,
-            "name": "Kyle Verreynne",
-            "tag": "WK",
-            "role": "WK-Batter"
-          },
-          {
-            "id": 13101,
-            "name": "Jiveshan Pillay",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 20443,
-            "name": "Sinalo Gobeni",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 14265,
-            "name": "David Bedingham",
-            "tag": null,
-            "role": "WK-Batter"
-          },
-          {
-            "id": 20437,
-            "name": "Joshua van Heerden",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 10679,
-            "name": "Tshepo Lebohang Moreki",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 17026,
-            "name": "Mihlali Mpongwana",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 12223,
-            "name": "Kyle Simmonds",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 55284,
-            "name": "Raeeq Daniels",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 9702,
-            "name": "Dane Paterson",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 9763,
-            "name": "Edward Moore",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 20583,
-            "name": "Asakhe Tsaka",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 1451224,
-            "name": "Josh Breed",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 1464111,
-            "name": "Kashief Joseph",
-            "tag": null,
-            "role": "Bowler"
-          }
-        ]
-      }
-    },
-    {
-      "id": 171767,
-      "series": "CSA Four-Day Series Division One 2026-27",
-      "seriesId": 13140,
-      "matchDesc": "9th Match",
-      "format": "TEST",
-      "matchType": "Domestic",
-      "dayNight": false,
-      "battingTeamId": 155,
-      "state": "Stumps",
-      "stateTitle": "Stumps",
-      "status": "Day 3: Stumps - Warriors need 377 runs",
-      "startTime": 1795075200000,
-      "endTime": 1795359600000,
-      "venue": {
-        "ground": "LC de Villiers Oval",
-        "city": "Pretoria"
-      },
-      "team1": {
-        "id": 89,
-        "name": "Titans",
-        "short": "TIT",
-        "imageId": 172182,
-        "logo": "data/logos/172182.jpg"
-      },
-      "team2": {
-        "id": 155,
-        "name": "Warriors",
-        "short": "WAR",
-        "imageId": 172222,
-        "logo": "data/logos/172222.jpg"
-      },
-      "scores": {
-        "team1": [
-          {
-            "id": 1,
-            "runs": 202,
-            "wickets": 10,
-            "overs": 74.6
-          },
-          {
-            "id": 3,
-            "runs": 372,
-            "wickets": 6,
-            "overs": 73.6
-          }
-        ],
-        "team2": [
-          {
-            "id": 2,
-            "runs": 178,
-            "wickets": 10,
-            "overs": 56.2
-          },
-          {
-            "id": 4,
-            "runs": 20,
-            "wickets": 2,
-            "overs": 9.6
-          }
-        ]
-      },
-      "squads": {
-        "team1": [
-          {
-            "id": 1423888,
-            "name": "Keagan Lion-Cachet",
-            "tag": "WK",
-            "role": "WK-Batter"
-          },
-          {
-            "id": 9540,
-            "name": "Simon Harmer",
-            "tag": "C",
-            "role": "Bowler"
-          },
-          {
-            "id": 10687,
-            "name": "Tshepang Dithole",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 10178,
-            "name": "Keegan Petersen",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 1450366,
-            "name": "Lethabo Phahlamohlaka",
-            "tag": null,
-            "role": "WK-Batter"
-          },
-          {
-            "id": 14565,
-            "name": "Marco Jansen",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 9581,
-            "name": "Dayyaan Galiem",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 14798,
-            "name": "Donovan Ferreira",
-            "tag": null,
-            "role": "WK-Batter"
-          },
-          {
-            "id": 16433,
-            "name": "Beyers Swanepoel",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 10175,
-            "name": "Junior Dala",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 9603,
-            "name": "Lungi Ngidi",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 11206,
-            "name": "Rivaldo Moonsamy",
-            "tag": null,
-            "role": "WK-Batter"
-          },
-          {
-            "id": 13667,
-            "name": "Sinethemba Qeshile",
-            "tag": null,
-            "role": "WK-Batter"
-          },
-          {
-            "id": 14428,
-            "name": "Tsepo Ndwandwa",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 20308,
-            "name": "Evan Jones",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 1462705,
-            "name": "Janco Smit",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 20578,
-            "name": "Aphiwe Mnyanda",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 31974,
-            "name": "Schalk Engelbrecht",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 53394,
-            "name": "Esosa Aihevba",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 1450330,
-            "name": "Divan de Villiers",
-            "tag": null,
-            "role": null
-          },
-          {
-            "id": 1467753,
-            "name": "Jarren Bacher",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 1450377,
-            "name": "Jorich Van Schalkwyk",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 13098,
-            "name": "Eathan Bosch",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 9601,
-            "name": "Andile Phehlukwayo",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          }
-        ],
-        "team2": [
-          {
-            "id": 13318,
-            "name": "Jean du Plessis",
-            "tag": "WK",
-            "role": "WK-Batter"
-          },
-          {
-            "id": 11432,
-            "name": "Senuran Muthusamy",
-            "tag": "C",
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 15948,
-            "name": "Modiri Litheko",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 9801,
-            "name": "Sibonelo Makhanya",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 41704,
-            "name": "JP King",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 19243,
-            "name": "Tristan Stubbs",
-            "tag": null,
-            "role": "WK-Batter"
-          },
-          {
-            "id": 11902,
-            "name": "Patrick Kruger",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 1431435,
-            "name": "Christopher King",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 9490,
-            "name": "Beuran Hendricks",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 13150,
-            "name": "Kerwin Mungroo",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 20432,
-            "name": "Gideon Peters",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 23341,
-            "name": "Matthew Boast",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 33183,
-            "name": "Muhammad Manack",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 53454,
-            "name": "Wesley Bedja",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          }
-        ]
-      }
-    },
-    {
-      "id": 171787,
-      "series": "CSA Four-Day Series Division One 2026-27",
-      "seriesId": 13140,
-      "matchDesc": "11th Match",
-      "format": "TEST",
-      "matchType": "Domestic",
-      "dayNight": false,
-      "battingTeamId": 281,
-      "state": "Stumps",
-      "stateTitle": "Stumps",
-      "status": "Day 3: Stumps - Knights lead by 26 runs",
-      "startTime": 1795075200000,
-      "endTime": 1795359600000,
-      "venue": {
-        "ground": "Mangaung Oval",
-        "city": "Bloemfontein"
-      },
-      "team1": {
-        "id": 1759,
-        "name": "Boland",
-        "short": "BOL",
-        "imageId": 349610,
-        "logo": "data/logos/349610.png"
-      },
-      "team2": {
-        "id": 281,
-        "name": "Knights",
-        "short": "KNG",
-        "imageId": 172331,
-        "logo": "data/logos/172331.jpg"
-      },
-      "scores": {
-        "team1": [
-          {
-            "id": 1,
-            "runs": 297,
-            "wickets": 10,
-            "overs": 85.4
-          }
-        ],
-        "team2": [
-          {
-            "id": 2,
-            "runs": 323,
-            "wickets": 6,
-            "overs": 108.6
-          }
-        ]
-      },
-      "squads": {
-        "team1": [
-          {
-            "id": 8517,
-            "name": "Gihahn Cloete",
-            "tag": "WK",
-            "role": "WK-Batter"
-          },
-          {
-            "id": 9530,
-            "name": "Dane Piedt",
-            "tag": "C",
-            "role": "Bowler"
-          },
-          {
-            "id": 18142,
-            "name": "Lesego Senokwane",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 14582,
-            "name": "Jonathan Bird",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 1464298,
-            "name": "Wian Ruthven",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 20546,
-            "name": "George Van Heerden",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 1431467,
-            "name": "Cole Abrahams",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 50997,
-            "name": "Emmanuel Motswiri",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 9708,
-            "name": "Malusi Siboto",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 54644,
-            "name": "Ntando Soni",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 31923,
-            "name": "Nico van Zyl",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 13091,
-            "name": "Isaac Dikgale",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 13629,
-            "name": "Junaid Dawood",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 14552,
-            "name": "Jacques Snyman",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 15127,
-            "name": "Tiaan van Vuuren",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 19238,
-            "name": "Ruan Haasbroek",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 24574,
-            "name": "Mbongiseni Mhlanga",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 1451116,
-            "name": "Seth Fledermaus",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 1463694,
-            "name": "Ruben Maree",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 1464059,
-            "name": "Ross Boast",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          }
-        ],
-        "team2": [
-          {
-            "id": 20297,
-            "name": "Jhedli van Briesies",
-            "tag": "WK",
-            "role": "WK-Batter"
-          },
-          {
-            "id": 14516,
-            "name": "Glenton Stuurman",
-            "tag": "C",
-            "role": "Bowler"
-          },
-          {
-            "id": 14588,
-            "name": "Ruan Gerhard Terblanche",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 20283,
-            "name": "Blayde Capell",
-            "tag": null,
-            "role": "WK-Batter"
-          },
-          {
-            "id": 22051,
-            "name": "Gavin Kaplan",
-            "tag": null,
-            "role": "WK-Batter"
-          },
-          {
-            "id": 14308,
-            "name": "Neil Brand",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 1423887,
-            "name": "Lehan Botha",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 14687,
-            "name": "Imran Manack",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 20273,
-            "name": "Yves Kamanzi",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 13066,
-            "name": "Akhona Mnyaka",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 8531,
-            "name": "Lizaad Williams",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 10194,
-            "name": "Ferisco Adams",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 19058,
-            "name": "Siyabonga Mahima",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 20541,
-            "name": "Ethan John Cunningham",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 55748,
-            "name": "Jevano Baron",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 1451200,
-            "name": "Nathan Jacobs",
-            "tag": null,
-            "role": "Bowler"
-          }
-        ]
-      }
-    },
-    {
-      "id": 171797,
-      "series": "CSA Four-Day Series Division One 2026-27",
-      "seriesId": 13140,
-      "matchDesc": "12th Match",
-      "format": "TEST",
-      "matchType": "Domestic",
-      "dayNight": false,
-      "battingTeamId": 922,
-      "state": "Stumps",
-      "stateTitle": "Stumps",
-      "status": "Day 3: Stumps - North West - Eastvaal Renault Dragons trail by 209 runs",
-      "startTime": 1795075200000,
-      "endTime": 1795359600000,
-      "venue": {
-        "ground": "Senwes Park",
-        "city": "Potchefstroom"
-      },
-      "team1": {
-        "id": 157,
-        "name": "Lions",
-        "short": "LIONS",
-        "imageId": 172224,
-        "logo": "data/logos/172224.jpg"
-      },
-      "team2": {
-        "id": 922,
-        "name": "North West - Eastvaal Renault Dragons",
-        "short": "NWEST",
-        "imageId": 248439,
-        "logo": "data/logos/248439.jpg"
-      },
-      "scores": {
-        "team1": [
-          {
-            "id": 1,
-            "runs": 384,
-            "wickets": 8,
-            "overs": 128.2
-          }
-        ],
-        "team2": [
-          {
-            "id": 2,
-            "runs": 175,
-            "wickets": 7,
-            "overs": 65.6
-          }
-        ]
-      },
-      "squads": {
-        "team1": [
-          {
-            "id": 14797,
-            "name": "Rubin Hermann",
-            "tag": "WK",
-            "role": "WK-Batter"
-          },
-          {
-            "id": 11497,
-            "name": "Wihan Lubbe",
-            "tag": "C",
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 9735,
-            "name": "Lesiba Ngoepe",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 31951,
-            "name": "Meeka eel Prince",
-            "tag": null,
-            "role": "WK-Batter"
-          },
-          {
-            "id": 8528,
-            "name": "Diego Rosier",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 15852,
-            "name": "Ruan de Swardt",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 31972,
-            "name": "Juan James",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 14429,
-            "name": "Onke Nyaku",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 10079,
-            "name": "Daryn Dupavillon",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 12587,
-            "name": "Shimane Alfred Mothoa",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 20526,
-            "name": "Caleb Seleka",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 1432803,
-            "name": "Ludwich Schuld",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 1450339,
-            "name": "Carl Fryer",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 20372,
-            "name": "Nealan van Heerden",
-            "tag": null,
-            "role": "Bowler"
-          }
-        ],
-        "team2": [
-          {
-            "id": 9730,
-            "name": "Dominic Hendricks",
-            "tag": "C",
-            "role": "Batter"
-          },
-          {
-            "id": 24622,
-            "name": "Connor Esterhuizen",
-            "tag": "WK",
-            "role": "WK-Batter"
-          },
-          {
-            "id": 9491,
-            "name": "Reeza Hendricks",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 11205,
-            "name": "Wandile Makwetu",
-            "tag": null,
-            "role": "WK-Batter"
-          },
-          {
-            "id": 1464673,
-            "name": "Wilco de Bruin",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 14587,
-            "name": "Siya Plaatjie",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 1466215,
-            "name": "JJ Basson",
-            "tag": null,
-            "role": "Batting Allrounder"
-          },
-          {
-            "id": 1464307,
-            "name": "Rafeeq Patel",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 19057,
-            "name": "Mitchell Van Buuren",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 24546,
-            "name": "Codi Yusuf",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 20428,
-            "name": "Nqabayomzi Peter",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 31958,
-            "name": "Onkgomoditse R Seletswane",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 10973,
-            "name": "Zubayr Hamza",
-            "tag": null,
-            "role": "Batter"
-          }
-        ]
-      }
-    },
-    {
       "id": 166677,
       "series": "Sheffield Shield 2026-27",
       "seriesId": 12717,
@@ -1284,10 +252,10 @@
       "format": "TEST",
       "matchType": "Domestic",
       "dayNight": false,
-      "battingTeamId": 164,
-      "state": "Stumps",
-      "stateTitle": "Stumps",
-      "status": "Day 1: Stumps",
+      "battingTeamId": 104,
+      "state": "In Progress",
+      "stateTitle": "In Progress",
+      "status": "Day 2: 2nd Session - New South Wales trail by 262 runs",
       "startTime": 1795303800000,
       "endTime": 1795588200000,
       "venue": {
@@ -1312,12 +280,19 @@
         "team1": [
           {
             "id": 1,
-            "runs": 249,
-            "wickets": 7,
-            "overs": 94.6
+            "runs": 278,
+            "wickets": 10,
+            "overs": 111.1
           }
         ],
-        "team2": []
+        "team2": [
+          {
+            "id": 2,
+            "runs": 16,
+            "wickets": null,
+            "overs": 3.6
+          }
+        ]
       },
       "squads": {
         "team1": [
@@ -1471,205 +446,6 @@
       }
     },
     {
-      "id": 172411,
-      "series": "CSA Provincial One-Day Challenge Division Two 2026-27",
-      "seriesId": 13160,
-      "matchDesc": "7th Match",
-      "format": "ODI",
-      "matchType": "Domestic",
-      "dayNight": false,
-      "battingTeamId": null,
-      "state": "Toss",
-      "stateTitle": "Toss",
-      "status": "South Western Districts opt to bat",
-      "startTime": 1795334400000,
-      "endTime": 1795363200000,
-      "venue": {
-        "ground": "Recreation Ground",
-        "city": "Oudtshoorn"
-      },
-      "team1": {
-        "id": 1768,
-        "name": "South Western Districts",
-        "short": "SWD",
-        "imageId": 349609,
-        "logo": "data/logos/349609.png"
-      },
-      "team2": {
-        "id": 1775,
-        "name": "Border",
-        "short": "BOR",
-        "imageId": 349602,
-        "logo": "data/logos/349602.png"
-      },
-      "scores": {
-        "team1": [],
-        "team2": []
-      },
-      "squads": {
-        "team1": [
-          {
-            "id": 9575,
-            "name": "Yaseen Valli",
-            "tag": "C",
-            "role": "Batter"
-          },
-          {
-            "id": 50598,
-            "name": "Benjamin Manual Hansen",
-            "tag": "WK",
-            "role": "WK-Batter"
-          },
-          {
-            "id": 13067,
-            "name": "Janneman Malan",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 24041,
-            "name": "Slade van Staden",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 1479671,
-            "name": "Modise Maloka",
-            "tag": null,
-            "role": null
-          },
-          {
-            "id": 15922,
-            "name": "Pheko Moletsane",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 20566,
-            "name": "Liam Alder",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 24531,
-            "name": "Nipho Mpungose",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 55620,
-            "name": "Nathan Engelbrecht",
-            "tag": null,
-            "role": "WK-Batter"
-          },
-          {
-            "id": 1431291,
-            "name": "Zack Jan Hendrik Momberg",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 1431313,
-            "name": "Banele Cele",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 1463245,
-            "name": "Jade Richter",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 1479667,
-            "name": "Leo Sadler",
-            "tag": null,
-            "role": null
-          }
-        ],
-        "team2": [
-          {
-            "id": 23936,
-            "name": "Nathan Roux",
-            "tag": "C",
-            "role": "WK-Batter"
-          },
-          {
-            "id": 13514,
-            "name": "Mncedisi Malika",
-            "tag": "WK",
-            "role": "WK-Batter"
-          },
-          {
-            "id": 51644,
-            "name": "Lihle Sizani",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 1464015,
-            "name": "Christiaan du Toit",
-            "tag": null,
-            "role": "Bowling Allrounder"
-          },
-          {
-            "id": 13324,
-            "name": "Thando Ntini",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 13394,
-            "name": "Kgaudisa Molefe",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 15123,
-            "name": "Michael Copeland",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 13523,
-            "name": "Sithembile Langa",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 20418,
-            "name": "Jerome Bossr",
-            "tag": null,
-            "role": "WK-Batter"
-          },
-          {
-            "id": 20551,
-            "name": "Jan Hardus Coetzer",
-            "tag": null,
-            "role": "Bowler"
-          },
-          {
-            "id": 22061,
-            "name": "Alindile Mhletywa",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 34116,
-            "name": "Mathew Fourie",
-            "tag": null,
-            "role": "Batter"
-          },
-          {
-            "id": 1479831,
-            "name": "Riley Miller",
-            "tag": null,
-            "role": "Batting Allrounder"
-          }
-        ]
-      }
-    },
-    {
       "id": 178413,
       "series": "Malaysia Women's T20I Tri-Series, 2026",
       "seriesId": 13553,
@@ -1678,9 +454,9 @@
       "matchType": "Women",
       "dayNight": false,
       "battingTeamId": null,
-      "state": "Preview",
-      "stateTitle": "Preview",
-      "status": "Match starts at Nov 23, 02:00 GMT",
+      "state": "Toss",
+      "stateTitle": "Toss",
+      "status": "Indonesia Women opt to bowl",
       "startTime": 1795399200000,
       "endTime": 1795411800000,
       "venue": {
@@ -1888,10 +664,10 @@
       "format": "TEST",
       "matchType": "Domestic",
       "dayNight": false,
-      "battingTeamId": null,
-      "state": "Preview",
-      "stateTitle": "Preview",
-      "status": "Match starts at Nov 23, 02:30 GMT",
+      "battingTeamId": 166,
+      "state": "In Progress",
+      "stateTitle": "In Progress",
+      "status": "Day 1: 1st Session",
       "startTime": 1795401000000,
       "endTime": 1795685400000,
       "venue": {
@@ -1899,21 +675,28 @@
         "city": "Perth"
       },
       "team1": {
-        "id": 87,
-        "name": "Western Australia",
-        "short": "WA",
-        "imageId": 172180,
-        "logo": "data/logos/172180.jpg"
-      },
-      "team2": {
         "id": 166,
         "name": "Tasmania",
         "short": "TAS",
         "imageId": 172235,
         "logo": "data/logos/172235.jpg"
       },
+      "team2": {
+        "id": 87,
+        "name": "Western Australia",
+        "short": "WA",
+        "imageId": 172180,
+        "logo": "data/logos/172180.jpg"
+      },
       "scores": {
-        "team1": [],
+        "team1": [
+          {
+            "id": 1,
+            "runs": 1,
+            "wickets": null,
+            "overs": 4.1
+          }
+        ],
         "team2": []
       },
       "squads": {
@@ -3689,6 +2472,725 @@
       }
     },
     {
+      "id": 166697,
+      "series": "Sheffield Shield 2026-27",
+      "seriesId": 12717,
+      "matchDesc": "15th Match",
+      "format": "TEST",
+      "matchType": "Domestic",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Preview",
+      "stateTitle": "Preview",
+      "status": "Match starts at Nov 24, 00:00 GMT",
+      "startTime": 1795478400000,
+      "endTime": 1795762800000,
+      "venue": {
+        "ground": "Adelaide Oval",
+        "city": "Adelaide"
+      },
+      "team1": {
+        "id": 158,
+        "name": "South Australia",
+        "short": "SAUS",
+        "imageId": 172225,
+        "logo": "data/logos/172225.jpg"
+      },
+      "team2": {
+        "id": 52,
+        "name": "Victoria",
+        "short": "VIC",
+        "imageId": 172153,
+        "logo": "data/logos/172153.jpg"
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": {
+        "team1": [
+          {
+            "id": 13346,
+            "name": "Nathan McSweeney",
+            "tag": "C",
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 9200,
+            "name": "Alex Carey",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 15596,
+            "name": "Henry Hunt",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 11375,
+            "name": "Jake Weatherald",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 11839,
+            "name": "Jason Sangha",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 10163,
+            "name": "Jake Lehmann",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 24603,
+            "name": "Jordan Buckingham",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 14495,
+            "name": "Matthew Gilkes",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 14500,
+            "name": "Ben Manenti",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1477330,
+            "name": "Noah McFadyen",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 12219,
+            "name": "Henry Thornton",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 11757,
+            "name": "Wes Agar",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 10210,
+            "name": "Harry Nielsen",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 11144,
+            "name": "Nathan McAndrew",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 11772,
+            "name": "Brendan Doggett",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 12227,
+            "name": "Lloyd Pope",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 13472,
+            "name": "Mackenzie Harvey",
+            "tag": null,
+            "role": "Batter"
+          }
+        ],
+        "team2": [
+          {
+            "id": 8159,
+            "name": "Peter Handscomb",
+            "tag": "C",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 1462870,
+            "name": "Liam Blackford",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 7776,
+            "name": "Marcus Harris",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 33360,
+            "name": "Ashley Chandrasinghe",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 13548,
+            "name": "Blake Macdonald",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1430979,
+            "name": "Harry Hoekstra",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 15146,
+            "name": "Todd Murphy",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 24541,
+            "name": "Fergus O Neill",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1449041,
+            "name": "Austin Anlezark",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1468742,
+            "name": "Dylan Brasher",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1481312,
+            "name": "Matt Hennig",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 15760,
+            "name": "Mitchell Perry",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 51921,
+            "name": "Doug Warren",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          }
+        ]
+      }
+    },
+    {
+      "id": 178423,
+      "series": "Malaysia Women's T20I Tri-Series, 2026",
+      "seriesId": 13553,
+      "matchDesc": "5th Match",
+      "format": "T20",
+      "matchType": "Women",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Upcoming",
+      "stateTitle": "Upcoming Match",
+      "status": "Match starts at Nov 24, 02:00 GMT",
+      "startTime": 1795485600000,
+      "endTime": 1795498200000,
+      "venue": {
+        "ground": "Bayuemas Oval",
+        "city": "Kuala Lumpur"
+      },
+      "team1": {
+        "id": 486,
+        "name": "China Women",
+        "short": "CHNW",
+        "imageId": 172534,
+        "logo": "data/logos/172534.jpg"
+      },
+      "team2": {
+        "id": 484,
+        "name": "Indonesia Women",
+        "short": "IDNW",
+        "imageId": 172532,
+        "logo": "data/logos/172532.jpg"
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": null
+    },
+    {
+      "id": 165100,
+      "series": "Syed Mushtaq Ali Trophy Elite 2026",
+      "seriesId": 12420,
+      "matchDesc": "Elite Group D",
+      "format": "T20",
+      "matchType": "League",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Upcoming",
+      "stateTitle": "Upcoming Match",
+      "status": "Match starts at Nov 24, 03:30 GMT",
+      "startTime": 1795487400000,
+      "endTime": 1795500000000,
+      "venue": {
+        "ground": "Jadavpur University Campus 2nd Ground",
+        "city": "Kolkata"
+      },
+      "team1": {
+        "id": 375,
+        "name": "Chhattisgarh",
+        "short": "CG",
+        "imageId": 172428,
+        "logo": "data/logos/172428.jpg"
+      },
+      "team2": {
+        "id": 253,
+        "name": "Goa",
+        "short": "GOA",
+        "imageId": 172306,
+        "logo": "data/logos/172306.jpg"
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": {
+        "team1": [
+          {
+            "id": 10949,
+            "name": "Amandeep Khare",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 8944,
+            "name": "Sandeep Warrier",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 18892,
+            "name": "Sourabh Majumdar",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 36111,
+            "name": "Aayush Pandey",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 12322,
+            "name": "Shubham Agarwal",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1480130,
+            "name": "Rudra Pratap Dehari",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1455491,
+            "name": "Vikalp Tiwari",
+            "tag": "C",
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 32728,
+            "name": "Prateek Yadav",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 8182,
+            "name": "Jayant Yadav",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 9033,
+            "name": "Dharmendrasinh Jadeja",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1455225,
+            "name": "Rahul Pradhan",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 1449241,
+            "name": "Sangeet Soni",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 1455621,
+            "name": "Dev Aditya Singh",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 11777,
+            "name": "Ajay Jadav Mandal",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 13490,
+            "name": "Shashank Chandrakar",
+            "tag": null,
+            "role": "Batter"
+          }
+        ],
+        "team2": [
+          {
+            "id": 13252,
+            "name": "Lalit Yadav",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1463671,
+            "name": "Abhinav Tejrana",
+            "tag": "C",
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 8898,
+            "name": "Darshan Misal",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 12669,
+            "name": "Suyash Prabhudessai",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 11020,
+            "name": "Felix Alemao",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 10984,
+            "name": "Vikash Singh",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1447817,
+            "name": "Shivendra Bhujbal",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 1468665,
+            "name": "Yash Kasvankar",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 10489,
+            "name": "Vasuki Koushik",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 22511,
+            "name": "Manthan Khutkar",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 12164,
+            "name": "Heramb Parab",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 10294,
+            "name": "Deepraj Gaonkar",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 11017,
+            "name": "Rajashekhar Harikant",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 51074,
+            "name": "Shubham Tari",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1448377,
+            "name": "Azaan Thota",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 33122,
+            "name": "Ruthvik Naik",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 19223,
+            "name": "Ishaan Gadekar",
+            "tag": null,
+            "role": "Batter"
+          }
+        ]
+      }
+    },
+    {
+      "id": 165091,
+      "series": "Syed Mushtaq Ali Trophy Elite 2026",
+      "seriesId": 12420,
+      "matchDesc": "Elite Group C",
+      "format": "T20",
+      "matchType": "League",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Upcoming",
+      "stateTitle": "Upcoming Match",
+      "status": "Match starts at Nov 24, 03:30 GMT",
+      "startTime": 1795489200000,
+      "endTime": 1795501800000,
+      "venue": {
+        "ground": "Punjab Cricket Association IS Bindra Stadium",
+        "city": "Mohali"
+      },
+      "team1": {
+        "id": 244,
+        "name": "Kerala",
+        "short": "KER",
+        "imageId": 172297,
+        "logo": "data/logos/172297.jpg"
+      },
+      "team2": {
+        "id": 162,
+        "name": "Assam",
+        "short": "ASM",
+        "imageId": 172230,
+        "logo": "data/logos/172230.jpg"
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": {
+        "team1": [
+          {
+            "id": 8271,
+            "name": "Sanju Samson",
+            "tag": "C",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 1449265,
+            "name": "Ahammed Imran",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 12253,
+            "name": "Rohan Kunnummal",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 10809,
+            "name": "Mohammed Azharuddeen",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 10332,
+            "name": "Salman Nizar",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 11893,
+            "name": "Vishnu Vinod",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 8107,
+            "name": "Jalaj Saxena",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 13483,
+            "name": "KM Asif",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 10315,
+            "name": "MD Nidheesh",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1447337,
+            "name": "Vignesh Puthur",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1460684,
+            "name": "Krishna Devan",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 1460461,
+            "name": "Biju Narayanan",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 34466,
+            "name": "Akhil Scaria",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 21666,
+            "name": "Muhammed Sharafuddeen",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 32464,
+            "name": "Vaisakh Chandran",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          }
+        ],
+        "team2": [
+          {
+            "id": 8768,
+            "name": "Sibsankar Roy",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 18793,
+            "name": "Denish Das",
+            "tag": "C",
+            "role": "Bowler"
+          },
+          {
+            "id": 11025,
+            "name": "Mrinmoy Dutta",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 13607,
+            "name": "Mukhtar Hussain",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 21596,
+            "name": "Akash Sengupta",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1466419,
+            "name": "Rohit Sen",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 51354,
+            "name": "Pradyun Saikia",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 55669,
+            "name": "Abdul Ajij Kuraishi",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 33115,
+            "name": "Avinov Choudhury",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 11026,
+            "name": "Saahil Jain",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1463377,
+            "name": "Ayushman Malakar",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 12306,
+            "name": "Jitumoni Kalita",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1463375,
+            "name": "Bhargab Lahkar",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 15483,
+            "name": "Roshan Alam",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1482457,
+            "name": "Bishal Saha",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          }
+        ]
+      }
+    },
+    {
       "id": 175240,
       "series": "ILT20 026",
       "seriesId": 12037,
@@ -4280,7 +3782,7 @@
       "dayNight": false,
       "battingTeamId": 92,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "TN Won",
       "status": "Tamil Nadu won by 99 runs",
       "startTime": 1795345200000,
       "endTime": 1795357800000,
@@ -4808,7 +4310,7 @@
       "dayNight": false,
       "battingTeamId": 249,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "ODSA Won",
       "status": "Odisha won by 13 runs",
       "startTime": 1795345200000,
       "endTime": 1795357800000,
@@ -6542,6 +6044,219 @@
       }
     },
     {
+      "id": 172411,
+      "series": "CSA Provincial One-Day Challenge Division Two 2026-27",
+      "seriesId": 13160,
+      "matchDesc": "7th Match",
+      "format": "ODI",
+      "matchType": "Domestic",
+      "dayNight": false,
+      "battingTeamId": 1768,
+      "state": "Complete",
+      "stateTitle": "Complete",
+      "status": "South Western Districts won by 127 runs",
+      "startTime": 1795334400000,
+      "endTime": 1795363200000,
+      "venue": {
+        "ground": "Recreation Ground",
+        "city": "Oudtshoorn"
+      },
+      "team1": {
+        "id": 1768,
+        "name": "South Western Districts",
+        "short": "SWD",
+        "imageId": 349609,
+        "logo": "data/logos/349609.png"
+      },
+      "team2": {
+        "id": 1775,
+        "name": "Border",
+        "short": "BOR",
+        "imageId": 349602,
+        "logo": "data/logos/349602.png"
+      },
+      "scores": {
+        "team1": [
+          {
+            "id": 1,
+            "runs": 267,
+            "wickets": 9,
+            "overs": 49.6
+          }
+        ],
+        "team2": [
+          {
+            "id": 2,
+            "runs": 140,
+            "wickets": 10,
+            "overs": 32.6
+          }
+        ]
+      },
+      "squads": {
+        "team1": [
+          {
+            "id": 9575,
+            "name": "Yaseen Valli",
+            "tag": "C",
+            "role": "Batter"
+          },
+          {
+            "id": 50598,
+            "name": "Benjamin Manual Hansen",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 13067,
+            "name": "Janneman Malan",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 24041,
+            "name": "Slade van Staden",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1479671,
+            "name": "Modise Maloka",
+            "tag": null,
+            "role": null
+          },
+          {
+            "id": 15922,
+            "name": "Pheko Moletsane",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 20566,
+            "name": "Liam Alder",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 24531,
+            "name": "Nipho Mpungose",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 55620,
+            "name": "Nathan Engelbrecht",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 1431291,
+            "name": "Zack Jan Hendrik Momberg",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1431313,
+            "name": "Banele Cele",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1463245,
+            "name": "Jade Richter",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1479667,
+            "name": "Leo Sadler",
+            "tag": null,
+            "role": null
+          }
+        ],
+        "team2": [
+          {
+            "id": 23936,
+            "name": "Nathan Roux",
+            "tag": "C",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 13514,
+            "name": "Mncedisi Malika",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 51644,
+            "name": "Lihle Sizani",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1464015,
+            "name": "Christiaan du Toit",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 13324,
+            "name": "Thando Ntini",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 13394,
+            "name": "Kgaudisa Molefe",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 15123,
+            "name": "Michael Copeland",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 13523,
+            "name": "Sithembile Langa",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 20418,
+            "name": "Jerome Bossr",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 20551,
+            "name": "Jan Hardus Coetzer",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 22061,
+            "name": "Alindile Mhletywa",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 34116,
+            "name": "Mathew Fourie",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1479831,
+            "name": "Riley Miller",
+            "tag": null,
+            "role": "Batting Allrounder"
+          }
+        ]
+      }
+    },
+    {
       "id": 172420,
       "series": "CSA Provincial One-Day Challenge Division Two 2026-27",
       "seriesId": 13160,
@@ -7250,7 +6965,7 @@
       "dayNight": false,
       "battingTeamId": 242,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "HYD Won",
       "status": "Hyderabad won by 4 wkts",
       "startTime": 1795330800000,
       "endTime": 1795343400000,
@@ -8529,7 +8244,7 @@
       "dayNight": false,
       "battingTeamId": 244,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "KER Won",
       "status": "Kerala won by 18 runs",
       "startTime": 1795325400000,
       "endTime": 1795338000000,
@@ -9075,7 +8790,7 @@
       "dayNight": false,
       "battingTeamId": 258,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "SLW Won",
       "status": "Sri Lanka Women won by 9 wkts",
       "startTime": 1795323600000,
       "endTime": 1795336200000,
@@ -11456,6 +11171,1050 @@
       }
     },
     {
+      "id": 171767,
+      "series": "CSA Four-Day Series Division One 2026-27",
+      "seriesId": 13140,
+      "matchDesc": "9th Match",
+      "format": "TEST",
+      "matchType": "Domestic",
+      "dayNight": false,
+      "battingTeamId": 89,
+      "state": "Complete",
+      "stateTitle": "Complete",
+      "status": "Titans won by 294 runs",
+      "startTime": 1795075200000,
+      "endTime": 1795359600000,
+      "venue": {
+        "ground": "LC de Villiers Oval",
+        "city": "Pretoria"
+      },
+      "team1": {
+        "id": 89,
+        "name": "Titans",
+        "short": "TIT",
+        "imageId": 172182,
+        "logo": "data/logos/172182.jpg"
+      },
+      "team2": {
+        "id": 155,
+        "name": "Warriors",
+        "short": "WAR",
+        "imageId": 172222,
+        "logo": "data/logos/172222.jpg"
+      },
+      "scores": {
+        "team1": [
+          {
+            "id": 1,
+            "runs": 202,
+            "wickets": 10,
+            "overs": 74.6
+          },
+          {
+            "id": 3,
+            "runs": 372,
+            "wickets": 6,
+            "overs": 73.6
+          }
+        ],
+        "team2": [
+          {
+            "id": 2,
+            "runs": 178,
+            "wickets": 10,
+            "overs": 56.2
+          },
+          {
+            "id": 4,
+            "runs": 102,
+            "wickets": 10,
+            "overs": 43.5
+          }
+        ]
+      },
+      "squads": {
+        "team1": [
+          {
+            "id": 1423888,
+            "name": "Keagan Lion-Cachet",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 9540,
+            "name": "Simon Harmer",
+            "tag": "C",
+            "role": "Bowler"
+          },
+          {
+            "id": 10687,
+            "name": "Tshepang Dithole",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 10178,
+            "name": "Keegan Petersen",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1450366,
+            "name": "Lethabo Phahlamohlaka",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 14565,
+            "name": "Marco Jansen",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 9581,
+            "name": "Dayyaan Galiem",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 14798,
+            "name": "Donovan Ferreira",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 16433,
+            "name": "Beyers Swanepoel",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 10175,
+            "name": "Junior Dala",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 9603,
+            "name": "Lungi Ngidi",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 11206,
+            "name": "Rivaldo Moonsamy",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 13667,
+            "name": "Sinethemba Qeshile",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 14428,
+            "name": "Tsepo Ndwandwa",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 20308,
+            "name": "Evan Jones",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1462705,
+            "name": "Janco Smit",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 20578,
+            "name": "Aphiwe Mnyanda",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 31974,
+            "name": "Schalk Engelbrecht",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 53394,
+            "name": "Esosa Aihevba",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1450330,
+            "name": "Divan de Villiers",
+            "tag": null,
+            "role": null
+          },
+          {
+            "id": 1467753,
+            "name": "Jarren Bacher",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1450377,
+            "name": "Jorich Van Schalkwyk",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 13098,
+            "name": "Eathan Bosch",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 9601,
+            "name": "Andile Phehlukwayo",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          }
+        ],
+        "team2": [
+          {
+            "id": 13318,
+            "name": "Jean du Plessis",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 11432,
+            "name": "Senuran Muthusamy",
+            "tag": "C",
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 15948,
+            "name": "Modiri Litheko",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 9801,
+            "name": "Sibonelo Makhanya",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 41704,
+            "name": "JP King",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 19243,
+            "name": "Tristan Stubbs",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 11902,
+            "name": "Patrick Kruger",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1431435,
+            "name": "Christopher King",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 9490,
+            "name": "Beuran Hendricks",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 13150,
+            "name": "Kerwin Mungroo",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 20432,
+            "name": "Gideon Peters",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 23341,
+            "name": "Matthew Boast",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 33183,
+            "name": "Muhammad Manack",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 53454,
+            "name": "Wesley Bedja",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          }
+        ]
+      }
+    },
+    {
+      "id": 171787,
+      "series": "CSA Four-Day Series Division One 2026-27",
+      "seriesId": 13140,
+      "matchDesc": "11th Match",
+      "format": "TEST",
+      "matchType": "Domestic",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Complete",
+      "stateTitle": "Complete",
+      "status": "Match drawn",
+      "startTime": 1795075200000,
+      "endTime": 1795359600000,
+      "venue": {
+        "ground": "Mangaung Oval",
+        "city": "Bloemfontein"
+      },
+      "team1": {
+        "id": 1759,
+        "name": "Boland",
+        "short": "BOL",
+        "imageId": 349610,
+        "logo": "data/logos/349610.png"
+      },
+      "team2": {
+        "id": 281,
+        "name": "Knights",
+        "short": "KNG",
+        "imageId": 172331,
+        "logo": "data/logos/172331.jpg"
+      },
+      "scores": {
+        "team1": [
+          {
+            "id": 1,
+            "runs": 297,
+            "wickets": 10,
+            "overs": 85.4
+          },
+          {
+            "id": 3,
+            "runs": 58,
+            "wickets": 2,
+            "overs": 22.6
+          }
+        ],
+        "team2": [
+          {
+            "id": 2,
+            "runs": 410,
+            "wickets": 7,
+            "overs": 120.5
+          }
+        ]
+      },
+      "squads": {
+        "team1": [
+          {
+            "id": 8517,
+            "name": "Gihahn Cloete",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 9530,
+            "name": "Dane Piedt",
+            "tag": "C",
+            "role": "Bowler"
+          },
+          {
+            "id": 18142,
+            "name": "Lesego Senokwane",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 14582,
+            "name": "Jonathan Bird",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1464298,
+            "name": "Wian Ruthven",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 20546,
+            "name": "George Van Heerden",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1431467,
+            "name": "Cole Abrahams",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 50997,
+            "name": "Emmanuel Motswiri",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 9708,
+            "name": "Malusi Siboto",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 54644,
+            "name": "Ntando Soni",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 31923,
+            "name": "Nico van Zyl",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 13091,
+            "name": "Isaac Dikgale",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 13629,
+            "name": "Junaid Dawood",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 14552,
+            "name": "Jacques Snyman",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 15127,
+            "name": "Tiaan van Vuuren",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 19238,
+            "name": "Ruan Haasbroek",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 24574,
+            "name": "Mbongiseni Mhlanga",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1451116,
+            "name": "Seth Fledermaus",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1463694,
+            "name": "Ruben Maree",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1464059,
+            "name": "Ross Boast",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          }
+        ],
+        "team2": [
+          {
+            "id": 20297,
+            "name": "Jhedli van Briesies",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 14516,
+            "name": "Glenton Stuurman",
+            "tag": "C",
+            "role": "Bowler"
+          },
+          {
+            "id": 14588,
+            "name": "Ruan Gerhard Terblanche",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 20283,
+            "name": "Blayde Capell",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 22051,
+            "name": "Gavin Kaplan",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 14308,
+            "name": "Neil Brand",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1423887,
+            "name": "Lehan Botha",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 14687,
+            "name": "Imran Manack",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 20273,
+            "name": "Yves Kamanzi",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 13066,
+            "name": "Akhona Mnyaka",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 8531,
+            "name": "Lizaad Williams",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 10194,
+            "name": "Ferisco Adams",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 19058,
+            "name": "Siyabonga Mahima",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 20541,
+            "name": "Ethan John Cunningham",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 55748,
+            "name": "Jevano Baron",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1451200,
+            "name": "Nathan Jacobs",
+            "tag": null,
+            "role": "Bowler"
+          }
+        ]
+      }
+    },
+    {
+      "id": 171797,
+      "series": "CSA Four-Day Series Division One 2026-27",
+      "seriesId": 13140,
+      "matchDesc": "12th Match",
+      "format": "TEST",
+      "matchType": "Domestic",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Complete",
+      "stateTitle": "Complete",
+      "status": "Match drawn",
+      "startTime": 1795075200000,
+      "endTime": 1795359600000,
+      "venue": {
+        "ground": "Senwes Park",
+        "city": "Potchefstroom"
+      },
+      "team1": {
+        "id": 157,
+        "name": "Lions",
+        "short": "LIONS",
+        "imageId": 172224,
+        "logo": "data/logos/172224.jpg"
+      },
+      "team2": {
+        "id": 922,
+        "name": "North West - Eastvaal Renault Dragons",
+        "short": "NWEST",
+        "imageId": 248439,
+        "logo": "data/logos/248439.jpg"
+      },
+      "scores": {
+        "team1": [
+          {
+            "id": 1,
+            "runs": 384,
+            "wickets": 8,
+            "overs": 128.2
+          }
+        ],
+        "team2": [
+          {
+            "id": 2,
+            "runs": 218,
+            "wickets": 10,
+            "overs": 81.1
+          },
+          {
+            "id": 3,
+            "runs": 162,
+            "wickets": 4,
+            "overs": 55.3
+          }
+        ]
+      },
+      "squads": {
+        "team1": [
+          {
+            "id": 14797,
+            "name": "Rubin Hermann",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 11497,
+            "name": "Wihan Lubbe",
+            "tag": "C",
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 9735,
+            "name": "Lesiba Ngoepe",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 31951,
+            "name": "Meeka eel Prince",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 8528,
+            "name": "Diego Rosier",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 15852,
+            "name": "Ruan de Swardt",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 31972,
+            "name": "Juan James",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 14429,
+            "name": "Onke Nyaku",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 10079,
+            "name": "Daryn Dupavillon",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 12587,
+            "name": "Shimane Alfred Mothoa",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 20526,
+            "name": "Caleb Seleka",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1432803,
+            "name": "Ludwich Schuld",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1450339,
+            "name": "Carl Fryer",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 20372,
+            "name": "Nealan van Heerden",
+            "tag": null,
+            "role": "Bowler"
+          }
+        ],
+        "team2": [
+          {
+            "id": 9730,
+            "name": "Dominic Hendricks",
+            "tag": "C",
+            "role": "Batter"
+          },
+          {
+            "id": 24622,
+            "name": "Connor Esterhuizen",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 9491,
+            "name": "Reeza Hendricks",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 11205,
+            "name": "Wandile Makwetu",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 1464673,
+            "name": "Wilco de Bruin",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 14587,
+            "name": "Siya Plaatjie",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1466215,
+            "name": "JJ Basson",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1464307,
+            "name": "Rafeeq Patel",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 19057,
+            "name": "Mitchell Van Buuren",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 24546,
+            "name": "Codi Yusuf",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 20428,
+            "name": "Nqabayomzi Peter",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 31958,
+            "name": "Onkgomoditse R Seletswane",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 10973,
+            "name": "Zubayr Hamza",
+            "tag": null,
+            "role": "Batter"
+          }
+        ]
+      }
+    },
+    {
+      "id": 171777,
+      "series": "CSA Four-Day Series Division One 2026-27",
+      "seriesId": 13140,
+      "matchDesc": "10th Match",
+      "format": "TEST",
+      "matchType": "Domestic",
+      "dayNight": false,
+      "battingTeamId": 90,
+      "state": "Complete",
+      "stateTitle": "Complete",
+      "status": "Dolphins won by 25 runs",
+      "startTime": 1795071600000,
+      "endTime": 1795356000000,
+      "venue": {
+        "ground": "Kingsmead",
+        "city": "Durban"
+      },
+      "team1": {
+        "id": 90,
+        "name": "Dolphins",
+        "short": "DOL",
+        "imageId": 172183,
+        "logo": "data/logos/172183.jpg"
+      },
+      "team2": {
+        "id": 917,
+        "name": "Western Province",
+        "short": "WPR",
+        "imageId": 1082447,
+        "logo": "data/logos/1082447.png"
+      },
+      "scores": {
+        "team1": [
+          {
+            "id": 1,
+            "runs": 235,
+            "wickets": 10,
+            "overs": 60.3
+          },
+          {
+            "id": 3,
+            "runs": 294,
+            "wickets": 10,
+            "overs": 92.5
+          }
+        ],
+        "team2": [
+          {
+            "id": 2,
+            "runs": 251,
+            "wickets": 10,
+            "overs": 84.1
+          },
+          {
+            "id": 4,
+            "runs": 253,
+            "wickets": 10,
+            "overs": 99.4
+          }
+        ]
+      },
+      "squads": {
+        "team1": [
+          {
+            "id": 14187,
+            "name": "Grant Roelofsen",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 12188,
+            "name": "Marques Ackerman",
+            "tag": "C",
+            "role": "Batter"
+          },
+          {
+            "id": 1450402,
+            "name": "Semal Pillay",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 14430,
+            "name": "Joshua Richards",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 14586,
+            "name": "Bryce Parsons",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 9587,
+            "name": "Jason Smith",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 9724,
+            "name": "Khaya Zondo",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 8530,
+            "name": "Prenelan Subrayen",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 50972,
+            "name": "Tristan Luus",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 12191,
+            "name": "Okuhle Cele",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 51686,
+            "name": "Sean Gilson",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 50549,
+            "name": "Romashan Pillay",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1450359,
+            "name": "Bandile Mbatha",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 53408,
+            "name": "Nqobani Mokoena",
+            "tag": null,
+            "role": "Bowler"
+          }
+        ],
+        "team2": [
+          {
+            "id": 20267,
+            "name": "Daniel Smith",
+            "tag": "C",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 11209,
+            "name": "Kyle Verreynne",
+            "tag": "WK",
+            "role": "WK-Batter"
+          },
+          {
+            "id": 13101,
+            "name": "Jiveshan Pillay",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 20443,
+            "name": "Sinalo Gobeni",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 14265,
+            "name": "David Bedingham",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 20437,
+            "name": "Joshua van Heerden",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 10679,
+            "name": "Tshepo Lebohang Moreki",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 17026,
+            "name": "Mihlali Mpongwana",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 12223,
+            "name": "Kyle Simmonds",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 55284,
+            "name": "Raeeq Daniels",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 9702,
+            "name": "Dane Paterson",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 9763,
+            "name": "Edward Moore",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 20583,
+            "name": "Asakhe Tsaka",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1451224,
+            "name": "Josh Breed",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1464111,
+            "name": "Kashief Joseph",
+            "tag": null,
+            "role": "Bowler"
+          }
+        ]
+      }
+    },
+    {
       "id": 171310,
       "series": "Plunket Shield 2026-27",
       "seriesId": 13097,
@@ -11678,7 +12437,7 @@
       "dayNight": false,
       "battingTeamId": 313,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "CD Won",
       "status": "Central Districts won by 9 wkts",
       "startTime": 1795037400000,
       "endTime": 1795321800000,
