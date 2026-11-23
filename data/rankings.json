@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T03:00:54.635Z",
+  "generatedAt": "2026-11-23T13:32:00.181Z",
   "data": {
     "men": {
       "batting": {
@@ -2012,10 +2012,10 @@
             "rank": 6,
             "id": 258,
             "name": "Sri Lanka Women",
-            "rating": 239,
+            "rating": 240,
             "trend": "Flat",
-            "matches": 51,
-            "points": 12198,
+            "matches": 52,
+            "points": 12458,
             "logo": "data/logos/776267.png"
           },
           {
@@ -2032,10 +2032,10 @@
             "rank": 8,
             "id": 259,
             "name": "Pakistan Women",
-            "rating": 210,
+            "rating": 209,
             "trend": "Flat",
-            "matches": 47,
-            "points": 9857,
+            "matches": 48,
+            "points": 10046,
             "logo": "data/logos/776311.png"
           },
           {
@@ -2044,8 +2044,8 @@
             "name": "Ireland Women",
             "rating": 203,
             "trend": "Flat",
-            "matches": 48,
-            "points": 9726,
+            "matches": 49,
+            "points": 9939,
             "logo": "data/logos/839468.png"
           },
           {
