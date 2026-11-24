@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T01:33:46.385Z",
+  "generatedAt": "2026-11-24T12:14:02.561Z",
   "data": {
     "men": {
       "batting": {
@@ -1136,10 +1136,10 @@
             "rank": 1,
             "id": 9,
             "name": "England",
-            "rating": 267,
+            "rating": 268,
             "trend": "Flat",
-            "matches": 42,
-            "points": 11231,
+            "matches": 43,
+            "points": 11542,
             "logo": "data/logos/776237.png"
           },
           {
@@ -1156,10 +1156,10 @@
             "rank": 3,
             "id": 4,
             "name": "Australia",
-            "rating": 261,
+            "rating": 260,
             "trend": "Flat",
-            "matches": 39,
-            "points": 10187,
+            "matches": 40,
+            "points": 10404,
             "logo": "data/logos/776202.png"
           },
           {
@@ -1404,10 +1404,10 @@
             "rank": 7,
             "id": 9149,
             "name": "Chamari Athapaththu",
-            "rating": 706,
+            "rating": 685,
             "trend": "Flat",
             "country": "Sri Lanka",
-            "points": 706,
+            "points": 685,
             "photo": "data/photos/765864.jpg"
           },
           {
@@ -1610,10 +1610,10 @@
             "rank": 7,
             "id": 12275,
             "name": "Nashra Sandhu",
-            "rating": 701,
+            "rating": 687,
             "trend": "Flat",
             "country": "Pakistan",
-            "points": 701,
+            "points": 687,
             "photo": "data/photos/1005772.jpg"
           },
           {
@@ -1637,11 +1637,11 @@
             "photo": "data/photos/1005199.jpg"
           },
           {
-            "rank": 10,
+            "rank": 11,
             "id": 9476,
             "name": "Kim Garth",
             "rating": 669,
-            "trend": "Flat",
+            "trend": "Down",
             "country": "Australia",
             "points": 669,
             "photo": "data/photos/1005201.jpg"
@@ -1774,23 +1774,23 @@
           },
           {
             "rank": 3,
-            "id": 11098,
-            "name": "Deepti Sharma",
-            "rating": 382,
-            "trend": "Flat",
-            "country": "India",
-            "points": 382,
-            "photo": "data/photos/1005075.jpg"
+            "id": 12292,
+            "name": "Kathryn Bryce",
+            "rating": 390,
+            "trend": "Up",
+            "country": "Scotland",
+            "points": 390,
+            "photo": "data/photos/1005453.jpg"
           },
           {
             "rank": 4,
-            "id": 9149,
-            "name": "Chamari Athapaththu",
-            "rating": 381,
-            "trend": "Flat",
-            "country": "Sri Lanka",
-            "points": 381,
-            "photo": "data/photos/765864.jpg"
+            "id": 11098,
+            "name": "Deepti Sharma",
+            "rating": 382,
+            "trend": "Down",
+            "country": "India",
+            "points": 382,
+            "photo": "data/photos/1005075.jpg"
           },
           {
             "rank": 5,
@@ -1804,32 +1804,32 @@
           },
           {
             "rank": 6,
-            "id": 13742,
-            "name": "Orla Prendergast",
-            "rating": 354,
-            "trend": "Flat",
-            "country": "Ireland",
-            "points": 354,
-            "photo": "data/photos/1005858.jpg"
+            "id": 9149,
+            "name": "Chamari Athapaththu",
+            "rating": 358,
+            "trend": "Down",
+            "country": "Sri Lanka",
+            "points": 358,
+            "photo": "data/photos/765864.jpg"
           },
           {
             "rank": 7,
-            "id": 12292,
-            "name": "Kathryn Bryce",
-            "rating": 320,
-            "trend": "Flat",
-            "country": "Scotland",
-            "points": 320,
-            "photo": "data/photos/1005453.jpg"
+            "id": 13742,
+            "name": "Orla Prendergast",
+            "rating": 327,
+            "trend": "Down",
+            "country": "Ireland",
+            "points": 327,
+            "photo": "data/photos/1005858.jpg"
           },
           {
             "rank": 8,
             "id": 14806,
             "name": "Fatima Sana",
-            "rating": 310,
+            "rating": 292,
             "trend": "Flat",
             "country": "Pakistan",
-            "points": 310,
+            "points": 292,
             "photo": "data/photos/1005765.jpg"
           },
           {
@@ -1844,13 +1844,13 @@
           },
           {
             "rank": 10,
-            "id": 15388,
-            "name": "Katherine Fraser",
-            "rating": 265,
-            "trend": "Flat",
-            "country": "Scotland",
-            "points": 265,
-            "photo": "data/photos/1005452.jpg"
+            "id": 9182,
+            "name": "Marizanne Kapp",
+            "rating": 260,
+            "trend": "Up",
+            "country": "South Africa",
+            "points": 260,
+            "photo": "data/photos/1005425.jpg"
           }
         ]
       },
