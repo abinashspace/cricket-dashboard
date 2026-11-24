@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T13:32:00.181Z",
+  "generatedAt": "2026-11-24T01:33:46.385Z",
   "data": {
     "men": {
       "batting": {
@@ -1395,7 +1395,7 @@
             "id": 11256,
             "name": "Hayley Matthews",
             "rating": 732,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "West Indies",
             "points": 732,
             "photo": "data/photos/1005648.jpg"
@@ -1405,7 +1405,7 @@
             "id": 9149,
             "name": "Chamari Athapaththu",
             "rating": 706,
-            "trend": "Down",
+            "trend": "Flat",
             "country": "Sri Lanka",
             "points": 706,
             "photo": "data/photos/765864.jpg"
@@ -1611,7 +1611,7 @@
             "id": 12275,
             "name": "Nashra Sandhu",
             "rating": 701,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "Pakistan",
             "points": 701,
             "photo": "data/photos/1005772.jpg"
@@ -1621,7 +1621,7 @@
             "id": 15470,
             "name": "Nonkululeko Mlaba",
             "rating": 683,
-            "trend": "Down",
+            "trend": "Flat",
             "country": "South Africa",
             "points": 683,
             "photo": "data/photos/1005427.jpg"
@@ -1631,7 +1631,7 @@
             "id": 12015,
             "name": "Georgia Wareham",
             "rating": 683,
-            "trend": "Down",
+            "trend": "Flat",
             "country": "Australia",
             "points": 683,
             "photo": "data/photos/1005199.jpg"
@@ -1777,7 +1777,7 @@
             "id": 11098,
             "name": "Deepti Sharma",
             "rating": 382,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "India",
             "points": 382,
             "photo": "data/photos/1005075.jpg"
@@ -1787,7 +1787,7 @@
             "id": 9149,
             "name": "Chamari Athapaththu",
             "rating": 381,
-            "trend": "Down",
+            "trend": "Flat",
             "country": "Sri Lanka",
             "points": 381,
             "photo": "data/photos/765864.jpg"
@@ -1797,7 +1797,7 @@
             "id": 11989,
             "name": "Ashleigh Gardner",
             "rating": 364,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "Australia",
             "points": 364,
             "photo": "data/photos/1005195.jpg"
@@ -1807,7 +1807,7 @@
             "id": 13742,
             "name": "Orla Prendergast",
             "rating": 354,
-            "trend": "Down",
+            "trend": "Flat",
             "country": "Ireland",
             "points": 354,
             "photo": "data/photos/1005858.jpg"
@@ -1817,7 +1817,7 @@
             "id": 12292,
             "name": "Kathryn Bryce",
             "rating": 320,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "Scotland",
             "points": 320,
             "photo": "data/photos/1005453.jpg"
@@ -1827,7 +1827,7 @@
             "id": 14806,
             "name": "Fatima Sana",
             "rating": 310,
-            "trend": "Down",
+            "trend": "Flat",
             "country": "Pakistan",
             "points": 310,
             "photo": "data/photos/1005765.jpg"
@@ -1837,7 +1837,7 @@
             "id": 11531,
             "name": "Sophie Ecclestone",
             "rating": 272,
-            "trend": "Down",
+            "trend": "Flat",
             "country": "England",
             "points": 272,
             "photo": "data/photos/1005626.jpg"
@@ -1847,7 +1847,7 @@
             "id": 15388,
             "name": "Katherine Fraser",
             "rating": 265,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "Scotland",
             "points": 265,
             "photo": "data/photos/1005452.jpg"
