@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T22:41:54.060Z",
+  "generatedAt": "2026-11-25T05:18:49.547Z",
   "matches": [
     {
       "id": 166677,
@@ -9,10 +9,10 @@
       "format": "TEST",
       "matchType": "Domestic",
       "dayNight": false,
-      "battingTeamId": 164,
-      "state": "Stumps",
-      "stateTitle": "Stumps",
-      "status": "Day 3: Stumps - Queensland lead by 81 runs",
+      "battingTeamId": 104,
+      "state": "Rain",
+      "stateTitle": "Break",
+      "status": "Day 4: Rain stops play - New South Wales need 186 runs",
       "startTime": 1795303800000,
       "endTime": 1795588200000,
       "venue": {
@@ -43,9 +43,9 @@
           },
           {
             "id": 3,
-            "runs": 106,
-            "wickets": 2,
-            "overs": 32.4
+            "runs": 306,
+            "wickets": 6,
+            "overs": 78.2
           }
         ],
         "team2": [
@@ -54,6 +54,12 @@
             "runs": 303,
             "wickets": 10,
             "overs": 106.6
+          },
+          {
+            "id": 4,
+            "runs": 96,
+            "wickets": 4,
+            "overs": 23.6
           }
         ]
       },
@@ -217,9 +223,9 @@
       "matchType": "Domestic",
       "dayNight": false,
       "battingTeamId": 87,
-      "state": "Stumps",
-      "stateTitle": "Stumps",
-      "status": "Day 2: Stumps - Western Australia trail by 145 runs",
+      "state": "In Progress",
+      "stateTitle": "In Progress",
+      "status": "Day 3: 2nd Session - Western Australia trail by 46 runs",
       "startTime": 1795401000000,
       "endTime": 1795685400000,
       "venue": {
@@ -252,9 +258,9 @@
         "team2": [
           {
             "id": 2,
-            "runs": 197,
-            "wickets": 5,
-            "overs": 73.6
+            "runs": 296,
+            "wickets": 6,
+            "overs": 104.3
           }
         ]
       },
@@ -666,10 +672,10 @@
       "format": "TEST",
       "matchType": "Domestic",
       "dayNight": false,
-      "battingTeamId": 158,
-      "state": "Stumps",
-      "stateTitle": "Stumps",
-      "status": "Day 1: Stumps",
+      "battingTeamId": 52,
+      "state": "Tea",
+      "stateTitle": "Tea",
+      "status": "Day 2: Tea Break - Victoria trail by 114 runs",
       "startTime": 1795478400000,
       "endTime": 1795762800000,
       "venue": {
@@ -694,12 +700,19 @@
         "team1": [
           {
             "id": 1,
-            "runs": 272,
-            "wickets": 8,
-            "overs": 93.6
+            "runs": 287,
+            "wickets": 10,
+            "overs": 97.1
           }
         ],
-        "team2": []
+        "team2": [
+          {
+            "id": 2,
+            "runs": 173,
+            "wickets": 2,
+            "overs": 55.6
+          }
+        ]
       },
       "squads": {
         "team1": [
@@ -896,10 +909,10 @@
       "format": "T20",
       "matchType": "Women",
       "dayNight": false,
-      "battingTeamId": null,
-      "state": "Preview",
-      "stateTitle": "Preview",
-      "status": "Match starts at Nov 25, 02:00 GMT",
+      "battingTeamId": 445,
+      "state": "Innings Break",
+      "stateTitle": "Ings Break",
+      "status": "Innings Break",
       "startTime": 1795572000000,
       "endTime": 1795584600000,
       "venue": {
@@ -921,7 +934,14 @@
         "logo": "data/logos/172534.jpg"
       },
       "scores": {
-        "team1": [],
+        "team1": [
+          {
+            "id": 1,
+            "runs": 104,
+            "wickets": 6,
+            "overs": 19.6
+          }
+        ],
         "team2": []
       },
       "squads": {
@@ -1137,10 +1157,10 @@
       "format": "T20",
       "matchType": "Women",
       "dayNight": false,
-      "battingTeamId": null,
-      "state": "Preview",
-      "stateTitle": "Preview",
-      "status": "Match starts at Nov 25, 05:00 GMT",
+      "battingTeamId": 189,
+      "state": "In Progress",
+      "stateTitle": "In Progress",
+      "status": "Sri Lanka Women opt to bowl",
       "startTime": 1795582800000,
       "endTime": 1795595400000,
       "venue": {
@@ -1148,21 +1168,28 @@
         "city": "Ajman"
       },
       "team1": {
-        "id": 258,
-        "name": "Sri Lanka Women",
-        "short": "SLW",
-        "imageId": 776267,
-        "logo": "data/logos/776267.png"
-      },
-      "team2": {
         "id": 189,
         "name": "Ireland Women",
         "short": "IREW",
         "imageId": 839468,
         "logo": "data/logos/839468.png"
       },
+      "team2": {
+        "id": 258,
+        "name": "Sri Lanka Women",
+        "short": "SLW",
+        "imageId": 776267,
+        "logo": "data/logos/776267.png"
+      },
       "scores": {
-        "team1": [],
+        "team1": [
+          {
+            "id": 1,
+            "runs": 22,
+            "wickets": 2,
+            "overs": 4.2
+          }
+        ],
         "team2": []
       },
       "squads": {
@@ -2186,6 +2213,584 @@
       }
     },
     {
+      "id": 165221,
+      "series": "Syed Mushtaq Ali Trophy Elite 2026",
+      "seriesId": 12420,
+      "matchDesc": "Elite Group D",
+      "format": "T20",
+      "matchType": "League",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Upcoming",
+      "stateTitle": "Upcoming Match",
+      "status": "Match starts at Nov 26, 03:30 GMT",
+      "startTime": 1795660200000,
+      "endTime": 1795672800000,
+      "venue": {
+        "ground": "Jadavpur University Campus 2nd Ground",
+        "city": "Kolkata"
+      },
+      "team1": {
+        "id": 467,
+        "name": "Uttarakhand",
+        "short": "UTK",
+        "imageId": 172515,
+        "logo": "data/logos/172515.jpg"
+      },
+      "team2": {
+        "id": 95,
+        "name": "Mumbai",
+        "short": "MUM",
+        "imageId": 172187,
+        "logo": "data/logos/172187.jpg"
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": {
+        "team1": [
+          {
+            "id": 13111,
+            "name": "Kunal Chandela",
+            "tag": "C",
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 14548,
+            "name": "Avneesh Sudha",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 14693,
+            "name": "Yuvraj Chaudhary",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 14108,
+            "name": "Mayank Mishra",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 12644,
+            "name": "Agnivesh Ayachi",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1463636,
+            "name": "Janmejay Joshi",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 15727,
+            "name": "Akash Madhwal",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 10357,
+            "name": "Jagadeesha Suchith",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1463397,
+            "name": "Aarav Mahajan",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 53492,
+            "name": "Devendra Singh Bora",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1449160,
+            "name": "Shashwat Dangwal",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1431833,
+            "name": "Tejasvi Jaiswal",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 14593,
+            "name": "Vaibhav Kandpal",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 52897,
+            "name": "Jagmohan Nagarkoti",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 51371,
+            "name": "Ravinder Negi",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1447205,
+            "name": "Sanskar Rawat",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 36146,
+            "name": "Aanjaneya Suryavanshi",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 14642,
+            "name": "Vijay Sharma",
+            "tag": null,
+            "role": "Batter"
+          }
+        ],
+        "team2": [
+          {
+            "id": 7915,
+            "name": "Suryakumar Yadav",
+            "tag": "C",
+            "role": "Batter"
+          },
+          {
+            "id": 9429,
+            "name": "Sarfaraz Khan",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 15417,
+            "name": "Suved Parkar",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 22566,
+            "name": "Angkrish Raghuvanshi",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 14964,
+            "name": "Hardik Tamore",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 14703,
+            "name": "Atharva Ankolekar",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 11195,
+            "name": "Shivam Dube",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 13496,
+            "name": "Shams Mulani",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 27424,
+            "name": "Musheer Khan",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 8683,
+            "name": "Shardul Thakur",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 14940,
+            "name": "Mohit Avasthi",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 24226,
+            "name": "Maxwell Swaminathan",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 14591,
+            "name": "Divyaansh Saxena",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 12315,
+            "name": "Sairaj Patil",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 55134,
+            "name": "Sylvester DSouza",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          }
+        ]
+      }
+    },
+    {
+      "id": 165211,
+      "series": "Syed Mushtaq Ali Trophy Elite 2026",
+      "seriesId": 12420,
+      "matchDesc": "Elite Group C",
+      "format": "T20",
+      "matchType": "League",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Upcoming",
+      "stateTitle": "Upcoming Match",
+      "status": "Match starts at Nov 26, 03:30 GMT",
+      "startTime": 1795662000000,
+      "endTime": 1795674600000,
+      "venue": {
+        "ground": "Punjab Cricket Association IS Bindra Stadium",
+        "city": "Mohali"
+      },
+      "team1": {
+        "id": 167,
+        "name": "Madhya Pradesh",
+        "short": "MP",
+        "imageId": 172236,
+        "logo": "data/logos/172236.jpg"
+      },
+      "team2": {
+        "id": 465,
+        "name": "Puducherry",
+        "short": "PDC",
+        "imageId": 172513,
+        "logo": "data/logos/172513.jpg"
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": null
+    },
+    {
+      "id": 165191,
+      "series": "Syed Mushtaq Ali Trophy Elite 2026",
+      "seriesId": 12420,
+      "matchDesc": "Elite Group A",
+      "format": "T20",
+      "matchType": "League",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Upcoming",
+      "stateTitle": "Upcoming Match",
+      "status": "Match starts at Nov 26, 03:30 GMT",
+      "startTime": 1795663800000,
+      "endTime": 1795676400000,
+      "venue": {
+        "ground": "Sharad Pawar Cricket Academy BKC",
+        "city": "Mumbai"
+      },
+      "team1": {
+        "id": 128,
+        "name": "Karnataka",
+        "short": "KAR",
+        "imageId": 776345,
+        "logo": "data/logos/776345.webp"
+      },
+      "team2": {
+        "id": 170,
+        "name": "Baroda",
+        "short": "BRD",
+        "imageId": 172238,
+        "logo": "data/logos/172238.jpg"
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": {
+        "team1": [
+          {
+            "id": 29130,
+            "name": "Smaran Ravichandran",
+            "tag": "C",
+            "role": "Batter"
+          },
+          {
+            "id": 8257,
+            "name": "Karun Nair",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1836,
+            "name": "Manish Pandey",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 29109,
+            "name": "Rohan Patil",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 13082,
+            "name": "Krishnan Shrijith",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 13972,
+            "name": "Luvnith Sisodia",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 10522,
+            "name": "Rithesh Bhatkal",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 22586,
+            "name": "Aneeshwar Gautam",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 10499,
+            "name": "Abhinav Manohar",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 47742,
+            "name": "Manvanth Kumar L",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1428940,
+            "name": "Shikhar Shetty",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 29102,
+            "name": "Abhilash Shetty",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 10484,
+            "name": "Praveen Dubey",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 10486,
+            "name": "Vijaykumar Vyshak",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 13977,
+            "name": "Vidhwath Kaverappa",
+            "tag": null,
+            "role": "Bowler"
+          }
+        ],
+        "team2": [
+          {
+            "id": 14408,
+            "name": "Shivalik Sharma",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 11311,
+            "name": "Krunal Pandya",
+            "tag": "C",
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 9509,
+            "name": "Atit Sheth",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 9427,
+            "name": "Deepak Hooda",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 52488,
+            "name": "Raj Limbani",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 14274,
+            "name": "Rasikh Salam Dar",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 18697,
+            "name": "Bhanu Pania",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 13251,
+            "name": "Dhruv Patel",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 32422,
+            "name": "Mahesh Pithiya",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 14690,
+            "name": "Shashwat Rawat",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 14451,
+            "name": "Safvan Patel",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1482467,
+            "name": "Parikshit Patidar",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 10214,
+            "name": "Jitesh Sharma",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 51364,
+            "name": "Amit Pasi",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1482471,
+            "name": "Hemant Punde",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          }
+        ]
+      }
+    },
+    {
+      "id": 165201,
+      "series": "Syed Mushtaq Ali Trophy Elite 2026",
+      "seriesId": 12420,
+      "matchDesc": "Elite Group B",
+      "format": "T20",
+      "matchType": "League",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Upcoming",
+      "stateTitle": "Upcoming Match",
+      "status": "Match starts at Nov 26, 03:30 GMT",
+      "startTime": 1795663800000,
+      "endTime": 1795676400000,
+      "venue": {
+        "ground": "Daly College Ground",
+        "city": "Indore"
+      },
+      "team1": {
+        "id": 252,
+        "name": "Jammu and Kashmir",
+        "short": "JK",
+        "imageId": 172305,
+        "logo": "data/logos/172305.jpg"
+      },
+      "team2": {
+        "id": 200,
+        "name": "Haryana",
+        "short": "HAR",
+        "imageId": 172260,
+        "logo": "data/logos/172260.jpg"
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": null
+    },
+    {
+      "id": 162931,
+      "series": "WBBL 2026",
+      "seriesId": 12677,
+      "matchDesc": "34th Match",
+      "format": "T20",
+      "matchType": "Women",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Upcoming",
+      "stateTitle": "Upcoming Match",
+      "status": "Match starts at Nov 26, 04:40 GMT",
+      "startTime": 1795668000000,
+      "endTime": 1795680600000,
+      "venue": {
+        "ground": "North Sydney Oval",
+        "city": "Sydney"
+      },
+      "team1": {
+        "id": 362,
+        "name": "Sydney Thunder Women",
+        "short": "SYTW",
+        "imageId": 824992,
+        "logo": "data/logos/824992.png"
+      },
+      "team2": {
+        "id": 355,
+        "name": "Adelaide Strikers Women",
+        "short": "ADSW",
+        "imageId": 824978,
+        "logo": "data/logos/824978.png"
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": null
+    },
+    {
       "id": 175253,
       "series": "ILT20 026",
       "seriesId": 12037,
@@ -3032,7 +3637,7 @@
       "dayNight": false,
       "battingTeamId": 241,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "AP Won",
       "status": "Andhra won by 3 wkts",
       "startTime": 1795518000000,
       "endTime": 1795530600000,
@@ -3578,7 +4183,7 @@
       "dayNight": false,
       "battingTeamId": 325,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "PAKA Won",
       "status": "Pakistan A won by 96 runs",
       "startTime": 1795514400000,
       "endTime": 1795543200000,
@@ -4586,7 +5191,7 @@
       "dayNight": false,
       "battingTeamId": 251,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "HP Won",
       "status": "Himachal Pradesh won by 9 wkts",
       "startTime": 1795504500000,
       "endTime": 1795517100000,
@@ -5090,7 +5695,7 @@
       "dayNight": false,
       "battingTeamId": 78,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "INDA Won",
       "status": "India A won by 7 wkts",
       "startTime": 1795500000000,
       "endTime": 1795528800000,
@@ -5333,7 +5938,7 @@
       "dayNight": false,
       "battingTeamId": 595,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "CDG Won",
       "status": "Chandigarh won by 58 runs",
       "startTime": 1795498200000,
       "endTime": 1795510800000,
@@ -6116,7 +6721,7 @@
       "dayNight": false,
       "battingTeamId": 242,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "HYD Won",
       "status": "Hyderabad won by 5 wkts",
       "startTime": 1795498200000,
       "endTime": 1795510800000,
@@ -6377,7 +6982,7 @@
       "dayNight": false,
       "battingTeamId": 462,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "MGLY Won",
       "status": "Meghalaya won by 2 wkts",
       "startTime": 1795498200000,
       "endTime": 1795510800000,
@@ -6887,7 +7492,7 @@
       "dayNight": false,
       "battingTeamId": 81,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "DEL Won",
       "status": "Delhi won by 116 runs",
       "startTime": 1795491000000,
       "endTime": 1795503600000,

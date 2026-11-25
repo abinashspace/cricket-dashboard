@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T22:41:54.063Z",
+  "generatedAt": "2026-11-25T05:18:49.550Z",
   "data": {
     "men": {
       "batting": {
@@ -39,7 +39,7 @@
             "id": 12173,
             "name": "Ibrahim Zadran",
             "rating": 752,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "Afghanistan",
             "points": 752,
             "photo": "data/photos/845418.jpg"
@@ -49,7 +49,7 @@
             "id": 576,
             "name": "Rohit Sharma",
             "rating": 732,
-            "trend": "Down",
+            "trend": "Flat",
             "country": "India",
             "points": 732,
             "photo": "data/photos/616514.jpg"
@@ -59,7 +59,7 @@
             "id": 10384,
             "name": "Shai Hope",
             "rating": 710,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "West Indies",
             "points": 710,
             "photo": "data/photos/845520.jpg"
@@ -69,7 +69,7 @@
             "id": 8502,
             "name": "Ben Duckett",
             "rating": 699,
-            "trend": "Down",
+            "trend": "Flat",
             "country": "England",
             "points": 699,
             "photo": "data/photos/848549.jpg"
@@ -79,7 +79,7 @@
             "id": 8359,
             "name": "Babar Azam",
             "rating": 661,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "Pakistan",
             "points": 661,
             "photo": "data/photos/846059.jpg"
@@ -89,7 +89,7 @@
             "id": 8019,
             "name": "Joe Root",
             "rating": 652,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "England",
             "points": 652,
             "photo": "data/photos/717792.jpg"
@@ -99,7 +99,7 @@
             "id": 9494,
             "name": "Kusal Mendis",
             "rating": 649,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "Sri Lanka",
             "points": 649,
             "photo": "data/photos/847148.jpg"
@@ -171,7 +171,7 @@
             "id": 10744,
             "name": "Rishabh Pant",
             "rating": 713,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "India",
             "points": 713,
             "photo": "data/photos/616524.jpg"
@@ -181,7 +181,7 @@
             "id": 8571,
             "name": "Rahmat Shah",
             "rating": 712,
-            "trend": "Down",
+            "trend": "Flat",
             "country": "Afghanistan",
             "points": 712,
             "photo": "data/photos/616543.jpg"
@@ -357,7 +357,7 @@
             "id": 10100,
             "name": "Mitchell Santner",
             "rating": 610,
-            "trend": "Down",
+            "trend": "Flat",
             "country": "New Zealand",
             "points": 610,
             "photo": "data/photos/845505.jpg"
@@ -367,7 +367,7 @@
             "id": 13214,
             "name": "Azmatullah Omarzai",
             "rating": 610,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "Afghanistan",
             "points": 610,
             "photo": "data/photos/845424.jpg"
@@ -377,7 +377,7 @@
             "id": 11540,
             "name": "Jofra Archer",
             "rating": 601,
-            "trend": "Up",
+            "trend": "Flat",
             "country": "England",
             "points": 601,
             "photo": "data/photos/848536.jpg"
