@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T02:04:42.476Z",
+  "generatedAt": "2026-11-27T11:16:28.257Z",
   "data": {
     "men": {
       "batting": {
@@ -2014,8 +2014,8 @@
             "name": "Sri Lanka Women",
             "rating": 240,
             "trend": "Flat",
-            "matches": 52,
-            "points": 12458,
+            "matches": 53,
+            "points": 12711,
             "logo": "data/logos/776267.png"
           },
           {
@@ -2044,8 +2044,8 @@
             "name": "Ireland Women",
             "rating": 203,
             "trend": "Flat",
-            "matches": 49,
-            "points": 9939,
+            "matches": 50,
+            "points": 10129,
             "logo": "data/logos/839468.png"
           },
           {
