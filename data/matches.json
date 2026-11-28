@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T20:11:43.872Z",
+  "generatedAt": "2026-11-28T02:53:53.805Z",
   "matches": [
     {
       "id": 171807,
@@ -9,10 +9,10 @@
       "format": "TEST",
       "matchType": "Domestic",
       "dayNight": false,
-      "battingTeamId": 281,
+      "battingTeamId": 1759,
       "state": "Stumps",
       "stateTitle": "Stumps",
-      "status": "Day 1: Stumps",
+      "status": "Day 2: Stumps - Boland trail by 452 runs",
       "startTime": 1795680000000,
       "endTime": 1795964400000,
       "venue": {
@@ -37,12 +37,19 @@
         "team1": [
           {
             "id": 1,
-            "runs": 359,
-            "wickets": 3,
-            "overs": 94.6
+            "runs": 603,
+            "wickets": 9,
+            "overs": 159.2
           }
         ],
-        "team2": []
+        "team2": [
+          {
+            "id": 2,
+            "runs": 151,
+            "wickets": 1,
+            "overs": 30.6
+          }
+        ]
       },
       "squads": {
         "team1": [
@@ -281,10 +288,10 @@
       "format": "TEST",
       "matchType": "Domestic",
       "dayNight": false,
-      "battingTeamId": 155,
+      "battingTeamId": 90,
       "state": "Stumps",
       "stateTitle": "Stumps",
-      "status": "Day 1: Stumps",
+      "status": "Day 2: Stumps - Dolphins trail by 143 runs",
       "startTime": 1795680000000,
       "endTime": 1795964400000,
       "venue": {
@@ -309,12 +316,19 @@
         "team1": [
           {
             "id": 1,
-            "runs": 266,
-            "wickets": 8,
-            "overs": 91.6
+            "runs": 288,
+            "wickets": 10,
+            "overs": 100.2
           }
         ],
-        "team2": []
+        "team2": [
+          {
+            "id": 2,
+            "runs": 145,
+            "wickets": 5,
+            "overs": 58.6
+          }
+        ]
       },
       "squads": {
         "team1": [
@@ -541,10 +555,10 @@
       "format": "TEST",
       "matchType": "Domestic",
       "dayNight": false,
-      "battingTeamId": 922,
+      "battingTeamId": 157,
       "state": "Stumps",
       "stateTitle": "Stumps",
-      "status": "Day 1: Stumps - North West - Eastvaal Renault Dragons trail by 158 runs",
+      "status": "Day 2: Stumps - Lions trail by 9 runs",
       "startTime": 1795680000000,
       "endTime": 1795964400000,
       "venue": {
@@ -572,14 +586,20 @@
             "runs": 187,
             "wickets": 10,
             "overs": 80.1
+          },
+          {
+            "id": 3,
+            "runs": 65,
+            "wickets": 2,
+            "overs": 22.6
           }
         ],
         "team2": [
           {
             "id": 2,
-            "runs": 29,
-            "wickets": 1,
-            "overs": 11.6
+            "runs": 261,
+            "wickets": 10,
+            "overs": 79.2
           }
         ]
       },
@@ -814,10 +834,10 @@
       "format": "TEST",
       "matchType": "Domestic",
       "dayNight": false,
-      "battingTeamId": 923,
+      "battingTeamId": 933,
       "state": "Stumps",
       "stateTitle": "Stumps",
-      "status": "Day 1: Stumps - Northern Cape trail by 108 runs",
+      "status": "Day 2: Stumps - Eastern Storm lead by 49 runs",
       "startTime": 1795680000000,
       "endTime": 1795878000000,
       "venue": {
@@ -845,14 +865,20 @@
             "runs": 198,
             "wickets": 10,
             "overs": 53.3
+          },
+          {
+            "id": 3,
+            "runs": 105,
+            "wickets": 5,
+            "overs": 34.6
           }
         ],
         "team2": [
           {
             "id": 2,
-            "runs": 90,
-            "wickets": 3,
-            "overs": 35.6
+            "runs": 254,
+            "wickets": 10,
+            "overs": 96.2
           }
         ]
       },
@@ -1064,9 +1090,9 @@
       "matchType": "Domestic",
       "dayNight": false,
       "battingTeamId": 294,
-      "state": "Stumps",
-      "stateTitle": "Stumps",
-      "status": "Day 1: Stumps - Northern Districts trail by 121 runs",
+      "state": "In Progress",
+      "stateTitle": "In Progress",
+      "status": "Day 2: 2nd Session - Northern Districts trail by 54 runs",
       "startTime": 1795728600000,
       "endTime": 1796013000000,
       "venue": {
@@ -1099,9 +1125,9 @@
         "team2": [
           {
             "id": 2,
-            "runs": 73,
-            "wickets": 5,
-            "overs": 30.6
+            "runs": 140,
+            "wickets": 6,
+            "overs": 56.6
           }
         ]
       },
@@ -1265,9 +1291,9 @@
       "matchType": "Domestic",
       "dayNight": false,
       "battingTeamId": 105,
-      "state": "Stumps",
-      "stateTitle": "Stumps",
-      "status": "Day 1: Stumps - Otago trail by 247 runs",
+      "state": "Tea",
+      "stateTitle": "Tea",
+      "status": "Day 2: Tea Break - Otago trail by 47 runs",
       "startTime": 1795728600000,
       "endTime": 1796013000000,
       "venue": {
@@ -1300,9 +1326,9 @@
         "team2": [
           {
             "id": 2,
-            "runs": 34,
-            "wickets": 1,
-            "overs": 10.6
+            "runs": 234,
+            "wickets": 6,
+            "overs": 73.6
           }
         ]
       },
@@ -1465,10 +1491,10 @@
       "format": "TEST",
       "matchType": "International",
       "dayNight": false,
-      "battingTeamId": 13,
-      "state": "Stumps",
-      "stateTitle": "Stumps",
-      "status": "Day 1: Stumps",
+      "battingTeamId": 2,
+      "state": "Tea",
+      "stateTitle": "Tea",
+      "status": "Day 2: Tea Break - India trail by 297 runs",
       "startTime": 1795730400000,
       "endTime": 1796101200000,
       "venue": {
@@ -1493,12 +1519,19 @@
         "team1": [
           {
             "id": 1,
-            "runs": 246,
-            "wickets": 5,
-            "overs": 84.6
+            "runs": 356,
+            "wickets": 10,
+            "overs": 116.3
           }
         ],
-        "team2": []
+        "team2": [
+          {
+            "id": 2,
+            "runs": 59,
+            "wickets": 3,
+            "overs": 14.4
+          }
+        ]
       },
       "squads": {
         "team1": [
@@ -1695,10 +1728,10 @@
       "format": "TEST",
       "matchType": "Domestic",
       "dayNight": false,
-      "battingTeamId": null,
-      "state": "Upcoming",
-      "stateTitle": "Upcoming Match",
-      "status": "Match starts at Nov 27, 21:30 GMT",
+      "battingTeamId": 312,
+      "state": "Tea",
+      "stateTitle": "Tea",
+      "status": "Day 1: Tea Break",
       "startTime": 1795815000000,
       "endTime": 1796099400000,
       "venue": {
@@ -1706,21 +1739,28 @@
         "city": "Auckland"
       },
       "team1": {
-        "id": 186,
-        "name": "Auckland",
-        "short": "AKL",
-        "imageId": 172246,
-        "logo": "data/logos/172246.jpg"
-      },
-      "team2": {
         "id": 312,
         "name": "Canterbury",
         "short": "CNTBRY",
         "imageId": 172362,
         "logo": "data/logos/172362.jpg"
       },
+      "team2": {
+        "id": 186,
+        "name": "Auckland",
+        "short": "AKL",
+        "imageId": 172246,
+        "logo": "data/logos/172246.jpg"
+      },
       "scores": {
-        "team1": [],
+        "team1": [
+          {
+            "id": 1,
+            "runs": 232,
+            "wickets": 7,
+            "overs": 58.6
+          }
+        ],
         "team2": []
       },
       "squads": null
@@ -3913,6 +3953,241 @@
       }
     },
     {
+      "id": 162967,
+      "series": "WBBL 2026",
+      "seriesId": 12677,
+      "matchDesc": "39th Match",
+      "format": "T20",
+      "matchType": "Women",
+      "dayNight": false,
+      "battingTeamId": null,
+      "state": "Preview",
+      "stateTitle": "Preview",
+      "status": "Match starts at Nov 29, 01:00 GMT",
+      "startTime": 1795914000000,
+      "endTime": 1795926600000,
+      "venue": {
+        "ground": "Karen Rolton Oval",
+        "city": "Adelaide, South Australia"
+      },
+      "team1": {
+        "id": 356,
+        "name": "Brisbane Heat Women",
+        "short": "BRHW",
+        "imageId": 824980,
+        "logo": "data/logos/824980.png"
+      },
+      "team2": {
+        "id": 360,
+        "name": "Perth Scorchers Women",
+        "short": "PRSW",
+        "imageId": 824984,
+        "logo": "data/logos/824984.png"
+      },
+      "scores": {
+        "team1": [],
+        "team2": []
+      },
+      "squads": {
+        "team1": [
+          {
+            "id": 12050,
+            "name": "Georgia Redmayne",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 14378,
+            "name": "Charli Knott",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 11101,
+            "name": "Grace Harris",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 13742,
+            "name": "Orla Prendergast",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 16209,
+            "name": "Yastika Bhatia",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 33274,
+            "name": "Lucy Hamilton",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 38734,
+            "name": "Sianna Ginger",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1431675,
+            "name": "Lucinda Bourke",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 1431659,
+            "name": "Mikayla Wrigley",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 13009,
+            "name": "Sarah Glenn",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1431667,
+            "name": "Lily Bassingthwaighte",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 13290,
+            "name": "Annie O Neil",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 9537,
+            "name": "Jess Jonassen",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 30308,
+            "name": "Grace Parsons",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 1433161,
+            "name": "Bonnie Berry",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1454743,
+            "name": "Ayaka Kato-Stafford",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 1480760,
+            "name": "Catherine White",
+            "tag": null,
+            "role": "Bowler"
+          }
+        ],
+        "team2": [
+          {
+            "id": 9989,
+            "name": "Beth Mooney",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 43391,
+            "name": "Ines McKeon",
+            "tag": null,
+            "role": "WK-Batter"
+          },
+          {
+            "id": 12014,
+            "name": "Chloe Piparo",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 9165,
+            "name": "Sophie Devine",
+            "tag": null,
+            "role": "Batting Allrounder"
+          },
+          {
+            "id": 12037,
+            "name": "Mikayla Hinkley",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 24937,
+            "name": "Freya Kemp",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 38708,
+            "name": "Chloe Ainsworth",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 13465,
+            "name": "Taneale Peschel",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 1431681,
+            "name": "Ruby Strange",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 15642,
+            "name": "Lilly Mills",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 20633,
+            "name": "Amy Edgar",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 12002,
+            "name": "Alana King",
+            "tag": null,
+            "role": "Bowler"
+          },
+          {
+            "id": 12005,
+            "name": "Katie Mack",
+            "tag": null,
+            "role": "Batter"
+          },
+          {
+            "id": 14806,
+            "name": "Fatima Sana",
+            "tag": null,
+            "role": "Bowling Allrounder"
+          },
+          {
+            "id": 51452,
+            "name": "Ebony Hoskin",
+            "tag": null,
+            "role": "Bowler"
+          }
+        ]
+      }
+    },
+    {
       "id": 178553,
       "series": "Indian Softball Cricket League 2026",
       "seriesId": 13593,
@@ -4189,7 +4464,7 @@
       "dayNight": false,
       "battingTeamId": 1312,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "SW Won",
       "status": "Sharjah Warriorz won by 7 wkts",
       "startTime": 1795789800000,
       "endTime": 1795802400000,
@@ -4638,7 +4913,7 @@
       "dayNight": false,
       "battingTeamId": 360,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "PRSW Won",
       "status": "Perth Scorchers Women won by 17 runs",
       "startTime": 1795774200000,
       "endTime": 1795786800000,
@@ -4887,7 +5162,7 @@
       "dayNight": false,
       "battingTeamId": 325,
       "state": "Complete",
-      "stateTitle": "Complete",
+      "stateTitle": "PAKA Won",
       "status": "Pakistan A won by 5 wkts",
       "startTime": 1795773600000,
       "endTime": 1795802400000,
